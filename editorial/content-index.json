@@ -1,0 +1,1227 @@
+{
+  "version": "2026-07-06",
+  "source": "google_us_cats_list-overview_2026-07-06_13-04-35.csv",
+  "totalKeywords": 200,
+  "totalArticleGroups": 89,
+  "articles": [
+    {
+      "id": "behavior-making-biscuits",
+      "status": "published",
+      "priority": 1,
+      "combinedVolume": 65000,
+      "primaryKeyword": "why do cats make biscuits",
+      "secondaryKeywords": [
+        "why do cats make biscuits on me",
+        "what does it mean when cats make biscuits",
+        "why do cats knead on you",
+        "why do cats do biscuits",
+        "why cats make biscuits",
+        "why do cats make biscuts",
+        "why do cats make biscuits and purr"
+      ],
+      "mergedKeywords": [
+        "why do cats knead",
+        "cat kneading meaning",
+        "making biscuits cat behavior"
+      ],
+      "searchIntent": "Informational — understand why cats rhythmically push their paws (kneading / biscuit making)",
+      "entityType": "behavior",
+      "url": "/behavior/making-biscuits",
+      "relatedEntities": [
+        "behavior-purring",
+        "behavior-suckling",
+        "guide-kitten-development"
+      ],
+      "internalLinks": [
+        "behavior-purring",
+        "breed-persian",
+        "behavior-zoomies"
+      ]
+    },
+    {
+      "id": "guide-cat-pregnancy",
+      "status": "published",
+      "priority": 2,
+      "combinedVolume": 45000,
+      "primaryKeyword": "how long are cats pregnant",
+      "secondaryKeywords": [
+        "how long are cats pregnant for",
+        "how long is a cats pregnancy",
+        "how long are cats pregnant in months",
+        "at what age can cats get pregnant",
+        "what age can cats get pregnant",
+        "how young can cats get pregnant",
+        "how old do cats have to be to get pregnant",
+        "how many kittens do cats have"
+      ],
+      "searchIntent": "Informational — gestation length, timeline, litter size, breeding age",
+      "entityType": "pregnancy",
+      "url": "/guides/cat-pregnancy",
+      "relatedEntities": [
+        "guide-kitten-development",
+        "behavior-heat-cycles"
+      ]
+    },
+    {
+      "id": "food-eggs",
+      "status": "published",
+      "priority": 3,
+      "combinedVolume": 25000,
+      "primaryKeyword": "can cats eat eggs",
+      "secondaryKeywords": [
+        "can cats eat scrambled eggs",
+        "can cats have scrambled eggs",
+        "can cats have egg"
+      ],
+      "searchIntent": "Informational — feline egg safety, preparation, nutrition",
+      "entityType": "food",
+      "url": "/foods/eggs"
+    },
+    {
+      "id": "food-strawberries",
+      "status": "published",
+      "priority": 4,
+      "combinedVolume": 18000,
+      "primaryKeyword": "can cats eat strawberries",
+      "searchIntent": "Informational — berry safety for cats",
+      "entityType": "food",
+      "url": "/foods/strawberries"
+    },
+    {
+      "id": "plant-rose",
+      "status": "published",
+      "priority": 5,
+      "combinedVolume": 28000,
+      "primaryKeyword": "are roses toxic to cats",
+      "secondaryKeywords": [
+        "are roses safe for cats",
+        "roses toxic to cats",
+        "can cats eat roses",
+        "are roses bad for cats",
+        "roses safe for cats"
+      ],
+      "searchIntent": "Informational — rose toxicity, thorns, petals",
+      "entityType": "plant",
+      "url": "/plants/rose"
+    },
+    {
+      "id": "behavior-licking-you",
+      "status": "published",
+      "priority": 6,
+      "combinedVolume": 11000,
+      "primaryKeyword": "why do cats lick you",
+      "searchIntent": "Informational — allogrooming, affection, anxiety",
+      "entityType": "behavior",
+      "url": "/behavior/why-cats-lick-you"
+    },
+    {
+      "id": "plant-snake-plant",
+      "status": "published",
+      "priority": 7,
+      "combinedVolume": 10800,
+      "primaryKeyword": "are snake plants toxic to cats",
+      "secondaryKeywords": [
+        "snake plant safe for cats"
+      ],
+      "searchIntent": "Informational — Sansevieria toxicity",
+      "entityType": "plant",
+      "url": "/plants/snake-plant"
+    },
+    {
+      "id": "behavior-female-cat-spraying",
+      "status": "published",
+      "priority": 8,
+      "combinedVolume": 14500,
+      "primaryKeyword": "do female cats spray",
+      "secondaryKeywords": [
+        "do girl cats spray",
+        "can female cats spray"
+      ],
+      "searchIntent": "Informational — urine marking in intact and spayed females",
+      "entityType": "behavior",
+      "url": "/behavior/female-cat-spraying"
+    },
+    {
+      "id": "food-cinnamon",
+      "status": "published",
+      "priority": 9,
+      "combinedVolume": 19400,
+      "primaryKeyword": "is cinnamon bad for cats",
+      "secondaryKeywords": [
+        "can cats have cinnamon",
+        "can cats eat cinnamon"
+      ],
+      "searchIntent": "Informational — cinnamon toxicity and coumarin",
+      "entityType": "food",
+      "url": "/foods/cinnamon"
+    },
+    {
+      "id": "plant-eucalyptus",
+      "status": "published",
+      "priority": 10,
+      "combinedVolume": 7500,
+      "primaryKeyword": "is eucalyptus safe for cats",
+      "searchIntent": "Informational — essential oil and plant toxicity",
+      "entityType": "plant",
+      "url": "/plants/eucalyptus"
+    },
+    {
+      "id": "behavior-loafing",
+      "status": "published",
+      "priority": 11,
+      "combinedVolume": 5900,
+      "primaryKeyword": "why do cats loaf",
+      "searchIntent": "Informational — cat loaf position thermoregulation",
+      "entityType": "behavior",
+      "url": "/behavior/cat-loaf"
+    },
+    {
+      "id": "food-tuna",
+      "status": "published",
+      "priority": 12,
+      "combinedVolume": 5500,
+      "primaryKeyword": "can cats eat tuna",
+      "searchIntent": "Informational — canned tuna safety, mercury, nutrition",
+      "entityType": "food",
+      "url": "/foods/tuna"
+    },
+    {
+      "id": "food-chicken",
+      "status": "published",
+      "priority": 13,
+      "combinedVolume": 8500,
+      "primaryKeyword": "can cats eat chicken",
+      "secondaryKeywords": [
+        "can cats have chicken",
+        "can cats eat cooked chicken",
+        "is chicken good for cats"
+      ],
+      "searchIntent": "Informational — cooked chicken as protein source",
+      "entityType": "food",
+      "url": "/foods/chicken"
+    },
+    {
+      "id": "parasite-worms",
+      "status": "published",
+      "priority": 14,
+      "combinedVolume": 8000,
+      "primaryKeyword": "how do cats get worms",
+      "secondaryKeywords": [
+        "how do indoor cats get worms",
+        "what do worms look like in cats",
+        "can you get worms from cats",
+        "can humans get tapeworms from cats"
+      ],
+      "searchIntent": "Informational — transmission, identification, zoonosis",
+      "entityType": "parasite",
+      "url": "/health/how-cats-get-worms"
+    },
+    {
+      "id": "guide-cat-estrus",
+      "status": "published",
+      "priority": 15,
+      "combinedVolume": 35000,
+      "primaryKeyword": "do cats get periods",
+      "secondaryKeywords": [
+        "do cats have periods",
+        "do female cats have periods",
+        "do female cats get periods",
+        "do girl cats have periods",
+        "do girl cats get periods",
+        "do cats get their period",
+        "do cats bleed when in heat",
+        "do cats bleed on their period",
+        "how long do cats stay in heat",
+        "how long are cats in heat for",
+        "how long do female cats stay in heat",
+        "when do male cats go into heat"
+      ],
+      "searchIntent": "Informational — feline estrus cycle (not menstruation)",
+      "entityType": "life-stage",
+      "url": "/guides/cat-heat-cycle"
+    },
+    {
+      "id": "fact-down-syndrome-cats",
+      "status": "published",
+      "priority": 16,
+      "combinedVolume": 5700,
+      "primaryKeyword": "can cats have down syndrome",
+      "secondaryKeywords": [
+        "can cats get down syndrome"
+      ],
+      "searchIntent": "Informational — genetic conditions mistaken for Down syndrome",
+      "entityType": "fact",
+      "url": "/facts/can-cats-have-down-syndrome"
+    },
+    {
+      "id": "behavior-zoomies",
+      "status": "published",
+      "priority": 17,
+      "combinedVolume": 4600,
+      "primaryKeyword": "why do cats get the zoomies",
+      "secondaryKeywords": [
+        "why do cats get zoomies"
+      ],
+      "searchIntent": "Informational — FRAPs, energy release",
+      "entityType": "behavior",
+      "url": "/behavior/zoomies"
+    },
+    {
+      "id": "behavior-purring",
+      "status": "published",
+      "priority": 18,
+      "combinedVolume": 6400,
+      "primaryKeyword": "why do cats purr",
+      "secondaryKeywords": [
+        "why do cats pur",
+        "what does it mean when cats purr",
+        "what does purring mean in cats"
+      ],
+      "searchIntent": "Informational — purring mechanisms and meanings",
+      "entityType": "cat-sound",
+      "url": "/behavior/purring"
+    },
+    {
+      "id": "behavior-cat-drooling",
+      "status": "merged",
+      "priority": 19,
+      "combinedVolume": 3600,
+      "primaryKeyword": "why do cats drool",
+      "searchIntent": "Informational — happy drool vs medical causes",
+      "entityType": "symptom",
+      "url": "/symptoms/cat-drooling",
+      "mergedInto": "symptom-drooling"
+    },
+    {
+      "id": "behavior-cat-snoring",
+      "status": "merged",
+      "priority": 20,
+      "combinedVolume": 6100,
+      "primaryKeyword": "do cats snore",
+      "secondaryKeywords": [
+        "can cats snore",
+        "is it normal for cats to snore",
+        "cat snoring"
+      ],
+      "searchIntent": "Informational — normal snoring vs respiratory disease",
+      "entityType": "symptom",
+      "url": "/symptoms/cat-snoring",
+      "mergedInto": "symptom-snoring"
+    },
+    {
+      "id": "behavior-eating-grass",
+      "status": "published",
+      "priority": 21,
+      "combinedVolume": 4700,
+      "primaryKeyword": "why do cats eat grass",
+      "secondaryKeywords": [
+        "do cats eat grass"
+      ],
+      "searchIntent": "Informational — plant eating behavior theories",
+      "entityType": "behavior",
+      "url": "/behavior/eating-grass"
+    },
+    {
+      "id": "behavior-water-aversion",
+      "status": "published",
+      "priority": 22,
+      "combinedVolume": 6700,
+      "primaryKeyword": "why don't cats like water",
+      "secondaryKeywords": [
+        "why do cats not like water",
+        "why dont cats like water"
+      ],
+      "searchIntent": "Informational — evolutionary and sensory reasons",
+      "entityType": "behavior",
+      "url": "/behavior/why-cats-dislike-water"
+    },
+    {
+      "id": "symptom-vomiting",
+      "status": "published",
+      "priority": 23,
+      "combinedVolume": 6300,
+      "primaryKeyword": "why do cats throw up",
+      "secondaryKeywords": [
+        "is it normal for cats to throw up"
+      ],
+      "searchIntent": "Informational — vomiting causes, urgency",
+      "entityType": "symptom",
+      "url": "/symptoms/cat-vomiting"
+    },
+    {
+      "id": "plant-pothos",
+      "status": "published",
+      "priority": 24,
+      "combinedVolume": 8600,
+      "primaryKeyword": "are pothos toxic to cats",
+      "secondaryKeywords": [
+        "is pothos toxic to cats",
+        "pothos plant toxic to cats"
+      ],
+      "searchIntent": "Informational — calcium oxalate toxicity",
+      "entityType": "plant",
+      "url": "/plants/pothos"
+    },
+    {
+      "id": "plant-monstera",
+      "status": "published",
+      "priority": 25,
+      "combinedVolume": 9200,
+      "primaryKeyword": "are monstera toxic to cats",
+      "secondaryKeywords": [
+        "are monsteras toxic to cats",
+        "is monstera toxic to cats",
+        "are monstera plants toxic to cats",
+        "monstera toxic to cats",
+        "monstera safe for cats"
+      ],
+      "searchIntent": "Informational — Monstera deliciosa toxicity",
+      "entityType": "plant",
+      "url": "/plants/monstera"
+    },
+    {
+      "id": "disease-feline-parvovirus",
+      "status": "published",
+      "priority": 26,
+      "combinedVolume": 4700,
+      "primaryKeyword": "can cats get parvo",
+      "searchIntent": "Informational — feline panleukopenia vs canine parvo",
+      "entityType": "disease",
+      "url": "/diseases/feline-panleukopenia"
+    },
+    {
+      "id": "wildlife-foxes-and-cats",
+      "status": "published",
+      "priority": 27,
+      "combinedVolume": 5500,
+      "primaryKeyword": "do foxes eat cats",
+      "secondaryKeywords": [
+        "do foxes kill cats"
+      ],
+      "searchIntent": "Informational — predation risk, urban wildlife",
+      "entityType": "fact",
+      "url": "/facts/foxes-and-cats"
+    },
+    {
+      "id": "breed-maine-coon-cost",
+      "status": "merged",
+      "priority": 28,
+      "combinedVolume": 3700,
+      "primaryKeyword": "how much do maine coon cats cost",
+      "searchIntent": "Commercial investigation — breeder pricing",
+      "entityType": "breed",
+      "url": "/breeds/maine-coon",
+      "mergedInto": "breed-maine-coon"
+    },
+    {
+      "id": "guide-hypoallergenic-cats",
+      "status": "published",
+      "priority": 29,
+      "combinedVolume": 6600,
+      "primaryKeyword": "what cats are hypoallergenic",
+      "secondaryKeywords": [
+        "are there any hypoallergenic cats",
+        "are russian blue cats hypoallergenic",
+        "are maine coon cats hypoallergenic",
+        "are persian cats hypoallergenic"
+      ],
+      "searchIntent": "Informational — Fel d 1, breed myths",
+      "entityType": "guide",
+      "url": "/guides/hypoallergenic-cats"
+    },
+    {
+      "id": "food-almond-milk",
+      "status": "published",
+      "priority": 30,
+      "combinedVolume": 2900,
+      "primaryKeyword": "can cats drink almond milk",
+      "searchIntent": "Informational — plant milk safety",
+      "entityType": "food",
+      "url": "/foods/almond-milk"
+    },
+    {
+      "id": "food-coconut-oil",
+      "status": "published",
+      "priority": 31,
+      "combinedVolume": 4900,
+      "primaryKeyword": "is coconut oil safe for cats",
+      "secondaryKeywords": [
+        "can cats have coconut oil",
+        "is coconut oil good for cats"
+      ],
+      "searchIntent": "Informational — supplement evidence",
+      "entityType": "food",
+      "url": "/foods/coconut-oil"
+    },
+    {
+      "id": "plant-basil",
+      "status": "published",
+      "priority": 32,
+      "combinedVolume": 7000,
+      "primaryKeyword": "is basil safe for cats",
+      "secondaryKeywords": [
+        "is basil toxic to cats",
+        "can cats eat basil",
+        "can cats have basil"
+      ],
+      "searchIntent": "Informational — herb safety",
+      "entityType": "plant",
+      "url": "/plants/basil"
+    },
+    {
+      "id": "behavior-biting",
+      "status": "published",
+      "priority": 33,
+      "combinedVolume": 6800,
+      "primaryKeyword": "why do cats bite you",
+      "secondaryKeywords": [
+        "why do cats bite when you pet them",
+        "why do cats bite their owners",
+        "do cats bite",
+        "do cats give love bites"
+      ],
+      "searchIntent": "Informational — play aggression, overstimulation, love bites",
+      "entityType": "behavior",
+      "url": "/behavior/why-cats-bite"
+    },
+    {
+      "id": "behavior-sleeping-on-chest",
+      "status": "published",
+      "priority": 34,
+      "combinedVolume": 4200,
+      "primaryKeyword": "why do cats lay on your chest",
+      "secondaryKeywords": [
+        "why do cats sleep on your chest",
+        "why do cats sit on your chest"
+      ],
+      "searchIntent": "Informational — bonding, warmth, heartbeat",
+      "entityType": "behavior",
+      "url": "/behavior/sleeping-on-chest"
+    },
+    {
+      "id": "parasite-ear-mites",
+      "status": "published",
+      "priority": 35,
+      "combinedVolume": 5200,
+      "primaryKeyword": "how do cats get ear mites",
+      "secondaryKeywords": [
+        "how to get rid of ear mites in cats"
+      ],
+      "searchIntent": "Informational — Otodectes transmission and treatment",
+      "entityType": "parasite",
+      "url": "/health/ear-mites-in-cats"
+    },
+    {
+      "id": "behavior-cat-farting",
+      "status": "merged",
+      "priority": 36,
+      "combinedVolume": 3200,
+      "primaryKeyword": "can cats fart",
+      "searchIntent": "Informational — flatulence causes",
+      "entityType": "symptom",
+      "url": "/symptoms/cat-farting",
+      "mergedInto": "symptom-farting"
+    },
+    {
+      "id": "fact-group-of-cats",
+      "status": "published",
+      "priority": 37,
+      "combinedVolume": 3400,
+      "primaryKeyword": "what do you call a group of cats",
+      "secondaryKeywords": [
+        "a group of cats is called"
+      ],
+      "searchIntent": "Informational — clowder, glaring terminology",
+      "entityType": "fact",
+      "url": "/facts/group-of-cats-name"
+    },
+    {
+      "id": "vaccination-rabies-cats",
+      "status": "published",
+      "priority": 38,
+      "combinedVolume": 2700,
+      "primaryKeyword": "how often do cats need rabies shots",
+      "secondaryKeywords": [
+        "how do cats get rabies",
+        "do cats carry rabies"
+      ],
+      "searchIntent": "Informational — rabies vaccine schedule",
+      "entityType": "vaccination",
+      "url": "/health/rabies-vaccine-for-cats"
+    },
+    {
+      "id": "care-bathing-cats",
+      "status": "published",
+      "priority": 39,
+      "combinedVolume": 1800,
+      "primaryKeyword": "should you bathe cats",
+      "secondaryKeywords": [
+        "are you supposed to bathe cats"
+      ],
+      "searchIntent": "Informational — when bathing is necessary",
+      "entityType": "care-guide",
+      "url": "/care/bathing-cats"
+    },
+    {
+      "id": "anatomy-dilated-pupils",
+      "status": "published",
+      "priority": 40,
+      "combinedVolume": 3500,
+      "primaryKeyword": "why do cats eyes dilate",
+      "secondaryKeywords": [
+        "why do cats pupils get big",
+        "why are my cats eyes always dilated"
+      ],
+      "searchIntent": "Informational — pupil dilation causes",
+      "entityType": "anatomy",
+      "url": "/anatomy/cat-pupil-dilation"
+    },
+    {
+      "id": "nutrition-wet-food",
+      "status": "published",
+      "priority": 41,
+      "combinedVolume": 1600,
+      "primaryKeyword": "do cats need wet food",
+      "searchIntent": "Informational — hydration, urinary health",
+      "entityType": "nutrition",
+      "url": "/nutrition/wet-food-for-cats"
+    },
+    {
+      "id": "food-lactose-free-milk",
+      "status": "published",
+      "priority": 42,
+      "combinedVolume": 3900,
+      "primaryKeyword": "can cats drink lactose free milk",
+      "secondaryKeywords": [
+        "can cats drink lactose-free milk",
+        "can cats have lactose free milk"
+      ],
+      "searchIntent": "Informational — lactose-free dairy for cats",
+      "entityType": "food",
+      "url": "/foods/lactose-free-milk"
+    },
+    {
+      "id": "food-pumpkin",
+      "status": "published",
+      "priority": 43,
+      "combinedVolume": 1900,
+      "primaryKeyword": "can cats eat pumpkin seeds",
+      "secondaryKeywords": [
+        "can cats have pumpkin seeds"
+      ],
+      "searchIntent": "Informational — pumpkin for digestive health",
+      "entityType": "food",
+      "url": "/foods/pumpkin"
+    },
+    {
+      "id": "food-hot-dogs",
+      "status": "published",
+      "priority": 44,
+      "combinedVolume": 2500,
+      "primaryKeyword": "can cats eat hot dogs",
+      "secondaryKeywords": [
+        "can cats have hot dogs"
+      ],
+      "searchIntent": "Informational — processed meat risks",
+      "entityType": "food",
+      "url": "/foods/hot-dogs"
+    },
+    {
+      "id": "food-chicken-bones",
+      "status": "published",
+      "priority": 45,
+      "combinedVolume": 2800,
+      "primaryKeyword": "can cats eat chicken bones",
+      "secondaryKeywords": [
+        "can cats eat bones"
+      ],
+      "searchIntent": "Informational — bone splinter risk",
+      "entityType": "food",
+      "url": "/foods/chicken-bones"
+    },
+    {
+      "id": "food-raw-fish",
+      "status": "published",
+      "priority": 46,
+      "combinedVolume": 1500,
+      "primaryKeyword": "can cats eat raw fish",
+      "searchIntent": "Informational — thiaminase, parasites",
+      "entityType": "food",
+      "url": "/foods/raw-fish"
+    },
+    {
+      "id": "plant-calla-lily",
+      "status": "published",
+      "priority": 47,
+      "combinedVolume": 2300,
+      "primaryKeyword": "are calla lilies poisonous to cats",
+      "searchIntent": "Informational — calcium oxalate vs true lily",
+      "entityType": "plant",
+      "url": "/plants/calla-lily"
+    },
+    {
+      "id": "plant-chrysanthemum",
+      "status": "published",
+      "priority": 48,
+      "combinedVolume": 2300,
+      "primaryKeyword": "are chrysanthemums toxic to cats",
+      "searchIntent": "Informational — pyrethrin-containing plants",
+      "entityType": "plant",
+      "url": "/plants/chrysanthemum"
+    },
+    {
+      "id": "plant-dahlia",
+      "status": "published",
+      "priority": 49,
+      "combinedVolume": 2600,
+      "primaryKeyword": "are dahlias toxic to cats",
+      "secondaryKeywords": [
+        "are dahlias poisonous to cats"
+      ],
+      "searchIntent": "Informational — mild GI irritation",
+      "entityType": "plant",
+      "url": "/plants/dahlia"
+    },
+    {
+      "id": "plant-geranium",
+      "status": "published",
+      "priority": 50,
+      "combinedVolume": 700,
+      "primaryKeyword": "are geraniums poisonous to cats",
+      "searchIntent": "Informational — Pelargonium toxicity",
+      "entityType": "plant",
+      "url": "/plants/geranium"
+    },
+    {
+      "id": "poisoning-incense-cats",
+      "status": "published",
+      "priority": 51,
+      "combinedVolume": 2600,
+      "primaryKeyword": "is incense bad for cats",
+      "secondaryKeywords": [
+        "are incense bad for cats"
+      ],
+      "searchIntent": "Informational — respiratory irritants",
+      "entityType": "poisonous-food",
+      "url": "/health/incense-and-cats"
+    },
+    {
+      "id": "medication-ibuprofen-cats",
+      "status": "published",
+      "priority": 52,
+      "combinedVolume": 600,
+      "primaryKeyword": "can cats have ibuprofen",
+      "searchIntent": "Informational — NSAID toxicity in cats",
+      "entityType": "medication",
+      "url": "/health/ibuprofen-toxicity-in-cats"
+    },
+    {
+      "id": "disease-kidney-failure-causes",
+      "status": "merged",
+      "priority": 53,
+      "combinedVolume": 700,
+      "primaryKeyword": "what causes kidney failure in cats",
+      "searchIntent": "Informational — CKD etiology (links to existing CKD article)",
+      "entityType": "disease",
+      "url": "/diseases/chronic-kidney-disease",
+      "note": "Expand existing CKD article rather than duplicate",
+      "mergedInto": "disease-chronic-kidney-disease"
+    },
+    {
+      "id": "disease-feline-herpes",
+      "status": "published",
+      "priority": 54,
+      "combinedVolume": 600,
+      "primaryKeyword": "how do cats get herpes",
+      "searchIntent": "Informational — FHV-1 transmission",
+      "entityType": "disease",
+      "url": "/diseases/feline-herpesvirus"
+    },
+    {
+      "id": "disease-feline-calicivirus",
+      "status": "published",
+      "priority": 55,
+      "combinedVolume": 700,
+      "primaryKeyword": "how long do cats live with calicivirus",
+      "searchIntent": "Informational — FCV prognosis",
+      "entityType": "disease",
+      "url": "/diseases/feline-calicivirus"
+    },
+    {
+      "id": "disease-lyme-cats",
+      "status": "published",
+      "priority": 56,
+      "combinedVolume": 1400,
+      "primaryKeyword": "can cats get lyme disease",
+      "searchIntent": "Informational — Borrelia in cats (rare)",
+      "entityType": "disease",
+      "url": "/diseases/lyme-disease-in-cats"
+    },
+    {
+      "id": "symptom-diarrhea-cats",
+      "status": "merged",
+      "priority": 57,
+      "combinedVolume": 700,
+      "primaryKeyword": "what causes diarrhea in cats",
+      "searchIntent": "Informational — acute vs chronic diarrhea",
+      "entityType": "symptom",
+      "url": "/symptoms/diarrhea-in-cats",
+      "mergedInto": "symptom-diarrhea"
+    },
+    {
+      "id": "symptom-coughing-cats",
+      "status": "merged",
+      "priority": 58,
+      "combinedVolume": 600,
+      "primaryKeyword": "can cats cough",
+      "searchIntent": "Informational — feline cough causes",
+      "entityType": "symptom",
+      "url": "/symptoms/cat-coughing",
+      "mergedInto": "symptom-coughing"
+    },
+    {
+      "id": "symptom-hot-ears",
+      "status": "published",
+      "priority": 59,
+      "combinedVolume": 1400,
+      "primaryKeyword": "why are my cats ears hot",
+      "secondaryKeywords": [
+        "why are my cats ears cold"
+      ],
+      "searchIntent": "Informational — ear temperature norms",
+      "entityType": "symptom",
+      "url": "/symptoms/cat-ear-temperature"
+    },
+    {
+      "id": "kitten-teething",
+      "status": "merged",
+      "priority": 60,
+      "combinedVolume": 2800,
+      "primaryKeyword": "when do cats lose their baby teeth",
+      "secondaryKeywords": [
+        "do cats lose teeth",
+        "do cats lose their baby teeth",
+        "do cats teeth fall out"
+      ],
+      "searchIntent": "Informational — kitten dental development",
+      "entityType": "kitten",
+      "url": "/guides/kitten-teething",
+      "mergedInto": "guide-kitten-teething"
+    },
+    {
+      "id": "behavior-catnip-overdose",
+      "status": "merged",
+      "priority": 61,
+      "combinedVolume": 4300,
+      "primaryKeyword": "can cats overdose on catnip",
+      "secondaryKeywords": [
+        "can cats have too much catnip",
+        "when can cats have catnip",
+        "can cats od on catnip"
+      ],
+      "searchIntent": "Informational — Nepeta cataria safety",
+      "entityType": "behavior",
+      "url": "/foods/catnip",
+      "mergedInto": "food-catnip"
+    },
+    {
+      "id": "behavior-chase-tail",
+      "status": "published",
+      "priority": 62,
+      "combinedVolume": 1300,
+      "primaryKeyword": "why do cats chase their tails",
+      "searchIntent": "Informational — play vs compulsive behavior",
+      "entityType": "behavior",
+      "url": "/behavior/chasing-tail"
+    },
+    {
+      "id": "behavior-puffy-tail",
+      "status": "published",
+      "priority": 63,
+      "combinedVolume": 700,
+      "primaryKeyword": "why do cats tails puff up",
+      "searchIntent": "Informational — piloerection, fear response",
+      "entityType": "body-language",
+      "url": "/behavior/puffy-tail"
+    },
+    {
+      "id": "behavior-stretch-greeting",
+      "status": "published",
+      "priority": 64,
+      "combinedVolume": 700,
+      "primaryKeyword": "why do cats stretch when they see you",
+      "searchIntent": "Informational — social greeting stretch",
+      "entityType": "behavior",
+      "url": "/behavior/stretch-greeting"
+    },
+    {
+      "id": "behavior-bury-poop",
+      "status": "published",
+      "priority": 65,
+      "combinedVolume": 1100,
+      "primaryKeyword": "why do cats bury their poop",
+      "searchIntent": "Informational — litter behavior, dominance",
+      "entityType": "behavior",
+      "url": "/behavior/burying-poop"
+    },
+    {
+      "id": "behavior-meow-at-night",
+      "status": "published",
+      "priority": 66,
+      "combinedVolume": 1100,
+      "primaryKeyword": "why do cats meow at night",
+      "searchIntent": "Informational — nocturnal vocalization",
+      "entityType": "cat-sound",
+      "url": "/behavior/meowing-at-night"
+    },
+    {
+      "id": "behavior-crying",
+      "status": "published",
+      "priority": 67,
+      "combinedVolume": 1400,
+      "primaryKeyword": "why do cats cry",
+      "searchIntent": "Informational — vocalization causes",
+      "entityType": "cat-sound",
+      "url": "/behavior/why-cats-cry"
+    },
+    {
+      "id": "behavior-playing-or-fighting",
+      "status": "published",
+      "priority": 68,
+      "combinedVolume": 1700,
+      "primaryKeyword": "how to tell if cats are playing or fighting",
+      "secondaryKeywords": [
+        "are my cats playing or fighting"
+      ],
+      "searchIntent": "Informational — intercat aggression vs play",
+      "entityType": "behavior",
+      "url": "/behavior/playing-or-fighting"
+    },
+    {
+      "id": "behavior-sleep-at-feet",
+      "status": "published",
+      "priority": 69,
+      "combinedVolume": 1500,
+      "primaryKeyword": "why do cats sleep at your feet",
+      "searchIntent": "Informational — sleeping position preferences",
+      "entityType": "behavior",
+      "url": "/behavior/sleeping-at-feet"
+    },
+    {
+      "id": "behavior-blep",
+      "status": "published",
+      "priority": 70,
+      "combinedVolume": 600,
+      "primaryKeyword": "why do cats blep",
+      "searchIntent": "Informational — tongue protrusion behavior",
+      "entityType": "behavior",
+      "url": "/behavior/cat-blep"
+    },
+    {
+      "id": "behavior-social-animals",
+      "status": "published",
+      "priority": 71,
+      "combinedVolume": 800,
+      "primaryKeyword": "are cats social animals",
+      "searchIntent": "Informational — feline social structure",
+      "entityType": "fact",
+      "url": "/behavior/are-cats-social-animals"
+    },
+    {
+      "id": "anatomy-whiskers-long",
+      "status": "published",
+      "priority": 72,
+      "combinedVolume": 1000,
+      "primaryKeyword": "why are my cats whiskers so long",
+      "searchIntent": "Informational — vibrissae function",
+      "entityType": "anatomy",
+      "url": "/anatomy/cat-whiskers"
+    },
+    {
+      "id": "anatomy-cat-vision-colors",
+      "status": "published",
+      "priority": 73,
+      "combinedVolume": 900,
+      "primaryKeyword": "what colors do cats like",
+      "searchIntent": "Informational — feline color vision",
+      "entityType": "anatomy",
+      "url": "/anatomy/cat-color-vision"
+    },
+    {
+      "id": "fact-cats-swim",
+      "status": "published",
+      "priority": 74,
+      "combinedVolume": 3500,
+      "primaryKeyword": "can cats swim",
+      "searchIntent": "Informational — swimming ability by breed",
+      "entityType": "fact",
+      "url": "/facts/can-cats-swim"
+    },
+    {
+      "id": "care-dental-cleaning",
+      "status": "published",
+      "priority": 75,
+      "combinedVolume": 700,
+      "primaryKeyword": "how to clean cats teeth",
+      "searchIntent": "Informational — home dental care",
+      "entityType": "care-guide",
+      "url": "/care/how-to-brush-cat-teeth"
+    },
+    {
+      "id": "care-stray-cat-feeding",
+      "status": "published",
+      "priority": 76,
+      "combinedVolume": 800,
+      "primaryKeyword": "what to feed stray cats",
+      "searchIntent": "Informational — safe feeding practices",
+      "entityType": "care-guide",
+      "url": "/care/feeding-stray-cats"
+    },
+    {
+      "id": "food-celery",
+      "status": "published",
+      "priority": 77,
+      "combinedVolume": 2100,
+      "primaryKeyword": "can cats have celery",
+      "searchIntent": "Informational — vegetable safety",
+      "entityType": "food",
+      "url": "/foods/celery"
+    },
+    {
+      "id": "food-sushi",
+      "status": "published",
+      "priority": 78,
+      "combinedVolume": 600,
+      "primaryKeyword": "can cats eat sushi",
+      "searchIntent": "Informational — raw fish rice safety",
+      "entityType": "food",
+      "url": "/foods/sushi"
+    },
+    {
+      "id": "food-oysters",
+      "status": "published",
+      "priority": 79,
+      "combinedVolume": 600,
+      "primaryKeyword": "can cats eat oysters",
+      "searchIntent": "Informational — shellfish safety",
+      "entityType": "food",
+      "url": "/foods/oysters"
+    },
+    {
+      "id": "plant-thyme",
+      "status": "published",
+      "priority": 80,
+      "combinedVolume": 800,
+      "primaryKeyword": "is thyme safe for cats",
+      "searchIntent": "Informational — herb toxicity",
+      "entityType": "plant",
+      "url": "/plants/thyme"
+    },
+    {
+      "id": "plant-bromeliad",
+      "status": "published",
+      "priority": 81,
+      "combinedVolume": 900,
+      "primaryKeyword": "are bromeliads toxic to cats",
+      "searchIntent": "Informational — bromeliad safety",
+      "entityType": "plant",
+      "url": "/plants/bromeliad"
+    },
+    {
+      "id": "plant-frankincense",
+      "status": "published",
+      "priority": 82,
+      "combinedVolume": 700,
+      "primaryKeyword": "is frankincense safe for cats",
+      "searchIntent": "Informational — essential oil safety",
+      "entityType": "plant",
+      "url": "/health/frankincense-and-cats"
+    },
+    {
+      "id": "health-cat-allergies",
+      "status": "published",
+      "priority": 83,
+      "combinedVolume": 2000,
+      "primaryKeyword": "what are cats allergic to",
+      "searchIntent": "Informational — environmental and food allergens",
+      "entityType": "disease",
+      "url": "/health/cat-allergies"
+    },
+    {
+      "id": "health-strep-throat-cats",
+      "status": "published",
+      "priority": 84,
+      "combinedVolume": 700,
+      "primaryKeyword": "can cats get strep throat",
+      "searchIntent": "Informational — streptococcal infections in cats",
+      "entityType": "disease",
+      "url": "/health/strep-in-cats"
+    },
+    {
+      "id": "health-lice-cats",
+      "status": "published",
+      "priority": 85,
+      "combinedVolume": 1000,
+      "primaryKeyword": "can cats get lice from humans",
+      "searchIntent": "Informational — species-specific lice",
+      "entityType": "parasite",
+      "url": "/health/lice-in-cats"
+    },
+    {
+      "id": "medication-pedialyte-cats",
+      "status": "published",
+      "priority": 86,
+      "combinedVolume": 600,
+      "primaryKeyword": "can cats have pedialyte",
+      "searchIntent": "Informational — electrolyte supplementation",
+      "entityType": "medication",
+      "url": "/health/pedialyte-for-cats"
+    },
+    {
+      "id": "medication-capstar",
+      "status": "published",
+      "priority": 87,
+      "combinedVolume": 600,
+      "primaryKeyword": "is capstar safe for cats",
+      "searchIntent": "Informational — nitenpyram flea treatment",
+      "entityType": "medication",
+      "url": "/health/capstar-for-cats"
+    },
+    {
+      "id": "compare-cats-vs-dogs-clean",
+      "status": "published",
+      "priority": 88,
+      "combinedVolume": 1200,
+      "primaryKeyword": "are cats cleaner than dogs",
+      "searchIntent": "Informational — grooming comparison",
+      "entityType": "comparison",
+      "url": "/compare/cats-vs-dogs-grooming"
+    },
+    {
+      "id": "compare-dogs-allergic-cats",
+      "status": "published",
+      "priority": 89,
+      "combinedVolume": 3800,
+      "primaryKeyword": "can dogs be allergic to cats",
+      "searchIntent": "Informational — cross-species allergies",
+      "entityType": "comparison",
+      "url": "/compare/dog-allergy-to-cats",
+      "note": "Peripheral to cat encyclopedia — low priority"
+    },
+    {
+      "id": "compare-dogs-better-than-cats",
+      "status": "skipped",
+      "priority": 90,
+      "combinedVolume": 1000,
+      "primaryKeyword": "reasons why dogs are better than cats",
+      "searchIntent": "Informational — opinion piece",
+      "entityType": "comparison",
+      "url": null,
+      "note": "SKIP — not encyclopedia content, no editorial value"
+    },
+    {
+      "id": "anatomy-male-cat-anatomy",
+      "status": "published",
+      "priority": 91,
+      "combinedVolume": 600,
+      "primaryKeyword": "do cats have balls",
+      "searchIntent": "Informational — male cat reproductive anatomy",
+      "entityType": "anatomy",
+      "url": "/anatomy/male-cat-reproductive-anatomy"
+    },
+    {
+      "id": "symptom-sick-cat",
+      "status": "published",
+      "priority": 92,
+      "combinedVolume": 800,
+      "primaryKeyword": "can cats get sick",
+      "searchIntent": "Informational — general illness signs",
+      "entityType": "symptom",
+      "url": "/symptoms/signs-of-a-sick-cat"
+    },
+    {
+      "id": "wildlife-what-eats-cats",
+      "status": "published",
+      "priority": 93,
+      "combinedVolume": 1200,
+      "primaryKeyword": "what eats cats",
+      "searchIntent": "Informational — predators of domestic cats",
+      "entityType": "fact",
+      "url": "/facts/what-eats-cats"
+    },
+    {
+      "id": "breed-bengal-size",
+      "status": "merged",
+      "priority": 94,
+      "combinedVolume": 900,
+      "primaryKeyword": "how big do bengal cats get",
+      "searchIntent": "Informational — Bengal breed size",
+      "entityType": "breed",
+      "url": "/breeds/bengal-cat",
+      "mergedInto": "breed-bengal"
+    },
+    {
+      "id": "breed-sphynx-price",
+      "status": "merged",
+      "priority": 95,
+      "combinedVolume": 1300,
+      "primaryKeyword": "how much do hairless cats cost",
+      "secondaryKeywords": [
+        "how much do sphynx cats cost"
+      ],
+      "searchIntent": "Commercial investigation",
+      "entityType": "breed",
+      "url": "/breeds/sphynx-cat",
+      "mergedInto": "breed-sphynx"
+    },
+    {
+      "id": "food-chocolate",
+      "status": "published",
+      "priority": 0,
+      "combinedVolume": 800,
+      "primaryKeyword": "can chocolate kill cats",
+      "secondaryKeywords": [
+        "can cats eat chocolate"
+      ],
+      "searchIntent": "Informational — chocolate toxicity",
+      "entityType": "food",
+      "url": "/foods/chocolate"
+    },
+    {
+      "id": "plant-lily",
+      "status": "published",
+      "priority": 0,
+      "primaryKeyword": "lily toxicity cats",
+      "searchIntent": "Informational — true lily nephrotoxicity",
+      "entityType": "plant",
+      "url": "/plants/lily"
+    },
+    {
+      "id": "disease-ckd",
+      "status": "published",
+      "priority": 0,
+      "primaryKeyword": "chronic kidney disease cats",
+      "secondaryKeywords": [
+        "what causes kidney failure in cats"
+      ],
+      "searchIntent": "Informational — CKD management",
+      "entityType": "disease",
+      "url": "/diseases/chronic-kidney-disease"
+    },
+    {
+      "id": "breed-persian",
+      "status": "published",
+      "priority": 0,
+      "primaryKeyword": "persian cat",
+      "secondaryKeywords": [
+        "are persian cats hypoallergenic"
+      ],
+      "searchIntent": "Informational — breed profile",
+      "entityType": "breed",
+      "url": "/breeds/persian-cat"
+    }
+  ],
+  "publishedCount": 87,
+  "skippedCount": 1,
+  "mergedCount": 11
+}

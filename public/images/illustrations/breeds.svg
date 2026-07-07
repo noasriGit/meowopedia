@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none" role="img" aria-label="Stylized cat breed illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fef3c7"/>
+      <stop offset="1" stop-color="#faf9f7"/>
+    </linearGradient>
+    <linearGradient id="cat" x1="200" y1="100" x2="600" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d97706"/>
+      <stop offset="1" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <ellipse cx="620" cy="120" rx="180" ry="120" fill="#fde68a" opacity="0.5"/>
+  <ellipse cx="140" cy="380" rx="120" ry="80" fill="#fbbf24" opacity="0.25"/>
+  <path d="M280 340c0-88 72-160 160-160s160 72 160 160v20H280v-20z" fill="url(#cat)" opacity="0.9"/>
+  <path d="M310 195l-35-55 45 20 40-35 10 50 50-10-25 45" fill="#b45309"/>
+  <path d="M490 195l35-55-45 20-40-35-10 50-50-10 25 45" fill="#b45309"/>
+  <circle cx="370" cy="255" r="8" fill="#1a1814"/>
+  <circle cx="450" cy="255" r="8" fill="#1a1814"/>
+  <path d="M395 285c20 18 50 18 70 0" stroke="#431407" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,24 @@
+{
+  "date": null,
+  "status": "idle",
+  "discoveredAt": null,
+  "filters": {
+    "maxDifficulty": 20,
+    "maxSerpDrTop5Min": 15,
+    "minVolume": 500
+  },
+  "keyword": null,
+  "article": null,
+  "draftAt": null,
+  "draftAtIso": null,
+  "draftAtEpochMs": null,
+  "draftWindow": {
+    "timezone": "America/New_York",
+    "startHour": 10,
+    "endHour": 18
+  },
+  "drafted": false,
+  "draftedAt": null,
+  "prUrl": null,
+  "candidatesReviewed": []
+}

@@ -1,0 +1,39 @@
+{
+  "_note": "Legacy path-keyed manifest. Canonical article images live in article-images.json keyed by article id.",
+  "/images/breeds/maine-coon-cat.jpg": {
+    "path": "/images/breeds/maine-coon-cat.jpg",
+    "alt": "Brown tabby Maine Coon cat with tufted ears resting on a sofa",
+    "license": "editorial",
+    "source": "Meowopedia image library",
+    "category": "breeds",
+    "width": 1600,
+    "height": 1067
+  },
+  "/images/breeds/bengal-cat.jpg": {
+    "path": "/images/breeds/bengal-cat.jpg",
+    "alt": "Bengal cat with spotted coat in natural light",
+    "license": "editorial",
+    "source": "Meowopedia image library",
+    "category": "breeds",
+    "width": 1600,
+    "height": 1067
+  },
+  "/images/breeds/persian-cat.jpg": {
+    "path": "/images/breeds/persian-cat.jpg",
+    "alt": "Long-haired Persian cat with round face",
+    "license": "editorial",
+    "source": "Meowopedia image library",
+    "category": "breeds",
+    "width": 1600,
+    "height": 1067
+  },
+  "/images/breeds/sphynx-cat.jpg": {
+    "path": "/images/breeds/sphynx-cat.jpg",
+    "alt": "Hairless Sphynx cat showing wrinkled skin",
+    "license": "editorial",
+    "source": "Meowopedia image library",
+    "category": "breeds",
+    "width": 1600,
+    "height": 1067
+  }
+}

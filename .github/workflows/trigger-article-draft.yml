@@ -1,0 +1,41 @@
+name: Trigger article draft (random time)
+
+on:
+  schedule:
+    # Window opens at 10:00 UTC — adjust to match pipeline-config draftWindow.startHour in your timezone.
+    # Default config uses America/New_York 10:00–18:00 → 14:00–22:00 UTC (EDT) or 15:00–23:00 UTC (EST).
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+    inputs:
+      skip_delay:
+        description: "Skip random delay (for manual testing)"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+jobs:
+  trigger-draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Random delay within draft window
+        if: inputs.skip_delay != 'true'
+        run: |
+          # 8-hour window in seconds (matches 10:00–18:00 local when cron fires at window start)
+          DELAY=$((RANDOM % 28800))
+          echo "Sleeping ${DELAY}s before triggering draft automation"
+          sleep "$DELAY"
+
+      - name: Trigger Cursor draft automation webhook
+        env:
+          WEBHOOK_URL: ${{ secrets.CURSOR_DRAFT_WEBHOOK_URL }}
+        run: |
+          if [ -z "$WEBHOOK_URL" ]; then
+            echo "CURSOR_DRAFT_WEBHOOK_URL secret is not set. Add it in GitHub repo settings."
+            exit 1
+          fi
+          curl -sS -f -X POST "$WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d '{"source":"github-actions","workflow":"trigger-article-draft"}'

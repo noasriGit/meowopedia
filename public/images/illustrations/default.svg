@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none" role="img" aria-label="Stylized encyclopedia illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#faf9f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="400" cy="250" r="150" fill="#ffedd5" opacity="0.6"/>
+  <path d="M320 300c0-70 35-120 80-120s80 50 80 120" fill="#fb923c" opacity="0.9"/>
+  <path d="M345 195l-18-30 22 10 18-16 6 20 24-5-12 20" fill="#c2410c"/>
+  <path d="M455 195l18-30-22 10-18-16-6 20-24-5 12 20" fill="#c2410c"/>
+  <circle cx="375" cy="245" r="7" fill="#1a1814"/>
+  <circle cx="425" cy="245" r="7" fill="#1a1814"/>
+</svg>

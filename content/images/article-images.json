@@ -1,0 +1,902 @@
+{
+  "anatomy-whiskers-long": {
+    "url": "https://live.staticflickr.com/6064/6028367829_a99a9bee8d.jpg",
+    "alt": "A cat in the window",
+    "license": "cc-by",
+    "attribution": "Trish Hamme",
+    "source": "flickr",
+    "category": "anatomy",
+    "width": 500,
+    "height": 500
+  },
+  "anatomy-dilated-pupils": {
+    "url": "https://live.staticflickr.com/3883/15344413361_d425dc60ae_b.jpg",
+    "alt": "Bright eyes",
+    "license": "cc0",
+    "attribution": "Bernard Spragg",
+    "source": "flickr",
+    "width": 1024,
+    "height": 762,
+    "category": "anatomy"
+  },
+  "behavior-biting": {
+    "url": "https://live.staticflickr.com/2050/2512296428_db0de77c26_b.jpg",
+    "alt": "LOOK WHAT UPS BROUGHT",
+    "license": "cc-by",
+    "attribution": "rikkis_refuge",
+    "source": "flickr",
+    "width": 1024,
+    "height": 768,
+    "category": "behavior"
+  },
+  "behavior-puffy-tail": {
+    "url": "https://live.staticflickr.com/6/8378612_34ab6787ae_b.jpg",
+    "alt": "Cat",
+    "license": "cc-by-sa",
+    "attribution": "sfllaw",
+    "source": "flickr",
+    "width": 768,
+    "height": 1024,
+    "category": "behavior"
+  },
+  "behavior-purring": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Contented_cat_%288546770661%29.jpg",
+    "alt": "Contented tabby cat resting peacefully with eyes closed",
+    "license": "cc-by",
+    "attribution": "psyberartist",
+    "source": "Wikimedia Commons",
+    "category": "behavior"
+  },
+  "behavior-sleeping-on-chest": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/4.5_months_blotched_tabby_kitten_sleeping_on_the_lap_of_its_master.jpg",
+    "alt": "Tabby kitten sleeping curled up on its owner's lap",
+    "license": "cc-by-sa",
+    "attribution": "l. Mcdaid",
+    "source": "Wikimedia Commons",
+    "category": "behavior"
+  },
+  "care-bathing-cats": {
+    "url": "https://live.staticflickr.com/191/521577861_345e353202_m.jpg",
+    "alt": "Bandit and Vincent Discuss Cats vs Dogs",
+    "license": "cc-by",
+    "attribution": "rikkis_refuge",
+    "source": "flickr",
+    "category": "care",
+    "width": 240,
+    "height": 126
+  },
+  "care-dental-cleaning": {
+    "url": "https://live.staticflickr.com/2371/2181340072_ab77361408_m.jpg",
+    "alt": "Cat Processing 101",
+    "license": "cc-by",
+    "attribution": "rikkis_refuge",
+    "source": "flickr",
+    "category": "care",
+    "width": 240,
+    "height": 222
+  },
+  "care-stray-cat-feeding": {
+    "url": "https://live.staticflickr.com/3886/15074570029_a60d051a7a_b.jpg",
+    "alt": "Feral Cat Relaxing on our Patio",
+    "license": "cc-by-sa",
+    "attribution": "Counselman Collection",
+    "source": "flickr",
+    "category": "care",
+    "width": 1023,
+    "height": 1024
+  },
+  "disease-feline-herpes": {
+    "url": "https://live.staticflickr.com/3924/15082272697_2bbc919f30_b.jpg",
+    "alt": "Tabby cat being examined at a veterinary clinic",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "diseases"
+  },
+  "disease-feline-parvovirus": {
+    "url": "https://live.staticflickr.com/3944/15500554142_34a56a567c_b.jpg",
+    "alt": "Street cat Jane",
+    "license": "cc-by-sa",
+    "attribution": "jessies.girl",
+    "source": "flickr",
+    "category": "diseases",
+    "width": 768,
+    "height": 1024
+  },
+  "food-almond-milk": {
+    "url": "https://live.staticflickr.com/5603/30881614190_bb01a1055b_b.jpg",
+    "alt": "Carton of almond milk on a table",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "foods"
+  },
+  "food-celery": {
+    "url": "https://live.staticflickr.com/2795/4474262474_4e7fb6bc0d.jpg",
+    "alt": "Celery and Garlic Juice",
+    "license": "cc-by",
+    "attribution": "Wild Tofu",
+    "source": "flickr",
+    "category": "foods",
+    "width": 500,
+    "height": 373
+  },
+  "food-chicken-bones": {
+    "url": "https://live.staticflickr.com/157/409220449_6fe5c4e515_b.jpg",
+    "alt": "Fried chicken bones on a plate",
+    "license": "cc-by",
+    "attribution": "istolethetv",
+    "source": "Openverse",
+    "category": "foods",
+    "width": 1024,
+    "height": 768
+  },
+  "food-chicken": {
+    "url": "https://live.staticflickr.com/2775/4079109977_0f8dd65f78_b.jpg",
+    "alt": "Chicken",
+    "license": "cc-by-sa",
+    "attribution": "StevenW.",
+    "source": "flickr",
+    "category": "foods",
+    "width": 1024,
+    "height": 768
+  },
+  "food-chocolate": {
+    "url": "https://live.staticflickr.com/5117/5860751835_060d760223_b.jpg",
+    "alt": "Mmm... chocolate cake with peanut butter cream icing",
+    "license": "cc-by",
+    "attribution": "jeffreyw",
+    "source": "flickr",
+    "category": "foods",
+    "width": 1024,
+    "height": 731
+  },
+  "food-cinnamon": {
+    "url": "https://live.staticflickr.com/4509/37641954626_cdff35a89c_b.jpg",
+    "alt": "Cinnamon",
+    "license": "cc-by-sa",
+    "attribution": "Kjokkenutstyr.net",
+    "source": "flickr",
+    "category": "foods",
+    "width": 1024,
+    "height": 683
+  },
+  "food-coconut-oil": {
+    "url": "https://live.staticflickr.com/2756/4404443713_af1af58731_b.jpg",
+    "alt": "Coconut Oil",
+    "license": "cc-by-sa",
+    "attribution": "Veganbaking.net",
+    "source": "flickr",
+    "category": "foods",
+    "width": 1024,
+    "height": 683
+  },
+  "food-eggs": {
+    "url": "https://live.staticflickr.com/7370/11141122374_afa991d17b_b.jpg",
+    "alt": "Green Eggs",
+    "license": "cc-by",
+    "attribution": "normanack",
+    "source": "flickr",
+    "category": "foods",
+    "width": 1024,
+    "height": 768
+  },
+  "food-hot-dogs": {
+    "url": "https://live.staticflickr.com/7425/12956484613_9698abe981_b.jpg",
+    "alt": "Hot dog",
+    "license": "cc-by",
+    "attribution": "JeepersMedia",
+    "source": "flickr",
+    "category": "foods",
+    "width": 1024,
+    "height": 768
+  },
+  "food-lactose-free-milk": {
+    "url": "https://live.staticflickr.com/2795/4144825453_5378c2781f_b.jpg",
+    "alt": "Carton of lactose-free milk",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "foods"
+  },
+  "food-pumpkin": {
+    "url": "https://live.staticflickr.com/4133/5129776051_13f792a7bf_b.jpg",
+    "alt": "The Great Pumpkin",
+    "license": "cc-by",
+    "attribution": "Sean Loyless",
+    "source": "flickr",
+    "category": "foods",
+    "width": 1024,
+    "height": 641
+  },
+  "food-raw-fish": {
+    "url": "https://live.staticflickr.com/2845/13578730313_46b35a222e_b.jpg",
+    "alt": "Raw Fish",
+    "license": "cc-by-sa",
+    "attribution": ".::RMT::.",
+    "source": "flickr",
+    "category": "foods",
+    "width": 1024,
+    "height": 683
+  },
+  "food-sushi": {
+    "url": "https://live.staticflickr.com/3052/3010146294_14f5ea48fb_b.jpg",
+    "alt": "sushi",
+    "license": "cc-by",
+    "attribution": "Geoff Peters 604",
+    "source": "flickr",
+    "category": "foods",
+    "width": 1024,
+    "height": 683
+  },
+  "food-tuna": {
+    "url": "https://live.staticflickr.com/8223/8372222471_662acd24f6.jpg",
+    "alt": "Tuna salad",
+    "license": "cc-by",
+    "attribution": "Bálint Kléri (balintk)",
+    "source": "flickr",
+    "category": "foods",
+    "width": 500,
+    "height": 500
+  },
+  "guide-hypoallergenic-cats": {
+    "url": "https://live.staticflickr.com/5177/5467820826_0b132f8cab_b.jpg",
+    "alt": "Cat Allergies",
+    "license": "cc-by",
+    "attribution": "theapoc",
+    "source": "flickr",
+    "category": "guides",
+    "width": 1024,
+    "height": 685
+  },
+  "parasite-ear-mites": {
+    "url": "https://live.staticflickr.com/177/385972693_4bac845f2d_m.jpg",
+    "alt": "Pumba the cat",
+    "license": "cc-by",
+    "attribution": "rikkis_refuge",
+    "source": "flickr",
+    "category": "health",
+    "width": 227,
+    "height": 240
+  },
+  "parasite-worms": {
+    "url": "https://live.staticflickr.com/2755/4039099883_64e9d02b31_b.jpg",
+    "alt": "CAT BOX!!!",
+    "license": "cc-by",
+    "attribution": "rikkis_refuge",
+    "source": "flickr",
+    "category": "health",
+    "width": 1024,
+    "height": 578
+  },
+  "vaccination-rabies-cats": {
+    "url": "https://live.staticflickr.com/3238/3013512490_d4c044ff51_b.jpg",
+    "alt": "Flurry at 3+ Pounds",
+    "license": "cc-by-sa",
+    "attribution": "pmarkham",
+    "source": "flickr",
+    "width": 683,
+    "height": 1024,
+    "category": "health"
+  },
+  "plant-basil": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg",
+    "alt": "Ocimum basilicum basil leaves and stems",
+    "license": "cc-by-sa",
+    "attribution": "Castielli",
+    "source": "Wikimedia Commons",
+    "width": 3488,
+    "height": 2616,
+    "category": "plants"
+  },
+  "plant-bromeliad": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Guzmania_lingulata.jpg",
+    "alt": "Guzmania lingulata bromeliad with red inflorescence",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "width": 3077,
+    "height": 3076,
+    "category": "plants"
+  },
+  "plant-calla-lily": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Zantedeschia_aethiopica_%28Witte_aronskelk%29_01.JPG",
+    "alt": "White Zantedeschia aethiopica calla lily flowers",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "width": 4671,
+    "height": 3114,
+    "category": "plants"
+  },
+  "plant-chrysanthemum": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Chrysanthemum_morifolium_08NOV.jpg",
+    "alt": "Chrysanthemum morifolium flowers in bloom",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "width": 2500,
+    "height": 2425,
+    "category": "plants"
+  },
+  "plant-dahlia": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Dahlia_%27Bishop_of_Auckland.JPG",
+    "alt": "Deep red Dahlia 'Bishop of Auckland' flower",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "width": 2453,
+    "height": 3271,
+    "category": "plants"
+  },
+  "plant-eucalyptus": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Eucalyptus_punctata_-_adult_leaves.jpg",
+    "alt": "Adult eucalyptus tree leaves",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "width": 1920,
+    "height": 1439,
+    "category": "plants"
+  },
+  "plant-geranium": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Pelargonium_graveolens.jpg",
+    "alt": "Pelargonium graveolens geranium leaves and flowers",
+    "license": "cc-by",
+    "attribution": "Juni",
+    "source": "Wikimedia Commons",
+    "width": 959,
+    "height": 1280,
+    "category": "plants"
+  },
+  "plant-lily": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Lilium_candidum_1.jpg",
+    "alt": "White Lilium candidum lily flowers",
+    "license": "cc-by-sa",
+    "attribution": "Stan Shebs",
+    "source": "Wikimedia Commons",
+    "width": 1800,
+    "height": 1343,
+    "category": "plants"
+  },
+  "plant-monstera": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Monstera_deliciosa2.jpg",
+    "alt": "Monstera deliciosa split-leaf foliage",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "width": 1512,
+    "height": 1719,
+    "category": "plants"
+  },
+  "plant-pothos": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Epipremnum_aureum_31082012.jpg",
+    "alt": "Epipremnum aureum pothos trailing vines and leaves",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "width": 4288,
+    "height": 2848,
+    "category": "plants"
+  },
+  "plant-rose": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Rosa_rubiginosa_flower.jpg",
+    "alt": "Pink Rosa rubiginosa rose flower",
+    "license": "cc-by-sa",
+    "attribution": "Carroll D.",
+    "source": "Wikimedia Commons",
+    "width": 4461,
+    "height": 2974,
+    "category": "plants"
+  },
+  "plant-thyme": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Thyme_plant.jpg",
+    "alt": "Thymus vulgaris thyme herb plant",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "width": 2592,
+    "height": 1944,
+    "category": "plants"
+  },
+  "symptom-drooling": {
+    "url": "https://live.staticflickr.com/159/417852567_b4f26e92ed_m.jpg",
+    "alt": "Herd of cats sleeping on couch",
+    "license": "cc-by",
+    "attribution": "rikkis_refuge",
+    "source": "flickr",
+    "category": "symptoms",
+    "width": 240,
+    "height": 132
+  },
+  "behavior-crying": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Kitten_%2806%29_by_Ron.jpg",
+    "alt": "Kitten meowing with mouth open",
+    "license": "cc0",
+    "attribution": "Ron",
+    "source": "Wikimedia Commons",
+    "category": "behavior"
+  },
+  "behavior-eating-grass": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Cat_Eating_Catgrass.jpg",
+    "alt": "Cat eating cat grass outdoors",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "behavior"
+  },
+  "behavior-female-cat-spraying": {
+    "url": "https://live.staticflickr.com/8237/8400624711_0219ecaaa7_b.jpg",
+    "alt": "Cat marking territory against a surface",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "behavior"
+  },
+  "behavior-licking-you": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Larry_the_cat_standing_on_grass_and_licking_his_nose_in_Auderghem%2C_Belgium_%28DSCF2372%29.jpg",
+    "alt": "Cat standing on grass licking its nose",
+    "license": "cc-by",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "behavior"
+  },
+  "behavior-loafing": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Cute_cat_in_loaf_position.jpg",
+    "alt": "Cat sitting in loaf position on a cushion",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "behavior"
+  },
+  "behavior-meow-at-night": {
+    "url": "https://live.staticflickr.com/5242/5354109866_af44f959d4_b.jpg",
+    "alt": "Cat meowing in dim indoor lighting",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "behavior"
+  },
+  "behavior-zoomies": {
+    "url": "https://live.staticflickr.com/7336/10285590004_21c300ec2e_b.jpg",
+    "alt": "Cat running playfully across a room",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "behavior"
+  },
+  "behavior-making-biscuits": {
+    "url": "https://live.staticflickr.com/4021/4417553669_7436783317_b.jpg",
+    "alt": "Cat kneading with front paws on a soft blanket",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "behavior"
+  },
+  "breed-bengal": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bengal_-_18.jpg",
+    "alt": "Bengal cat with spotted rosette coat pattern",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "breeds"
+  },
+  "breed-maine-coon": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Jeunes_main_coons.jpg",
+    "alt": "Young Maine Coon cats with long tufted ears",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "breeds"
+  },
+  "breed-persian": {
+    "url": "https://live.staticflickr.com/5004/5339239070_1b086ceb87.jpg",
+    "alt": "Grey Persian cat with long fluffy coat",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "breeds"
+  },
+  "breed-sphynx": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/2_Sphynx_cats_sleeping_together.jpg",
+    "alt": "Two hairless Sphynx cats sleeping together",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "breeds"
+  },
+  "anatomy-cat-vision-colors": {
+    "url": "https://live.staticflickr.com/1842/43998837454_e886656cc0_b.jpg",
+    "alt": "Fast and Furious Compound Firework Barrage by Black Cat Fireworks",
+    "license": "cc-by",
+    "attribution": "EpicFireworks",
+    "source": "flickr",
+    "width": 1024,
+    "height": 606,
+    "category": "anatomy"
+  },
+  "anatomy-male-cat-anatomy": {
+    "url": "https://live.staticflickr.com/4362/36402273023_206afe0410_b.jpg",
+    "alt": "Diagram of male cat reproductive anatomy",
+    "license": "cc-by",
+    "attribution": "Coyoteprince",
+    "source": "flickr",
+    "width": 1024,
+    "height": 787,
+    "category": "anatomy"
+  },
+  "behavior-blep": {
+    "url": "https://live.staticflickr.com/65535/50516028937_c3ab8765a8_b.jpg",
+    "alt": "Black Cat Blep (thesebosscats/twitter.com)",
+    "license": "cc-by",
+    "attribution": "rosannaarconrad",
+    "source": "flickr",
+    "category": "behavior",
+    "width": 826,
+    "height": 1024
+  },
+  "behavior-bury-poop": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Japanese_litter_box_in_use.jpg",
+    "alt": "Norwegian Forest cat using a covered litter box",
+    "license": "cc-by-sa",
+    "attribution": "Ocdp",
+    "source": "Wikimedia Commons",
+    "category": "behavior"
+  },
+  "behavior-chase-tail": {
+    "url": "https://live.staticflickr.com/2254/2234460988_d691f77a27_b.jpg",
+    "alt": "Moonlight cat chasing his tail",
+    "license": "cc-by-sa",
+    "attribution": "wbaiv",
+    "source": "flickr",
+    "category": "behavior",
+    "width": 1024,
+    "height": 768
+  },
+  "behavior-playing-or-fighting": {
+    "url": "https://live.staticflickr.com/4009/4666595488_3a43e69b8e_b.jpg",
+    "alt": "Talk to Me",
+    "license": "cc-by",
+    "attribution": "Trish Hamme",
+    "source": "flickr",
+    "width": 1024,
+    "height": 668,
+    "category": "behavior"
+  },
+  "behavior-sleep-at-feet": {
+    "url": "https://live.staticflickr.com/7222/6864716314_0200909828_b.jpg",
+    "alt": "Love and Trust",
+    "license": "cc-by",
+    "attribution": "Trish Hamme",
+    "source": "flickr",
+    "width": 1024,
+    "height": 863,
+    "category": "behavior"
+  },
+  "behavior-social-animals": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Two_orange_tabby_cats_greeting_by_rubbing-Hisashi-01.jpg",
+    "alt": "Two orange tabby cats greeting each other by rubbing heads",
+    "license": "cc-by-sa",
+    "attribution": "Hisashi",
+    "source": "Wikimedia Commons",
+    "category": "behavior"
+  },
+  "behavior-water-aversion": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Two_Sphynx_cats_in_bath.jpg",
+    "alt": "Two Sphynx cats being bathed in a tub",
+    "license": "cc-by-sa",
+    "attribution": "Shannon Badiee",
+    "source": "Wikimedia Commons",
+    "category": "behavior"
+  },
+  "compare-cats-vs-dogs-clean": {
+    "url": "https://live.staticflickr.com/2221/3539908931_720dd7c608_b.jpg",
+    "alt": "Cat vs Dog",
+    "license": "cc-by-sa",
+    "attribution": "photogramma1",
+    "source": "flickr",
+    "category": "compare",
+    "width": 768,
+    "height": 1024
+  },
+  "disease-ckd": {
+    "url": "https://live.staticflickr.com/7559/15633818714_75938fe113.jpg",
+    "alt": "veterinary clinic,dog and cat, caucasian, check, checkup, clinic, doctor, dog, equipment, examination, examining, hand, health, healthcare, healthy, hold, holding, kitten, kitty, love, medical, medicine, nurse, occupation, people, pe",
+    "license": "cc-by",
+    "attribution": "www.ilmicrofono.it",
+    "source": "flickr",
+    "category": "diseases",
+    "width": 347,
+    "height": 500
+  },
+  "fact-cats-swim": {
+    "url": "https://live.staticflickr.com/2554/4115872878_66acfe5ac3_b.jpg",
+    "alt": "Kelp of Cat Rock, Anacapa Island",
+    "license": "cc-by",
+    "attribution": "NOAA's National Ocean Service",
+    "source": "flickr",
+    "category": "facts",
+    "width": 681,
+    "height": 1024
+  },
+  "fact-group-of-cats": {
+    "url": "https://live.staticflickr.com/2601/3815577889_a27af93b69_b.jpg",
+    "alt": "Professional Judge Darryl Adams",
+    "license": "cc-by",
+    "attribution": "rikkis_refuge",
+    "source": "flickr",
+    "width": 1024,
+    "height": 685,
+    "category": "facts"
+  },
+  "wildlife-foxes-and-cats": {
+    "url": "https://live.staticflickr.com/65535/48762577428_a8fb775326_b.jpg",
+    "alt": "Momma Cat staring at the snow 1",
+    "license": "cc-by",
+    "attribution": "James St. John",
+    "source": "flickr",
+    "width": 1024,
+    "height": 658,
+    "category": "facts"
+  },
+  "wildlife-what-eats-cats": {
+    "url": "https://live.staticflickr.com/7264/7609145366_1fa4f88aed_b.jpg",
+    "alt": "a proud, mysterious cat ~ ~ ~",
+    "license": "cc-by",
+    "attribution": "Trish Hamme",
+    "source": "flickr",
+    "category": "facts",
+    "width": 941,
+    "height": 798
+  },
+  "food-catnip": {
+    "url": "https://live.staticflickr.com/4078/4931128158_c66a72801f_b.jpg",
+    "alt": "~0.5mm Mite on Catnip Flower",
+    "license": "cc-by-sa",
+    "attribution": "Kurayba",
+    "source": "flickr",
+    "width": 1024,
+    "height": 681,
+    "category": "foods"
+  },
+  "food-oysters": {
+    "url": "https://live.staticflickr.com/2639/13091863025_8963282ae5_b.jpg",
+    "alt": "Morning milk",
+    "license": "cc-by",
+    "attribution": "grongar",
+    "source": "flickr",
+    "width": 1024,
+    "height": 768,
+    "category": "foods"
+  },
+  "food-strawberries": {
+    "url": "https://live.staticflickr.com/1430/1328402515_7ec84c7626_b.jpg",
+    "alt": "Strawberries",
+    "license": "cc-by",
+    "attribution": "Sharon Mollerus",
+    "source": "flickr",
+    "category": "foods",
+    "width": 1024,
+    "height": 664
+  },
+  "guide-cat-pregnancy": {
+    "url": "https://live.staticflickr.com/3454/3189461961_9ab8892bd2_b.jpg",
+    "alt": "Cat + Bag = Out",
+    "license": "cc-by",
+    "attribution": "brettneilson",
+    "source": "flickr",
+    "category": "guides",
+    "width": 1024,
+    "height": 681
+  },
+  "guide-kitten-teething": {
+    "url": "https://live.staticflickr.com/3184/2655477957_e046526611_b.jpg",
+    "alt": "Kitten vs Hand Wrestling",
+    "license": "cc-by",
+    "attribution": "pinguino",
+    "source": "flickr",
+    "category": "guides",
+    "width": 1024,
+    "height": 683
+  },
+  "health-cat-allergies": {
+    "url": "https://live.staticflickr.com/5073/14228593899_59de6c6138_b.jpg",
+    "alt": "Cat scratches itself",
+    "license": "cc-by",
+    "attribution": "Ivan Radic",
+    "source": "flickr",
+    "category": "health",
+    "width": 1024,
+    "height": 768
+  },
+  "nutrition-wet-food": {
+    "url": "https://live.staticflickr.com/5794/23994608172_d17eef00fb_b.jpg",
+    "alt": "Hello! Spotted just outside the pasar inpress dump: Two street kittens that ain't doing too well.",
+    "license": "cc-by-sa",
+    "attribution": "jessies.girl",
+    "source": "flickr",
+    "category": "nutrition",
+    "width": 768,
+    "height": 1024
+  },
+  "plant-snake-plant": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Sansevieria_trifasciata_%2836268%29.jpg",
+    "alt": "Sansevieria trifasciata snake plant leaves",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "width": 2296,
+    "height": 4080,
+    "category": "plants"
+  },
+  "symptom-coughing": {
+    "url": "https://live.staticflickr.com/51/189889015_ad629433c8_b.jpg",
+    "alt": "Mom, pre-colorization",
+    "license": "cc-by-sa",
+    "attribution": "Mrs. Gemstone",
+    "source": "flickr",
+    "width": 847,
+    "height": 1024,
+    "category": "symptoms"
+  },
+  "symptom-hot-ears": {
+    "url": "https://live.staticflickr.com/2277/2765005747_eee0fab7ca_b.jpg",
+    "alt": "Close-up of a cat with prominent ears",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "symptoms"
+  },
+  "symptom-farting": {
+    "url": "https://live.staticflickr.com/3941/15495303501_29547c15e1_b.jpg",
+    "alt": "what an interesting assortment of cats and bottles and i don't kno what YARD SALE FART BUTTS",
+    "license": "cc-by-sa",
+    "attribution": "▓▒░ TORLEY ░▒▓",
+    "source": "flickr",
+    "category": "symptoms",
+    "width": 1024,
+    "height": 615
+  },
+  "symptom-snoring": {
+    "url": "https://live.staticflickr.com/1391/4720654001_a96dfcca22_b.jpg",
+    "alt": "Gorgeous Cat 18",
+    "license": "cc-by",
+    "attribution": "1970_Lincoln_Continental",
+    "source": "flickr",
+    "width": 1024,
+    "height": 683,
+    "category": "symptoms"
+  },
+  "symptom-vomiting": {
+    "url": "https://live.staticflickr.com/2325/2364326032_e21487da5d_b.jpg",
+    "alt": "Cat Vomit Fountain",
+    "license": "cc-by",
+    "attribution": "Bogdan Migulski",
+    "source": "flickr",
+    "width": 1024,
+    "height": 768,
+    "category": "symptoms"
+  },
+  "symptom-diarrhea": {
+    "url": "https://live.staticflickr.com/3260/2880036438_1fbbdea125_b.jpg",
+    "alt": "Young kitten resting on a blanket",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "symptoms"
+  },
+  "symptom-sick-cat": {
+    "url": "https://live.staticflickr.com/7523/15883015191_a85a062316_b.jpg",
+    "alt": "Rikki's Refuge Cats - Wish List",
+    "license": "cc-by",
+    "attribution": "rikkis_refuge",
+    "source": "flickr",
+    "width": 1024,
+    "height": 600,
+    "category": "symptoms"
+  },
+  "behavior-stretch-greeting": {
+    "url": "https://live.staticflickr.com/4050/4524232608_8c5f36ed46.jpg",
+    "alt": "Cat stretching with front paws extended forward",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "behavior"
+  },
+  "compare-dogs-allergic-cats": {
+    "url": "https://live.staticflickr.com/148/417852540_716fdb9416_m.jpg",
+    "alt": "Senior cat and dog resting together with paws touching",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "compare"
+  },
+  "disease-feline-calicivirus": {
+    "url": "https://live.staticflickr.com/3911/15082262507_e80329e533_b.jpg",
+    "alt": "Cat being examined at a veterinary clinic",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "diseases"
+  },
+  "disease-lyme-cats": {
+    "url": "https://live.staticflickr.com/6209/6098494886_55d147b943_b.jpg",
+    "alt": "Cat outdoors in tall grass",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "diseases"
+  },
+  "fact-down-syndrome-cats": {
+    "url": "https://live.staticflickr.com/2060/2304237340_a79343e2e4_b.jpg",
+    "alt": "Person holding a small kitten with unique facial features",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "facts"
+  },
+  "guide-cat-estrus": {
+    "url": "https://live.staticflickr.com/1047/1439305246_539c02320f_b.jpg",
+    "alt": "Pregnant female cat resting on a blanket",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "guides"
+  },
+  "medication-capstar": {
+    "url": "https://live.staticflickr.com/7826/46508164475_5a55d6ac89_b.jpg",
+    "alt": "Cat reacting during flea treatment application",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "health"
+  },
+  "plant-frankincense": {
+    "url": "https://live.staticflickr.com/2826/10408841746_e4cc3d98d5_b.jpg",
+    "alt": "Frankincense resin chunks",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "plants"
+  },
+  "medication-ibuprofen-cats": {
+    "url": "https://live.staticflickr.com/65535/48914080376_366a345623_b.jpg",
+    "alt": "Cat resting peacefully on a soft blanket",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "health"
+  },
+  "poisoning-incense-cats": {
+    "url": "https://live.staticflickr.com/8261/8630065306_478185d1c3_b.jpg",
+    "alt": "Cat grooming itself indoors on a couch",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "health"
+  },
+  "health-lice-cats": {
+    "url": "https://live.staticflickr.com/2837/33441705594_9005ebc0ba_b.jpg",
+    "alt": "Cat grooming its fur with its tongue",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "health"
+  },
+  "medication-pedialyte-cats": {
+    "url": "https://live.staticflickr.com/3882/15268409872_02b9edb15b_b.jpg",
+    "alt": "Cat receiving care at a veterinary clinic",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "health"
+  },
+  "health-strep-throat-cats": {
+    "url": "https://live.staticflickr.com/5565/15245751546_5c940573d4_b.jpg",
+    "alt": "Cat being examined by a veterinarian",
+    "license": "cc-by",
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "health"
+  }
+}

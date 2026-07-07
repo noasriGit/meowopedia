@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none" role="img" aria-label="Stylized wild cat illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d1fae5"/>
+      <stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <path d="M0 360c120-40 220-20 320 0s220 40 320 0 160-20 160-20v160H0V360z" fill="#6ee7b7" opacity="0.35"/>
+  <path d="M250 320c60-120 180-140 300-80s140 120 80 200H250V320z" fill="#15803d" opacity="0.85"/>
+  <circle cx="360" cy="230" r="10" fill="#ecfdf5"/>
+  <circle cx="430" cy="230" r="10" fill="#ecfdf5"/>
+  <path d="M300 180l-20-35 28 12 22-20 6 30 32-8-16 28" fill="#14532d"/>
+</svg>

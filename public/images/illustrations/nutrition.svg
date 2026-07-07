@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none" role="img" aria-label="Stylized cat nutrition illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dcfce7"/>
+      <stop offset="1" stop-color="#f0fdf4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <ellipse cx="400" cy="340" rx="240" ry="60" fill="#86efac" opacity="0.25"/>
+  <rect x="280" y="160" width="240" height="160" rx="20" fill="#fff" stroke="#16a34a" stroke-width="4"/>
+  <circle cx="360" cy="230" r="28" fill="#bbf7d0"/>
+  <circle cx="440" cy="230" r="28" fill="#4ade80"/>
+  <path d="M310 300h180" stroke="#15803d" stroke-width="6" stroke-linecap="round"/>
+  <path d="M220 180c40-30 100-40 160-20M580 180c-40-30-100-40-160-20" stroke="#22c55e" stroke-width="4" opacity="0.5"/>
+</svg>
