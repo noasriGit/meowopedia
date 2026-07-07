@@ -1,22 +1,10 @@
 {
-  "ahrefs": {
+  "keywordList": {
+    "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "country": "us",
     "maxDifficulty": 20,
-    "maxSerpDrTop5Min": 15,
     "minVolume": 500,
-    "matchMode": "terms",
-    "terms": "questions",
-    "seeds": [
-      "cat",
-      "cats",
-      "kitten",
-      "feline",
-      "why do cats",
-      "can cats eat",
-      "are cats"
-    ],
-    "limitPerSeed": 200,
-    "maxSeedsPerRun": 3
+    "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
   },
   "draftWindow": {
     "timezone": "America/New_York",

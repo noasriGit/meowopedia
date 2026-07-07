@@ -1,17 +1,39 @@
 {
-  "date": null,
-  "status": "idle",
-  "discoveredAt": null,
+  "date": "2026-07-07",
+  "status": "queued",
+  "discoveredAt": "2026-07-07T18:18:32.630Z",
   "filters": {
     "maxDifficulty": 20,
     "maxSerpDrTop5Min": 15,
     "minVolume": 500
   },
-  "keyword": null,
-  "article": null,
-  "draftAt": null,
-  "draftAtIso": null,
-  "draftAtEpochMs": null,
+  "keyword": {
+    "primary": "why is my cat vomiting",
+    "volume": 6700,
+    "difficulty": 2,
+    "trafficPotential": 20000,
+    "intents": {
+      "informational": true,
+      "navigational": false,
+      "commercial": false,
+      "transactional": false,
+      "branded": false,
+      "local": false
+    },
+    "seed": "cat",
+    "source": "matching-terms"
+  },
+  "article": {
+    "id": "symptom-why-is-my-cat-vomiting",
+    "slug": "why-is-my-cat-vomiting",
+    "category": "symptoms",
+    "entityType": "symptom",
+    "searchIntent": "Informational — why is my cat vomiting",
+    "contentPath": "content/symptoms/why-is-my-cat-vomiting.mdx"
+  },
+  "draftAt": "2026-07-07T12:44:00",
+  "draftAtIso": "2026-07-07T16:44:00.000Z",
+  "draftAtEpochMs": 1783442640000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -20,5 +42,56 @@
   "drafted": false,
   "draftedAt": null,
   "prUrl": null,
-  "candidatesReviewed": []
+  "candidatesReviewed": [
+    {
+      "keyword": "why is my cat vomiting",
+      "volume": 6700,
+      "difficulty": 2
+    },
+    {
+      "keyword": "why is my cat meowing so much all of a sudden",
+      "volume": 6300,
+      "difficulty": 2
+    },
+    {
+      "keyword": "why do cats hate water",
+      "volume": 5900,
+      "difficulty": 10
+    },
+    {
+      "keyword": "why does my cat keep sneezing",
+      "volume": 5900,
+      "difficulty": 2
+    },
+    {
+      "keyword": "why is my cat sneezing so much",
+      "volume": 4400,
+      "difficulty": 1
+    },
+    {
+      "keyword": "can cats get pink eye",
+      "volume": 3900,
+      "difficulty": 3
+    },
+    {
+      "keyword": "why is my cat panting",
+      "volume": 3900,
+      "difficulty": 3
+    },
+    {
+      "keyword": "why is my cat pooping on the floor",
+      "volume": 3800,
+      "difficulty": 3
+    },
+    {
+      "keyword": "can cats taste spicy",
+      "volume": 3500,
+      "difficulty": 0
+    },
+    {
+      "keyword": "why is my cat not eating",
+      "volume": 3300,
+      "difficulty": 3
+    }
+  ]
 }

@@ -1,9 +1,9 @@
 name: Discover cat keywords (daily)
 
 description: >
-  Runs Ahrefs keyword discovery with KD < 20 and weak DR in top 5,
-  deduplicates against editorial/content-index.json, and queues one keyword
-  for article drafting at a random time today.
+  Picks one new keyword from the extended Ahrefs CSV export, deduplicates against
+  editorial/content-index.json, and queues it for article drafting at a random
+  time today.
 
 trigger:
   type: cron
@@ -17,29 +17,28 @@ prompt: |
   You are the Meowopedia daily keyword discovery agent.
 
   ## Goal
-  Find one new cat-related keyword that is NOT already in our content index,
-  passes Ahrefs filters (KD < 20, DR < 15 in top 5), and queue it for
-  article drafting later today at a random time.
+  Find one new cat-related keyword from our extended keyword CSV that is NOT
+  already in the content index, passes pipeline filters (KD < 20, volume >= 500),
+  and queue it for article drafting later today at a random time.
 
   ## Steps
-  1. Pull the latest `main` branch.
-  2. Ensure `AHREFS_API_TOKEN` is available in the environment (Cursor automation secret).
-  3. Run: `npm run discover-keywords`
-  4. If exit code is 0, read `editorial/daily-queue.json` and summarize:
+  1. Pull the latest `master` branch.
+  2. Run: `npm run discover-keywords`
+  3. If exit code is 0, read `editorial/daily-queue.json` and summarize:
      - chosen keyword, volume, difficulty
      - scheduled draft time (`draftAt` in America/New_York)
      - planned article path and id
-  5. If exit code is 2 (no candidates), report that no keywords matched filters today.
+  4. If exit code is 2 (no candidates), report that no keywords matched filters today.
      Do not modify any files beyond what the script already wrote.
-  6. Commit and push any changes the script made to:
+  5. Commit and push any changes the script made to:
      - `editorial/daily-queue.json`
      - `editorial/content-index.json` (if a queued entry was added)
      Use commit message: `chore(editorial): queue daily keyword for [keyword]`
 
   ## Rules
   - Do NOT draft the article in this automation.
-  - Do NOT change `editorial/pipeline-config.json` filters unless explicitly asked.
-  - Do NOT commit `.env.local` or API keys.
+  - Do NOT change `editorial/pipeline-config.json` unless explicitly asked.
+  - Keyword discovery uses `google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv` — no API calls.
 
 ---
 
@@ -65,7 +64,7 @@ prompt: |
   editorial standards, then open a pull request for human review.
 
   ## Steps
-  1. Pull the latest `main` branch.
+  1. Pull the latest `master` branch.
   2. Run: `npm run check-draft-queue -- --json`
      - Exit 1 → draft not due yet or nothing queued; stop with a short message.
      - Exit 2 → already drafted today; stop.

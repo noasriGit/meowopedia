@@ -1,30 +1,28 @@
 #!/usr/bin/env node
 /**
- * Discover a new cat keyword via Ahrefs and queue it for daily article drafting.
+ * Discover a new cat keyword from the extended keyword CSV list and queue it
+ * for daily article drafting.
  *
  * Usage:
  *   npm run discover-keywords
  *   npm run discover-keywords -- --dry-run
  *   npm run discover-keywords -- --force
- *
- * Requires AHREFS_API_TOKEN in .env.local (or environment).
  */
 
-import { AhrefsClient, buildKeywordFilters } from "./editorial/ahrefs.mjs";
 import {
   collectIndexedKeywords,
   loadContentIndex,
   queueArticleInIndex,
   saveContentIndex,
 } from "./editorial/content-index.mjs";
-import { loadEnv, requireEnv } from "./editorial/env.mjs";
+import { loadEnv } from "./editorial/env.mjs";
 import { randomDraftAt, todayInTimezone } from "./editorial/draft-window.mjs";
 import { inferArticleMeta } from "./editorial/infer-category.mjs";
-import { isDuplicateKeyword } from "./editorial/normalize-keyword.mjs";
+import { filterKeywordRows, loadKeywordCsv } from "./editorial/keyword-csv.mjs";
+import { findDuplicateMatch } from "./editorial/normalize-keyword.mjs";
 import {
   loadDailyQueue,
   loadPipelineConfig,
-  pickSeedForToday,
   saveDailyQueue,
   shouldSkipKeyword,
 } from "./editorial/queue.mjs";
@@ -35,9 +33,9 @@ const args = new Set(process.argv.slice(2));
 const dryRun = args.has("--dry-run");
 const force = args.has("--force");
 
-async function main() {
+function main() {
   const config = loadPipelineConfig();
-  const { ahrefs, draftWindow, skipPatterns } = config;
+  const { keywordList, draftWindow, skipPatterns } = config;
   const today = todayInTimezone(draftWindow.timezone);
 
   const existingQueue = loadDailyQueue();
@@ -52,94 +50,64 @@ async function main() {
   }
 
   const indexedKeywords = collectIndexedKeywords();
-  const where = buildKeywordFilters({
-    maxDifficulty: ahrefs.maxDifficulty,
-    maxSerpDrTop5Min: ahrefs.maxSerpDrTop5Min,
-    minVolume: ahrefs.minVolume,
+  const { path: csvPath, rows, totalRows } = loadKeywordCsv(keywordList.path);
+
+  console.error(`Loaded ${totalRows} keywords from ${keywordList.path}`);
+
+  const filtered = filterKeywordRows(rows, {
+    maxDifficulty: keywordList.maxDifficulty,
+    minVolume: keywordList.minVolume,
+    country: keywordList.country,
   });
 
-  const client = new AhrefsClient(requireEnv("AHREFS_API_TOKEN"));
-  const primarySeed = pickSeedForToday(ahrefs.seeds, today);
-  const seedsToQuery = [primarySeed, ...ahrefs.seeds.filter((seed) => seed !== primarySeed)].slice(
-    0,
-    ahrefs.maxSeedsPerRun ?? 3,
+  console.error(
+    `${filtered.length} keywords passed filters (KD < ${keywordList.maxDifficulty}, volume >= ${keywordList.minVolume})`,
   );
 
   const seen = new Set();
   const candidates = [];
 
-  for (const seed of seedsToQuery) {
-    console.error(`Querying Ahrefs matching-terms for seed: "${seed}"`);
-    const rows = await client.matchingTerms({
-      keywords: seed,
-      country: ahrefs.country,
-      matchMode: ahrefs.matchMode ?? "terms",
-      terms: ahrefs.terms ?? "questions",
-      where,
-      limit: ahrefs.limitPerSeed ?? 200,
-    });
+  for (const row of filtered) {
+    const keyword = row.keyword.trim();
+    const key = keyword.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
 
-    for (const row of rows) {
-      const keyword = row.keyword?.trim();
-      if (!keyword || seen.has(keyword.toLowerCase())) continue;
-      seen.add(keyword.toLowerCase());
+    if (shouldSkipKeyword(keyword, skipPatterns)) continue;
 
-      if (shouldSkipKeyword(keyword, skipPatterns)) continue;
-      if (isDuplicateKeyword(keyword, indexedKeywords)) continue;
-      if ((row.difficulty ?? 100) >= ahrefs.maxDifficulty) continue;
-
-      candidates.push({
-        keyword,
-        volume: row.volume ?? 0,
-        difficulty: row.difficulty ?? null,
-        trafficPotential: row.traffic_potential ?? null,
-        intents: row.intents ?? null,
-        seed,
-      });
+    const duplicateOf = findDuplicateMatch(keyword, indexedKeywords);
+    if (duplicateOf) {
+      console.error(`Skipping duplicate of "${duplicateOf}": ${keyword}`);
+      continue;
     }
+
+    candidates.push({
+      keyword,
+      volume: row.volume ?? 0,
+      difficulty: row.difficulty ?? null,
+      trafficPotential: row.trafficPotential ?? null,
+      intents: row.intents ?? null,
+      parentKeyword: row.parentKeyword ?? null,
+      category: row.category ?? null,
+      source: "keyword-list-csv",
+    });
   }
 
   candidates.sort((a, b) => (b.volume ?? 0) - (a.volume ?? 0));
 
   if (!candidates.length) {
-    console.error("No new keywords matched filters. Trying related-terms fallback...");
-    const fallbackRows = await client.relatedTerms({
-      keywords: primarySeed,
-      country: ahrefs.country,
-      where,
-      limit: ahrefs.limitPerSeed ?? 100,
-    });
-
-    for (const row of fallbackRows) {
-      const keyword = row.keyword?.trim();
-      if (!keyword || seen.has(keyword.toLowerCase())) continue;
-      if (shouldSkipKeyword(keyword, skipPatterns)) continue;
-      if (isDuplicateKeyword(keyword, indexedKeywords)) continue;
-
-      candidates.push({
-        keyword,
-        volume: row.volume ?? 0,
-        difficulty: row.difficulty ?? null,
-        trafficPotential: row.traffic_potential ?? null,
-        intents: row.intents ?? null,
-        seed: primarySeed,
-        source: "related-terms",
-      });
-    }
-
-    candidates.sort((a, b) => (b.volume ?? 0) - (a.volume ?? 0));
-  }
-
-  if (!candidates.length) {
     const result = {
       status: "no_candidates",
       date: today,
-      message: "No new keywords passed Ahrefs filters and deduplication.",
+      message: "No new keywords passed CSV filters and deduplication.",
+      keywordList: csvPath,
       filters: {
-        maxDifficulty: ahrefs.maxDifficulty,
-        maxSerpDrTop5Min: ahrefs.maxSerpDrTop5Min,
-        minVolume: ahrefs.minVolume,
+        maxDifficulty: keywordList.maxDifficulty,
+        minVolume: keywordList.minVolume,
+        country: keywordList.country,
       },
+      totalRows,
+      filteredRows: filtered.length,
     };
     console.log(JSON.stringify(result, null, 2));
     process.exitCode = 2;
@@ -159,10 +127,14 @@ async function main() {
     date: today,
     status: "queued",
     discoveredAt: new Date().toISOString(),
+    keywordList: {
+      path: keywordList.path,
+      note: keywordList.note ?? null,
+    },
     filters: {
-      maxDifficulty: ahrefs.maxDifficulty,
-      maxSerpDrTop5Min: ahrefs.maxSerpDrTop5Min,
-      minVolume: ahrefs.minVolume,
+      maxDifficulty: keywordList.maxDifficulty,
+      minVolume: keywordList.minVolume,
+      country: keywordList.country,
     },
     keyword: {
       primary: pick.keyword,
@@ -170,12 +142,11 @@ async function main() {
       difficulty: pick.difficulty,
       trafficPotential: pick.trafficPotential,
       intents: pick.intents,
-      seed: pick.seed,
-      source: pick.source ?? "matching-terms",
+      parentKeyword: pick.parentKeyword,
+      source: pick.source,
     },
     article: {
       id: meta.id,
-      title: meta.title ?? undefined,
       slug: meta.slug,
       category: meta.category,
       entityType: meta.entityType,
@@ -236,6 +207,7 @@ async function main() {
         draftAtIso: queue.draftAtIso,
         articleId: meta.id,
         contentPath: queue.article.contentPath,
+        keywordList: keywordList.path,
       },
       null,
       2,
@@ -243,7 +215,4 @@ async function main() {
   );
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exit(1);
-});
+main();
