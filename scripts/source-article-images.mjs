@@ -8,6 +8,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
+import { cleanQuery, isRelevantCandidate } from "./editorial/image-relevance.mjs";
 
 const require = createRequire(import.meta.url);
 const matter = require("gray-matter");
@@ -95,13 +96,6 @@ function parseArticle(filePath) {
   };
 }
 
-function cleanQuery(text) {
-  return text
-    .replace(/\?/g, "")
-    .replace(/can cats|are cats|why do cats|what does|how to|in cats/gi, "")
-    .replace(/\s+/g, " ")
-    .trim();
-}
 
 function buildQueries(article) {
   const { category, title, slug, tags, aliases } = article;
@@ -117,7 +111,7 @@ function buildQueries(article) {
     case "behavior":
       return [`cat ${tag || slug.replace(/^behavior-/, "").replace(/-/g, " ")}`, `cat ${primary}`, primary];
     case "foods":
-      return [slug.replace(/-/g, " "), tag, alias].filter(Boolean);
+      return [`cat ${slug.replace(/-/g, " ")}`, slug.replace(/-/g, " "), tag, alias].filter(Boolean);
     case "plants":
       return [`${slug.replace(/-/g, " ")} plant`, slug.replace(/-/g, " "), tag].filter(Boolean);
     case "anatomy":
@@ -148,38 +142,6 @@ function normalizeLicense(value) {
 
 function isAllowedLicense(license) {
   return ["cc0", "cc-by", "cc-by-sa", "unsplash", "pexels"].includes(license);
-}
-
-const CAT_KEYWORDS = /\b(cat|cats|kitten|kittens|feline|kitty|maine coon|bengal|persian|sphynx)\b/i;
-
-function isRelevantCandidate(candidate, article) {
-  const haystack = `${candidate.alt ?? ""} ${candidate.url ?? ""}`.toLowerCase();
-  const slugPhrase = article.slug.replace(/-cat$/, "").replace(/-/g, " ").toLowerCase();
-
-  if (article.category === "foods" || article.category === "plants") {
-    const terms = slugPhrase.split(" ").filter((t) => t.length > 2);
-    return terms.some((term) => haystack.includes(term));
-  }
-
-  const catCategories = new Set([
-    "behavior",
-    "health",
-    "symptoms",
-    "diseases",
-    "breeds",
-    "facts",
-    "guides",
-    "care",
-    "anatomy",
-    "compare",
-    "nutrition",
-  ]);
-
-  if (catCategories.has(article.category)) {
-    return CAT_KEYWORDS.test(haystack);
-  }
-
-  return true;
 }
 
 function pickUnique(candidates, article) {
@@ -355,9 +317,17 @@ function updateMdxFrontmatter(filePath, featuredImage, featuredImageAlt) {
   fs.writeFileSync(filePath, updated, "utf8");
 }
 
+function readArg(name) {
+  const index = process.argv.indexOf(name);
+  if (index === -1) return null;
+  return process.argv[index + 1] ?? null;
+}
+
 async function main() {
   loadEnv();
   const rescore = process.argv.includes("--rescore");
+  const force = process.argv.includes("--force");
+  const onlyId = readArg("--id");
 
   const categoryDirs = fs
     .readdirSync(CONTENT_ROOT, { withFileTypes: true })
@@ -371,7 +341,11 @@ async function main() {
     ? JSON.parse(fs.readFileSync(ARTICLE_IMAGES_PATH, "utf8"))
     : {};
 
-  const articleImages = rescore ? { ...existingImages } : {};
+  for (const asset of Object.values(existingImages)) {
+    if (asset?.url) USED_URLS.add(asset.url);
+  }
+
+  const articleImages = rescore || onlyId ? { ...existingImages } : {};
   const report = { generatedAt: new Date().toISOString(), articles: [], failures: [] };
 
   if (rescore) {
@@ -380,15 +354,29 @@ async function main() {
       if (article && asset?.url && isRelevantCandidate(asset, article)) {
         USED_URLS.add(asset.url);
       } else if (asset?.url) {
+        USED_URLS.delete(asset.url);
         delete articleImages[id];
         console.log(`Rescoring irrelevant image for ${id}`);
       }
     }
   }
 
-  const targetArticles = rescore
+  let targetArticles = rescore
     ? articles.filter((article) => !articleImages[article.id])
     : articles;
+
+  if (onlyId) {
+    const article = articles.find((a) => a.id === onlyId);
+    if (!article) {
+      console.error(`Article not found: ${onlyId}`);
+      process.exit(1);
+    }
+    if (force && articleImages[onlyId]?.url) {
+      USED_URLS.delete(articleImages[onlyId].url);
+      delete articleImages[onlyId];
+    }
+    targetArticles = [article];
+  }
 
   console.log(
     rescore
@@ -398,6 +386,15 @@ async function main() {
 
   for (let i = 0; i < targetArticles.length; i++) {
     const article = targetArticles[i];
+    if (!force && !onlyId && articleImages[article.id]?.url) {
+      console.log(`[skip] ${article.id} — already has image`);
+      continue;
+    }
+    if (!force && onlyId && articleImages[article.id]?.url) {
+      console.log(`[skip] ${article.id} — already has image (use --force to replace)`);
+      continue;
+    }
+
     console.log(`[${i + 1}/${targetArticles.length}] ${article.id} — ${article.title}`);
 
     const result = await findImageForArticle(article);

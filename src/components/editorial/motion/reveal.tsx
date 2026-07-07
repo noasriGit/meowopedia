@@ -9,6 +9,11 @@ interface RevealProps {
   delay?: number;
 }
 
+function isInViewport(el: HTMLElement) {
+  const rect = el.getBoundingClientRect();
+  return rect.top < window.innerHeight - 24 && rect.bottom > 24;
+}
+
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -16,24 +21,46 @@ export function Reveal({ children, className, delay = 0 }: RevealProps) {
     const el = ref.current;
     if (!el) return;
 
+    const show = () => {
+      el.dataset.visible = "true";
+    };
+
+    el.dataset.animate = "true";
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      show();
+      return;
+    }
+
+    if (isInViewport(el)) {
+      show();
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.dataset.visible = "true";
+          show();
           observer.disconnect();
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.05, rootMargin: "0px 0px -8% 0px" }
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
+
+    const fallback = window.setTimeout(show, 1200);
+
+    return () => {
+      window.clearTimeout(fallback);
+      observer.disconnect();
+    };
   }, []);
 
   return (
     <div
       ref={ref}
-      data-visible="false"
+      data-visible="true"
       className={cn("editorial-reveal", className)}
       style={{ "--reveal-delay": `${delay}ms` } as React.CSSProperties}
     >

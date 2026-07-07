@@ -57,9 +57,9 @@ export function markArticleDraftedInIndex(index, articleId, { url, slug }) {
   const article = index.articles.find((item) => item.id === articleId);
   if (!article) return null;
 
-  article.status = "draft";
+  article.status = "published";
   article.url = url;
   if (slug) article.slug = slug;
-  article.note = "Draft created by daily article pipeline — pending review";
+  article.note = "Published by daily article pipeline";
   return article;
 }

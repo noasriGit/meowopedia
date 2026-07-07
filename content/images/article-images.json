@@ -11,22 +11,18 @@
   },
   "anatomy-dilated-pupils": {
     "url": "https://live.staticflickr.com/3883/15344413361_d425dc60ae_b.jpg",
-    "alt": "Bright eyes",
-    "license": "cc0",
-    "attribution": "Bernard Spragg",
-    "source": "flickr",
-    "width": 1024,
-    "height": 762,
+    "alt": "Close-up of a cat face with wide open eyes",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "anatomy"
   },
   "behavior-biting": {
-    "url": "https://live.staticflickr.com/2050/2512296428_db0de77c26_b.jpg",
-    "alt": "LOOK WHAT UPS BROUGHT",
-    "license": "cc-by",
-    "attribution": "rikkis_refuge",
-    "source": "flickr",
-    "width": 1024,
-    "height": 768,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Cat_Scratch_and_Bite.jpg",
+    "alt": "Cat playfully nipping a hand during play",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "behavior"
   },
   "behavior-puffy-tail": {
@@ -104,140 +100,116 @@
     "height": 1024
   },
   "food-almond-milk": {
-    "url": "https://live.staticflickr.com/5603/30881614190_bb01a1055b_b.jpg",
-    "alt": "Carton of almond milk on a table",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Domestic_cat_and_kitten_drinking_milk_from_a_saucer%29_-_CF_LCCN2012645540.jpg",
+    "alt": "Domestic cat and kitten drinking milk from a saucer",
     "license": "cc-by",
-    "attribution": "Flickr contributor",
-    "source": "Openverse",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "foods"
   },
   "food-celery": {
-    "url": "https://live.staticflickr.com/2795/4474262474_4e7fb6bc0d.jpg",
-    "alt": "Celery and Garlic Juice",
-    "license": "cc-by",
-    "attribution": "Wild Tofu",
-    "source": "flickr",
-    "category": "foods",
-    "width": 500,
-    "height": 373
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Cat_eating_wet_plant-based_cat_food.jpg",
+    "alt": "Cat eating from a bowl — celery safety for cats",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-chicken-bones": {
-    "url": "https://live.staticflickr.com/157/409220449_6fe5c4e515_b.jpg",
-    "alt": "Fried chicken bones on a plate",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Gotcha_%284247399721%29.png",
+    "alt": "Cat near food — chicken bones safety for cats",
     "license": "cc-by",
-    "attribution": "istolethetv",
-    "source": "Openverse",
-    "category": "foods",
-    "width": 1024,
-    "height": 768
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-chicken": {
-    "url": "https://live.staticflickr.com/2775/4079109977_0f8dd65f78_b.jpg",
-    "alt": "Chicken",
-    "license": "cc-by-sa",
-    "attribution": "StevenW.",
-    "source": "flickr",
-    "category": "foods",
-    "width": 1024,
-    "height": 768
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Playing_time_of_our_cat.jpg",
+    "alt": "Cat at feeding time — chicken safety for cats",
+    "license": "cc-by",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-chocolate": {
-    "url": "https://live.staticflickr.com/5117/5860751835_060d760223_b.jpg",
-    "alt": "Mmm... chocolate cake with peanut butter cream icing",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sleeping_cat_on_a_bed.jpg",
+    "alt": "Cat resting indoors — chocolate is unsafe for cats",
     "license": "cc-by",
-    "attribution": "jeffreyw",
-    "source": "flickr",
-    "category": "foods",
-    "width": 1024,
-    "height": 731
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-cinnamon": {
-    "url": "https://live.staticflickr.com/4509/37641954626_cdff35a89c_b.jpg",
-    "alt": "Cinnamon",
-    "license": "cc-by-sa",
-    "attribution": "Kjokkenutstyr.net",
-    "source": "flickr",
-    "category": "foods",
-    "width": 1024,
-    "height": 683
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/A_cat_sleeping_in_a_cat_bed.jpg",
+    "alt": "Cat resting indoors — cinnamon and cats",
+    "license": "cc-by",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-coconut-oil": {
-    "url": "https://live.staticflickr.com/2756/4404443713_af1af58731_b.jpg",
-    "alt": "Coconut Oil",
-    "license": "cc-by-sa",
-    "attribution": "Veganbaking.net",
-    "source": "flickr",
-    "category": "foods",
-    "width": 1024,
-    "height": 683
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/December_2008_sleeping_cat_and_dog.jpg",
+    "alt": "Cat resting indoors — coconut oil and cats",
+    "license": "cc-by",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-eggs": {
-    "url": "https://live.staticflickr.com/7370/11141122374_afa991d17b_b.jpg",
-    "alt": "Green Eggs",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Cats_sleeping_on_a_dog_bed.jpg",
+    "alt": "Cats indoors — eggs and cat nutrition",
     "license": "cc-by",
-    "attribution": "normanack",
-    "source": "flickr",
-    "category": "foods",
-    "width": 1024,
-    "height": 768
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-hot-dogs": {
-    "url": "https://live.staticflickr.com/7425/12956484613_9698abe981_b.jpg",
-    "alt": "Hot dog",
-    "license": "cc-by",
-    "attribution": "JeepersMedia",
-    "source": "flickr",
-    "category": "foods",
-    "width": 1024,
-    "height": 768
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Two-ginger-cats-fight.jpg",
+    "alt": "Cats playing indoors — hot dogs and cats",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-lactose-free-milk": {
-    "url": "https://live.staticflickr.com/2795/4144825453_5378c2781f_b.jpg",
-    "alt": "Carton of lactose-free milk",
-    "license": "cc-by",
-    "attribution": "Flickr contributor",
-    "source": "Openverse",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Guangzhou-Kitten-and-bowl-of-rice-0552.jpg",
+    "alt": "Kitten beside a bowl of milk alternative",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "foods"
   },
   "food-pumpkin": {
-    "url": "https://live.staticflickr.com/4133/5129776051_13f792a7bf_b.jpg",
-    "alt": "The Great Pumpkin",
-    "license": "cc-by",
-    "attribution": "Sean Loyless",
-    "source": "flickr",
-    "category": "foods",
-    "width": 1024,
-    "height": 641
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/9906Black_tortoiseshell_and_white_cat_eating_Tilapia_fish_bones_28.jpg",
+    "alt": "Cat eating from a bowl — pumpkin and cats",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-raw-fish": {
-    "url": "https://live.staticflickr.com/2845/13578730313_46b35a222e_b.jpg",
-    "alt": "Raw Fish",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Cat_eating_fish_02.jpg",
+    "alt": "Cat eating raw fish",
     "license": "cc-by-sa",
-    "attribution": ".::RMT::.",
-    "source": "flickr",
-    "category": "foods",
-    "width": 1024,
-    "height": 683
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-sushi": {
-    "url": "https://live.staticflickr.com/3052/3010146294_14f5ea48fb_b.jpg",
-    "alt": "sushi",
-    "license": "cc-by",
-    "attribution": "Geoff Peters 604",
-    "source": "flickr",
-    "category": "foods",
-    "width": 1024,
-    "height": 683
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Cats_eating_fish_01.jpg",
+    "alt": "Cats eating fish — similar concern to sushi for cats",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "food-tuna": {
-    "url": "https://live.staticflickr.com/8223/8372222471_662acd24f6.jpg",
-    "alt": "Tuna salad",
-    "license": "cc-by",
-    "attribution": "Bálint Kléri (balintk)",
-    "source": "flickr",
-    "category": "foods",
-    "width": 500,
-    "height": 500
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Cats_eating_fish_02.jpg",
+    "alt": "Cat eating tuna fish from a dish",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "guide-hypoallergenic-cats": {
     "url": "https://live.staticflickr.com/5177/5467820826_0b132f8cab_b.jpg",
@@ -270,13 +242,11 @@
     "height": 578
   },
   "vaccination-rabies-cats": {
-    "url": "https://live.staticflickr.com/3238/3013512490_d4c044ff51_b.jpg",
-    "alt": "Flurry at 3+ Pounds",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Insuline-injection-cat.jpg",
+    "alt": "Cat receiving a vaccination injection at the vet",
     "license": "cc-by-sa",
-    "attribution": "pmarkham",
-    "source": "flickr",
-    "width": 683,
-    "height": 1024,
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "health"
   },
   "plant-basil": {
@@ -482,8 +452,8 @@
     "category": "breeds"
   },
   "breed-maine-coon": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Jeunes_main_coons.jpg",
-    "alt": "Young Maine Coon cats with long tufted ears",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Maine_Coon_male_NO_Sigdalskauen_Balder.jpg",
+    "alt": "Maine Coon cat with long tufted ears and fluffy coat",
     "license": "cc-by-sa",
     "attribution": "Wikimedia contributor",
     "source": "Wikimedia Commons",
@@ -554,23 +524,19 @@
     "height": 768
   },
   "behavior-playing-or-fighting": {
-    "url": "https://live.staticflickr.com/4009/4666595488_3a43e69b8e_b.jpg",
-    "alt": "Talk to Me",
-    "license": "cc-by",
-    "attribution": "Trish Hamme",
-    "source": "flickr",
-    "width": 1024,
-    "height": 668,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Cats_playing1.jpg",
+    "alt": "Two cats wrestling and playing together",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "behavior"
   },
   "behavior-sleep-at-feet": {
-    "url": "https://live.staticflickr.com/7222/6864716314_0200909828_b.jpg",
-    "alt": "Love and Trust",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Cat_sleeping_on_bed.jpg",
+    "alt": "Cat sleeping curled up on a bed",
     "license": "cc-by",
-    "attribution": "Trish Hamme",
-    "source": "flickr",
-    "width": 1024,
-    "height": 863,
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "behavior"
   },
   "behavior-social-animals": {
@@ -601,13 +567,11 @@
   },
   "disease-ckd": {
     "url": "https://live.staticflickr.com/7559/15633818714_75938fe113.jpg",
-    "alt": "veterinary clinic,dog and cat, caucasian, check, checkup, clinic, doctor, dog, equipment, examination, examining, hand, health, healthcare, healthy, hold, holding, kitten, kitty, love, medical, medicine, nurse, occupation, people, pe",
+    "alt": "Tabby cat being examined at a veterinary clinic",
     "license": "cc-by",
-    "attribution": "www.ilmicrofono.it",
-    "source": "flickr",
-    "category": "diseases",
-    "width": 347,
-    "height": 500
+    "attribution": "Flickr contributor",
+    "source": "Openverse",
+    "category": "diseases"
   },
   "fact-cats-swim": {
     "url": "https://live.staticflickr.com/2554/4115872878_66acfe5ac3_b.jpg",
@@ -620,13 +584,11 @@
     "height": 1024
   },
   "fact-group-of-cats": {
-    "url": "https://live.staticflickr.com/2601/3815577889_a27af93b69_b.jpg",
-    "alt": "Professional Judge Darryl Adams",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f/Herd_of_Cats.jpg",
+    "alt": "Large group of cats gathered together outdoors",
     "license": "cc-by",
-    "attribution": "rikkis_refuge",
-    "source": "flickr",
-    "width": 1024,
-    "height": 685,
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "facts"
   },
   "wildlife-foxes-and-cats": {
@@ -650,34 +612,30 @@
     "height": 798
   },
   "food-catnip": {
-    "url": "https://live.staticflickr.com/4078/4931128158_c66a72801f_b.jpg",
-    "alt": "~0.5mm Mite on Catnip Flower",
-    "license": "cc-by-sa",
-    "attribution": "Kurayba",
-    "source": "flickr",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Gillie_and_the_catnip_ball_%28445482471%29.jpg",
+    "alt": "Cat playing with a catnip ball",
+    "license": "cc-by",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "width": 1024,
     "height": 681,
     "category": "foods"
   },
   "food-oysters": {
-    "url": "https://live.staticflickr.com/2639/13091863025_8963282ae5_b.jpg",
-    "alt": "Morning milk",
-    "license": "cc-by",
-    "attribution": "grongar",
-    "source": "flickr",
-    "width": 1024,
-    "height": 768,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Cat_eating_fish_01.jpg",
+    "alt": "Cat eating fish — oysters and cats",
+    "license": "cc-by-sa",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "foods"
   },
   "food-strawberries": {
-    "url": "https://live.staticflickr.com/1430/1328402515_7ec84c7626_b.jpg",
-    "alt": "Strawberries",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/A_beautiful_ginger_cat_on_a_vase_%282023%3B_cropped_2025%29.jpg",
+    "alt": "Ginger cat indoors — strawberries and cats",
     "license": "cc-by",
-    "attribution": "Sharon Mollerus",
-    "source": "flickr",
-    "category": "foods",
-    "width": 1024,
-    "height": 664
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
+    "category": "foods"
   },
   "guide-cat-pregnancy": {
     "url": "https://live.staticflickr.com/3454/3189461961_9ab8892bd2_b.jpg",
@@ -730,13 +688,11 @@
     "category": "plants"
   },
   "symptom-coughing": {
-    "url": "https://live.staticflickr.com/51/189889015_ad629433c8_b.jpg",
-    "alt": "Mom, pre-colorization",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Cats_are_playing_together.JPG",
+    "alt": "Cat with mouth open while playing",
     "license": "cc-by-sa",
-    "attribution": "Mrs. Gemstone",
-    "source": "flickr",
-    "width": 847,
-    "height": 1024,
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "symptoms"
   },
   "symptom-hot-ears": {
@@ -828,11 +784,11 @@
     "category": "diseases"
   },
   "fact-down-syndrome-cats": {
-    "url": "https://live.staticflickr.com/2060/2304237340_a79343e2e4_b.jpg",
-    "alt": "Person holding a small kitten with unique facial features",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Kitten-stare.jpg",
+    "alt": "Kitten with a distinctive facial expression",
     "license": "cc-by",
-    "attribution": "Flickr contributor",
-    "source": "Openverse",
+    "attribution": "Wikimedia contributor",
+    "source": "Wikimedia Commons",
     "category": "facts"
   },
   "guide-cat-estrus": {
@@ -852,12 +808,12 @@
     "category": "health"
   },
   "plant-frankincense": {
-    "url": "https://live.staticflickr.com/2826/10408841746_e4cc3d98d5_b.jpg",
-    "alt": "Frankincense resin chunks",
-    "license": "cc-by",
-    "attribution": "Flickr contributor",
-    "source": "Openverse",
-    "category": "plants"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Lucky_Cat_%28Unsplash%29.jpg",
+    "alt": "Cat sitting near indoor plants and decor",
+    "license": "cc0",
+    "attribution": "Unsplash contributor",
+    "source": "Wikimedia Commons",
+    "category": "health"
   },
   "medication-ibuprofen-cats": {
     "url": "https://live.staticflickr.com/65535/48914080376_366a345623_b.jpg",

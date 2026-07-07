@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meowopedia image audit</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { margin: 0; padding: 1.5rem; background: #111; color: #eee; }
+    header { margin-bottom: 1.5rem; }
+    .stats { opacity: 0.85; }
+    .toolbar { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1rem 0; }
+    button, select { padding: 0.5rem 0.75rem; border-radius: 8px; border: 1px solid #444; background: #222; color: inherit; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+    .card { border: 1px solid #333; border-radius: 12px; overflow: hidden; background: #1a1a1a; }
+    .card.flagged { border-color: #c55; box-shadow: 0 0 0 1px #c55 inset; }
+    .img-wrap { display: block; aspect-ratio: 16 / 10; background: #000; }
+    .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .missing { display: grid; place-items: center; height: 100%; color: #aaa; }
+    .meta { padding: 0.9rem 1rem 1.1rem; }
+    h2 { font-size: 1rem; margin: 0 0 0.35rem; line-height: 1.35; }
+    .id, .alt, .url { font-size: 0.85rem; margin: 0.35rem 0; line-height: 1.4; word-break: break-word; }
+    .flags { margin: 0.5rem 0 0; padding-left: 1.1rem; color: #f88; font-size: 0.85rem; }
+    .ok { margin: 0.5rem 0 0; color: #7d7; font-size: 0.85rem; }
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meowopedia image audit</h1>
+    <p class="stats">Generated 2026-07-07T20:19:28.834Z · 97 articles · 0 flagged by heuristics</p>
+    <p>Review every hero image visually. Heuristic flags catch bad alt text (e.g. "mite on catnip") but cannot replace your eyes — a random person can still slip through if the alt text lies.</p>
+    <div class="toolbar">
+      <button type="button" id="show-all">Show all</button>
+      <button type="button" id="show-flagged">Flagged only (0)</button>
+      <label>
+        Category
+        <select id="category-filter">
+          <option value="">All</option>
+          <option value="anatomy">anatomy</option><option value="behavior">behavior</option><option value="breeds">breeds</option><option value="care">care</option><option value="compare">compare</option><option value="diseases">diseases</option><option value="facts">facts</option><option value="foods">foods</option><option value="guides">guides</option><option value="health">health</option><option value="nutrition">nutrition</option><option value="plants">plants</option><option value="symptoms">symptoms</option>
+        </select>
+      </label>
+    </div>
+  </header>
+  <div class="grid" id="grid">
+    <article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/0/09/Guzmania_lingulata.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Guzmania_lingulata.jpg" alt="Guzmania lingulata bromeliad with red inflorescence" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Bromeliads Toxic to Cats?</h2>
+    <p class="id">plant-bromeliad · plants</p>
+    <p class="alt"><strong>Alt:</strong> Guzmania lingulata bromeliad with red inflorescence</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/0/09/Guzmania_lingulata.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/4/4e/Zantedeschia_aethiopica_%28Witte_aronskelk%29_01.JPG" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Zantedeschia_aethiopica_%28Witte_aronskelk%29_01.JPG" alt="White Zantedeschia aethiopica calla lily flowers" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Calla Lilies Poisonous to Cats?</h2>
+    <p class="id">plant-calla-lily · plants</p>
+    <p class="alt"><strong>Alt:</strong> White Zantedeschia aethiopica calla lily flowers</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/4/4e/Zantedeschia_aethiopica_%28Witte_aronskelk%29_01.JPG" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/2221/3539908931_720dd7c608_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/2221/3539908931_720dd7c608_b.jpg" alt="Cat vs Dog" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Cats Cleaner Than Dogs?</h2>
+    <p class="id">compare-cats-vs-dogs-clean · compare</p>
+    <p class="alt"><strong>Alt:</strong> Cat vs Dog</p>
+    <p class="url"><a href="https://live.staticflickr.com/2221/3539908931_720dd7c608_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/d/dd/Two_orange_tabby_cats_greeting_by_rubbing-Hisashi-01.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Two_orange_tabby_cats_greeting_by_rubbing-Hisashi-01.jpg" alt="Two orange tabby cats greeting each other by rubbing heads" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Cats Social Animals?</h2>
+    <p class="id">behavior-social-animals · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Two orange tabby cats greeting each other by rubbing heads</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/d/dd/Two_orange_tabby_cats_greeting_by_rubbing-Hisashi-01.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/a/a1/Chrysanthemum_morifolium_08NOV.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Chrysanthemum_morifolium_08NOV.jpg" alt="Chrysanthemum morifolium flowers in bloom" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Chrysanthemums Toxic to Cats?</h2>
+    <p class="id">plant-chrysanthemum · plants</p>
+    <p class="alt"><strong>Alt:</strong> Chrysanthemum morifolium flowers in bloom</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/a/a1/Chrysanthemum_morifolium_08NOV.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/d/d8/Dahlia_%27Bishop_of_Auckland.JPG" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Dahlia_%27Bishop_of_Auckland.JPG" alt="Deep red Dahlia 'Bishop of Auckland' flower" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Dahlias Toxic to Cats?</h2>
+    <p class="id">plant-dahlia · plants</p>
+    <p class="alt"><strong>Alt:</strong> Deep red Dahlia 'Bishop of Auckland' flower</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/d/d8/Dahlia_%27Bishop_of_Auckland.JPG" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/f/fb/Pelargonium_graveolens.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Pelargonium_graveolens.jpg" alt="Pelargonium graveolens geranium leaves and flowers" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Geraniums Poisonous to Cats?</h2>
+    <p class="id">plant-geranium · plants</p>
+    <p class="alt"><strong>Alt:</strong> Pelargonium graveolens geranium leaves and flowers</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/f/fb/Pelargonium_graveolens.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/2/2e/Monstera_deliciosa2.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Monstera_deliciosa2.jpg" alt="Monstera deliciosa split-leaf foliage" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Monstera Toxic to Cats?</h2>
+    <p class="id">plant-monstera · plants</p>
+    <p class="alt"><strong>Alt:</strong> Monstera deliciosa split-leaf foliage</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/2/2e/Monstera_deliciosa2.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/9/9d/Epipremnum_aureum_31082012.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Epipremnum_aureum_31082012.jpg" alt="Epipremnum aureum pothos trailing vines and leaves" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Pothos Toxic to Cats?</h2>
+    <p class="id">plant-pothos · plants</p>
+    <p class="alt"><strong>Alt:</strong> Epipremnum aureum pothos trailing vines and leaves</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/9/9d/Epipremnum_aureum_31082012.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/6/66/Rosa_rubiginosa_flower.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Rosa_rubiginosa_flower.jpg" alt="Pink Rosa rubiginosa rose flower" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Roses Toxic to Cats?</h2>
+    <p class="id">plant-rose · plants</p>
+    <p class="alt"><strong>Alt:</strong> Pink Rosa rubiginosa rose flower</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/6/66/Rosa_rubiginosa_flower.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/4/46/Sansevieria_trifasciata_%2836268%29.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Sansevieria_trifasciata_%2836268%29.jpg" alt="Sansevieria trifasciata snake plant leaves" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Are Snake Plants Toxic to Cats?</h2>
+    <p class="id">plant-snake-plant · plants</p>
+    <p class="alt"><strong>Alt:</strong> Sansevieria trifasciata snake plant leaves</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/4/46/Sansevieria_trifasciata_%2836268%29.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/1/1d/Bengal_-_18.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Bengal_-_18.jpg" alt="Bengal cat with spotted rosette coat pattern" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Bengal Cat</h2>
+    <p class="id">breed-bengal · breeds</p>
+    <p class="alt"><strong>Alt:</strong> Bengal cat with spotted rosette coat pattern</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/1/1d/Bengal_-_18.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Cats_are_playing_together.JPG" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Cats_are_playing_together.JPG" alt="Cat with mouth open while playing" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Cough?</h2>
+    <p class="id">symptom-coughing · symptoms</p>
+    <p class="alt"><strong>Alt:</strong> Cat with mouth open while playing</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Cats_are_playing_together.JPG" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/7/70/Domestic_cat_and_kitten_drinking_milk_from_a_saucer%29_-_CF_LCCN2012645540.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Domestic_cat_and_kitten_drinking_milk_from_a_saucer%29_-_CF_LCCN2012645540.jpg" alt="Domestic cat and kitten drinking milk from a saucer" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Drink Almond Milk?</h2>
+    <p class="id">food-almond-milk · foods</p>
+    <p class="alt"><strong>Alt:</strong> Domestic cat and kitten drinking milk from a saucer</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/7/70/Domestic_cat_and_kitten_drinking_milk_from_a_saucer%29_-_CF_LCCN2012645540.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/6/69/Guangzhou-Kitten-and-bowl-of-rice-0552.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Guangzhou-Kitten-and-bowl-of-rice-0552.jpg" alt="Kitten beside a bowl of milk alternative" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Drink Lactose-Free Milk?</h2>
+    <p class="id">food-lactose-free-milk · foods</p>
+    <p class="alt"><strong>Alt:</strong> Kitten beside a bowl of milk alternative</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/6/69/Guangzhou-Kitten-and-bowl-of-rice-0552.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/e/e1/Cat_eating_wet_plant-based_cat_food.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Cat_eating_wet_plant-based_cat_food.jpg" alt="Cat eating from a bowl — celery safety for cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Celery?</h2>
+    <p class="id">food-celery · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat eating from a bowl — celery safety for cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/e/e1/Cat_eating_wet_plant-based_cat_food.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/3/36/Gotcha_%284247399721%29.png" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Gotcha_%284247399721%29.png" alt="Cat near food — chicken bones safety for cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Chicken Bones?</h2>
+    <p class="id">food-chicken-bones · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat near food — chicken bones safety for cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/3/36/Gotcha_%284247399721%29.png" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/5/58/Playing_time_of_our_cat.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Playing_time_of_our_cat.jpg" alt="Cat at feeding time — chicken safety for cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Chicken?</h2>
+    <p class="id">food-chicken · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat at feeding time — chicken safety for cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/5/58/Playing_time_of_our_cat.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/2/2d/Sleeping_cat_on_a_bed.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Sleeping_cat_on_a_bed.jpg" alt="Cat resting indoors — chocolate is unsafe for cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Chocolate?</h2>
+    <p class="id">food-chocolate · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat resting indoors — chocolate is unsafe for cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/2/2d/Sleeping_cat_on_a_bed.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/2/28/Cats_sleeping_on_a_dog_bed.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Cats_sleeping_on_a_dog_bed.jpg" alt="Cats indoors — eggs and cat nutrition" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Eggs?</h2>
+    <p class="id">food-eggs · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cats indoors — eggs and cat nutrition</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/2/28/Cats_sleeping_on_a_dog_bed.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/3/3a/Two-ginger-cats-fight.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Two-ginger-cats-fight.jpg" alt="Cats playing indoors — hot dogs and cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Hot Dogs?</h2>
+    <p class="id">food-hot-dogs · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cats playing indoors — hot dogs and cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/3/3a/Two-ginger-cats-fight.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/3/30/Cat_eating_fish_01.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Cat_eating_fish_01.jpg" alt="Cat eating fish — oysters and cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Oysters?</h2>
+    <p class="id">food-oysters · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat eating fish — oysters and cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/3/30/Cat_eating_fish_01.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/f/f8/9906Black_tortoiseshell_and_white_cat_eating_Tilapia_fish_bones_28.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/9906Black_tortoiseshell_and_white_cat_eating_Tilapia_fish_bones_28.jpg" alt="Cat eating from a bowl — pumpkin and cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Pumpkin Seeds?</h2>
+    <p class="id">food-pumpkin · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat eating from a bowl — pumpkin and cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/f/f8/9906Black_tortoiseshell_and_white_cat_eating_Tilapia_fish_bones_28.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/b/b1/Cat_eating_fish_02.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Cat_eating_fish_02.jpg" alt="Cat eating raw fish" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Raw Fish?</h2>
+    <p class="id">food-raw-fish · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat eating raw fish</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/b/b1/Cat_eating_fish_02.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/e/e1/A_beautiful_ginger_cat_on_a_vase_%282023%3B_cropped_2025%29.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/A_beautiful_ginger_cat_on_a_vase_%282023%3B_cropped_2025%29.jpg" alt="Ginger cat indoors — strawberries and cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Strawberries?</h2>
+    <p class="id">food-strawberries · foods</p>
+    <p class="alt"><strong>Alt:</strong> Ginger cat indoors — strawberries and cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/e/e1/A_beautiful_ginger_cat_on_a_vase_%282023%3B_cropped_2025%29.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cats_eating_fish_01.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cats_eating_fish_01.jpg" alt="Cats eating fish — similar concern to sushi for cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Sushi?</h2>
+    <p class="id">food-sushi · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cats eating fish — similar concern to sushi for cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cats_eating_fish_01.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/4/45/Cats_eating_fish_02.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Cats_eating_fish_02.jpg" alt="Cat eating tuna fish from a dish" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Eat Tuna?</h2>
+    <p class="id">food-tuna · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat eating tuna fish from a dish</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/4/45/Cats_eating_fish_02.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/3941/15495303501_29547c15e1_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/3941/15495303501_29547c15e1_b.jpg" alt="what an interesting assortment of cats and bottles and i don't kno what YARD SALE FART BUTTS" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Fart?</h2>
+    <p class="id">symptom-farting · symptoms</p>
+    <p class="alt"><strong>Alt:</strong> what an interesting assortment of cats and bottles and i don't kno what YARD SALE FART BUTTS</p>
+    <p class="url"><a href="https://live.staticflickr.com/3941/15495303501_29547c15e1_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/2837/33441705594_9005ebc0ba_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/2837/33441705594_9005ebc0ba_b.jpg" alt="Cat grooming its fur with its tongue" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Get Lice from Humans?</h2>
+    <p class="id">health-lice-cats · health</p>
+    <p class="alt"><strong>Alt:</strong> Cat grooming its fur with its tongue</p>
+    <p class="url"><a href="https://live.staticflickr.com/2837/33441705594_9005ebc0ba_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/6209/6098494886_55d147b943_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/6209/6098494886_55d147b943_b.jpg" alt="Cat outdoors in tall grass" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Get Lyme Disease?</h2>
+    <p class="id">disease-lyme-cats · diseases</p>
+    <p class="alt"><strong>Alt:</strong> Cat outdoors in tall grass</p>
+    <p class="url"><a href="https://live.staticflickr.com/6209/6098494886_55d147b943_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/3944/15500554142_34a56a567c_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/3944/15500554142_34a56a567c_b.jpg" alt="Street cat Jane" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Get Parvo?</h2>
+    <p class="id">disease-feline-parvovirus · diseases</p>
+    <p class="alt"><strong>Alt:</strong> Street cat Jane</p>
+    <p class="url"><a href="https://live.staticflickr.com/3944/15500554142_34a56a567c_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/7523/15883015191_a85a062316_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/7523/15883015191_a85a062316_b.jpg" alt="Rikki's Refuge Cats - Wish List" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Get Sick?</h2>
+    <p class="id">symptom-sick-cat · symptoms</p>
+    <p class="alt"><strong>Alt:</strong> Rikki's Refuge Cats - Wish List</p>
+    <p class="url"><a href="https://live.staticflickr.com/7523/15883015191_a85a062316_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/5565/15245751546_5c940573d4_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/5565/15245751546_5c940573d4_b.jpg" alt="Cat being examined by a veterinarian" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Get Strep Throat?</h2>
+    <p class="id">health-strep-throat-cats · health</p>
+    <p class="alt"><strong>Alt:</strong> Cat being examined by a veterinarian</p>
+    <p class="url"><a href="https://live.staticflickr.com/5565/15245751546_5c940573d4_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/c/cc/Kitten-stare.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Kitten-stare.jpg" alt="Kitten with a distinctive facial expression" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Have Down Syndrome?</h2>
+    <p class="id">fact-down-syndrome-cats · facts</p>
+    <p class="alt"><strong>Alt:</strong> Kitten with a distinctive facial expression</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/c/cc/Kitten-stare.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/65535/48914080376_366a345623_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/65535/48914080376_366a345623_b.jpg" alt="Cat resting peacefully on a soft blanket" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Have Ibuprofen?</h2>
+    <p class="id">medication-ibuprofen-cats · health</p>
+    <p class="alt"><strong>Alt:</strong> Cat resting peacefully on a soft blanket</p>
+    <p class="url"><a href="https://live.staticflickr.com/65535/48914080376_366a345623_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/3882/15268409872_02b9edb15b_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/3882/15268409872_02b9edb15b_b.jpg" alt="Cat receiving care at a veterinary clinic" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Have Pedialyte?</h2>
+    <p class="id">medication-pedialyte-cats · health</p>
+    <p class="alt"><strong>Alt:</strong> Cat receiving care at a veterinary clinic</p>
+    <p class="url"><a href="https://live.staticflickr.com/3882/15268409872_02b9edb15b_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/2/29/Gillie_and_the_catnip_ball_%28445482471%29.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Gillie_and_the_catnip_ball_%28445482471%29.jpg" alt="Cat playing with a catnip ball" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Overdose on Catnip?</h2>
+    <p class="id">food-catnip · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat playing with a catnip ball</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/2/29/Gillie_and_the_catnip_ball_%28445482471%29.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/2554/4115872878_66acfe5ac3_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/2554/4115872878_66acfe5ac3_b.jpg" alt="Kelp of Cat Rock, Anacapa Island" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Cats Swim?</h2>
+    <p class="id">fact-cats-swim · facts</p>
+    <p class="alt"><strong>Alt:</strong> Kelp of Cat Rock, Anacapa Island</p>
+    <p class="url"><a href="https://live.staticflickr.com/2554/4115872878_66acfe5ac3_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/148/417852540_716fdb9416_m.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/148/417852540_716fdb9416_m.jpg" alt="Senior cat and dog resting together with paws touching" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Can Dogs Be Allergic to Cats?</h2>
+    <p class="id">compare-dogs-allergic-cats · compare</p>
+    <p class="alt"><strong>Alt:</strong> Senior cat and dog resting together with paws touching</p>
+    <p class="url"><a href="https://live.staticflickr.com/148/417852540_716fdb9416_m.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/0/0/PKD_cat.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0/PKD_cat.jpg" alt="Cat with polycystic kidney disease under veterinary care" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Chronic Kidney Disease in Cats</h2>
+    <p class="id">disease-ckd · diseases</p>
+    <p class="alt"><strong>Alt:</strong> Cat with polycystic kidney disease under veterinary care</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/0/0/PKD_cat.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/1047/1439305246_539c02320f_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/1047/1439305246_539c02320f_b.jpg" alt="Pregnant female cat resting on a blanket" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Do Cats Get Periods?</h2>
+    <p class="id">guide-cat-estrus · guides</p>
+    <p class="alt"><strong>Alt:</strong> Pregnant female cat resting on a blanket</p>
+    <p class="url"><a href="https://live.staticflickr.com/1047/1439305246_539c02320f_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/5794/23994608172_d17eef00fb_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/5794/23994608172_d17eef00fb_b.jpg" alt="Hello! Spotted just outside the pasar inpress dump: Two street kittens that ain't doing too well." loading="lazy" /></a>
+  <div class="meta">
+    <h2>Do Cats Need Wet Food?</h2>
+    <p class="id">nutrition-wet-food · nutrition</p>
+    <p class="alt"><strong>Alt:</strong> Hello! Spotted just outside the pasar inpress dump: Two street kittens that ain't doing too well.</p>
+    <p class="url"><a href="https://live.staticflickr.com/5794/23994608172_d17eef00fb_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/1391/4720654001_a96dfcca22_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/1391/4720654001_a96dfcca22_b.jpg" alt="Gorgeous Cat 18" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Do Cats Snore?</h2>
+    <p class="id">symptom-snoring · symptoms</p>
+    <p class="alt"><strong>Alt:</strong> Gorgeous Cat 18</p>
+    <p class="url"><a href="https://live.staticflickr.com/1391/4720654001_a96dfcca22_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/8237/8400624711_0219ecaaa7_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/8237/8400624711_0219ecaaa7_b.jpg" alt="Cat marking territory against a surface" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Do Female Cats Spray?</h2>
+    <p class="id">behavior-female-cat-spraying · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat marking territory against a surface</p>
+    <p class="url"><a href="https://live.staticflickr.com/8237/8400624711_0219ecaaa7_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/65535/48762577428_a8fb775326_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/65535/48762577428_a8fb775326_b.jpg" alt="Momma Cat staring at the snow 1" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Do Foxes Eat Cats?</h2>
+    <p class="id">wildlife-foxes-and-cats · facts</p>
+    <p class="alt"><strong>Alt:</strong> Momma Cat staring at the snow 1</p>
+    <p class="url"><a href="https://live.staticflickr.com/65535/48762577428_a8fb775326_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/4362/36402273023_206afe0410_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/4362/36402273023_206afe0410_b.jpg" alt="Diagram of male cat reproductive anatomy" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Do Male Cats Have Balls?</h2>
+    <p class="id">anatomy-male-cat-anatomy · anatomy</p>
+    <p class="alt"><strong>Alt:</strong> Diagram of male cat reproductive anatomy</p>
+    <p class="url"><a href="https://live.staticflickr.com/4362/36402273023_206afe0410_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/177/385972693_4bac845f2d_m.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/177/385972693_4bac845f2d_m.jpg" alt="Pumba the cat" loading="lazy" /></a>
+  <div class="meta">
+    <h2>How Do Cats Get Ear Mites?</h2>
+    <p class="id">parasite-ear-mites · health</p>
+    <p class="alt"><strong>Alt:</strong> Pumba the cat</p>
+    <p class="url"><a href="https://live.staticflickr.com/177/385972693_4bac845f2d_m.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/3924/15082272697_2bbc919f30_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/3924/15082272697_2bbc919f30_b.jpg" alt="Tabby cat being examined at a veterinary clinic" loading="lazy" /></a>
+  <div class="meta">
+    <h2>How Do Cats Get Herpes?</h2>
+    <p class="id">disease-feline-herpes · diseases</p>
+    <p class="alt"><strong>Alt:</strong> Tabby cat being examined at a veterinary clinic</p>
+    <p class="url"><a href="https://live.staticflickr.com/3924/15082272697_2bbc919f30_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/2755/4039099883_64e9d02b31_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/2755/4039099883_64e9d02b31_b.jpg" alt="CAT BOX!!!" loading="lazy" /></a>
+  <div class="meta">
+    <h2>How Do Cats Get Worms?</h2>
+    <p class="id">parasite-worms · health</p>
+    <p class="alt"><strong>Alt:</strong> CAT BOX!!!</p>
+    <p class="url"><a href="https://live.staticflickr.com/2755/4039099883_64e9d02b31_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/3454/3189461961_9ab8892bd2_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/3454/3189461961_9ab8892bd2_b.jpg" alt="Cat + Bag = Out" loading="lazy" /></a>
+  <div class="meta">
+    <h2>How Long Are Cats Pregnant?</h2>
+    <p class="id">guide-cat-pregnancy · guides</p>
+    <p class="alt"><strong>Alt:</strong> Cat + Bag = Out</p>
+    <p class="url"><a href="https://live.staticflickr.com/3454/3189461961_9ab8892bd2_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/3911/15082262507_e80329e533_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/3911/15082262507_e80329e533_b.jpg" alt="Cat being examined at a veterinary clinic" loading="lazy" /></a>
+  <div class="meta">
+    <h2>How Long Do Cats Live with Calicivirus?</h2>
+    <p class="id">disease-feline-calicivirus · diseases</p>
+    <p class="alt"><strong>Alt:</strong> Cat being examined at a veterinary clinic</p>
+    <p class="url"><a href="https://live.staticflickr.com/3911/15082262507_e80329e533_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/e/e1/Insuline-injection-cat.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Insuline-injection-cat.jpg" alt="Cat receiving a vaccination injection at the vet" loading="lazy" /></a>
+  <div class="meta">
+    <h2>How Often Do Cats Need Rabies Shots?</h2>
+    <p class="id">vaccination-rabies-cats · health</p>
+    <p class="alt"><strong>Alt:</strong> Cat receiving a vaccination injection at the vet</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/e/e1/Insuline-injection-cat.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/2371/2181340072_ab77361408_m.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/2371/2181340072_ab77361408_m.jpg" alt="Cat Processing 101" loading="lazy" /></a>
+  <div class="meta">
+    <h2>How to Clean Cats' Teeth</h2>
+    <p class="id">care-dental-cleaning · care</p>
+    <p class="alt"><strong>Alt:</strong> Cat Processing 101</p>
+    <p class="url"><a href="https://live.staticflickr.com/2371/2181340072_ab77361408_m.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/8/80/Cats_playing1.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Cats_playing1.jpg" alt="Two cats wrestling and playing together" loading="lazy" /></a>
+  <div class="meta">
+    <h2>How to Tell If Cats Are Playing or Fighting</h2>
+    <p class="id">behavior-playing-or-fighting · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Two cats wrestling and playing together</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/8/80/Cats_playing1.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg" alt="Ocimum basilicum basil leaves and stems" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Is Basil Safe for Cats?</h2>
+    <p class="id">plant-basil · plants</p>
+    <p class="alt"><strong>Alt:</strong> Ocimum basilicum basil leaves and stems</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/7826/46508164475_5a55d6ac89_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/7826/46508164475_5a55d6ac89_b.jpg" alt="Cat reacting during flea treatment application" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Is Capstar Safe for Cats?</h2>
+    <p class="id">medication-capstar · health</p>
+    <p class="alt"><strong>Alt:</strong> Cat reacting during flea treatment application</p>
+    <p class="url"><a href="https://live.staticflickr.com/7826/46508164475_5a55d6ac89_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/5/5d/A_cat_sleeping_in_a_cat_bed.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/A_cat_sleeping_in_a_cat_bed.jpg" alt="Cat resting indoors — cinnamon and cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Is Cinnamon Bad for Cats?</h2>
+    <p class="id">food-cinnamon · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat resting indoors — cinnamon and cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/5/5d/A_cat_sleeping_in_a_cat_bed.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/c/c3/December_2008_sleeping_cat_and_dog.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/December_2008_sleeping_cat_and_dog.jpg" alt="Cat resting indoors — coconut oil and cats" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Is Coconut Oil Safe for Cats?</h2>
+    <p class="id">food-coconut-oil · foods</p>
+    <p class="alt"><strong>Alt:</strong> Cat resting indoors — coconut oil and cats</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/c/c3/December_2008_sleeping_cat_and_dog.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/9/9a/Eucalyptus_punctata_-_adult_leaves.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Eucalyptus_punctata_-_adult_leaves.jpg" alt="Adult eucalyptus tree leaves" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Is Eucalyptus Safe for Cats?</h2>
+    <p class="id">plant-eucalyptus · plants</p>
+    <p class="alt"><strong>Alt:</strong> Adult eucalyptus tree leaves</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/9/9a/Eucalyptus_punctata_-_adult_leaves.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/0/05/Lucky_Cat_%28Unsplash%29.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Lucky_Cat_%28Unsplash%29.jpg" alt="Cat sitting near indoor plants and decor" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Is Frankincense Safe for Cats?</h2>
+    <p class="id">plant-frankincense · health</p>
+    <p class="alt"><strong>Alt:</strong> Cat sitting near indoor plants and decor</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/0/05/Lucky_Cat_%28Unsplash%29.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/8261/8630065306_478185d1c3_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/8261/8630065306_478185d1c3_b.jpg" alt="Cat grooming itself indoors on a couch" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Is Incense Bad for Cats?</h2>
+    <p class="id">poisoning-incense-cats · health</p>
+    <p class="alt"><strong>Alt:</strong> Cat grooming itself indoors on a couch</p>
+    <p class="url"><a href="https://live.staticflickr.com/8261/8630065306_478185d1c3_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/4/4c/Thyme_plant.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Thyme_plant.jpg" alt="Thymus vulgaris thyme herb plant" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Is Thyme Safe for Cats?</h2>
+    <p class="id">plant-thyme · plants</p>
+    <p class="alt"><strong>Alt:</strong> Thymus vulgaris thyme herb plant</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/4/4c/Thyme_plant.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/3/30/Lilium_candidum_1.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Lilium_candidum_1.jpg" alt="White Lilium candidum lily flowers" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Lily Toxicity in Cats</h2>
+    <p class="id">plant-lily · plants</p>
+    <p class="alt"><strong>Alt:</strong> White Lilium candidum lily flowers</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/3/30/Lilium_candidum_1.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/7/7e/Jeunes_main_coons.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Jeunes_main_coons.jpg" alt="Young Maine Coon cats with long tufted ears" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Maine Coon Cat</h2>
+    <p class="id">breed-maine-coon · breeds</p>
+    <p class="alt"><strong>Alt:</strong> Young Maine Coon cats with long tufted ears</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/7/7e/Jeunes_main_coons.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/5004/5339239070_1b086ceb87.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/5004/5339239070_1b086ceb87.jpg" alt="Grey Persian cat with long fluffy coat" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Persian Cat</h2>
+    <p class="id">breed-persian · breeds</p>
+    <p class="alt"><strong>Alt:</strong> Grey Persian cat with long fluffy coat</p>
+    <p class="url"><a href="https://live.staticflickr.com/5004/5339239070_1b086ceb87.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/191/521577861_345e353202_m.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/191/521577861_345e353202_m.jpg" alt="Bandit and Vincent Discuss Cats vs Dogs" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Should You Bathe Cats?</h2>
+    <p class="id">care-bathing-cats · care</p>
+    <p class="alt"><strong>Alt:</strong> Bandit and Vincent Discuss Cats vs Dogs</p>
+    <p class="url"><a href="https://live.staticflickr.com/191/521577861_345e353202_m.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/a/af/2_Sphynx_cats_sleeping_together.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/2_Sphynx_cats_sleeping_together.jpg" alt="Two hairless Sphynx cats sleeping together" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Sphynx Cat</h2>
+    <p class="id">breed-sphynx · breeds</p>
+    <p class="alt"><strong>Alt:</strong> Two hairless Sphynx cats sleeping together</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/a/af/2_Sphynx_cats_sleeping_together.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/5073/14228593899_59de6c6138_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/5073/14228593899_59de6c6138_b.jpg" alt="Cat scratches itself" loading="lazy" /></a>
+  <div class="meta">
+    <h2>What Are Cats Allergic To?</h2>
+    <p class="id">health-cat-allergies · health</p>
+    <p class="alt"><strong>Alt:</strong> Cat scratches itself</p>
+    <p class="url"><a href="https://live.staticflickr.com/5073/14228593899_59de6c6138_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/5177/5467820826_0b132f8cab_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/5177/5467820826_0b132f8cab_b.jpg" alt="Cat Allergies" loading="lazy" /></a>
+  <div class="meta">
+    <h2>What Cats Are Hypoallergenic?</h2>
+    <p class="id">guide-hypoallergenic-cats · guides</p>
+    <p class="alt"><strong>Alt:</strong> Cat Allergies</p>
+    <p class="url"><a href="https://live.staticflickr.com/5177/5467820826_0b132f8cab_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/3260/2880036438_1fbbdea125_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/3260/2880036438_1fbbdea125_b.jpg" alt="Young kitten resting on a blanket" loading="lazy" /></a>
+  <div class="meta">
+    <h2>What Causes Diarrhea in Cats?</h2>
+    <p class="id">symptom-diarrhea · symptoms</p>
+    <p class="alt"><strong>Alt:</strong> Young kitten resting on a blanket</p>
+    <p class="url"><a href="https://live.staticflickr.com/3260/2880036438_1fbbdea125_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/1842/43998837454_e886656cc0_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/1842/43998837454_e886656cc0_b.jpg" alt="Fast and Furious Compound Firework Barrage by Black Cat Fireworks" loading="lazy" /></a>
+  <div class="meta">
+    <h2>What Colors Do Cats Like?</h2>
+    <p class="id">anatomy-cat-vision-colors · anatomy</p>
+    <p class="alt"><strong>Alt:</strong> Fast and Furious Compound Firework Barrage by Black Cat Fireworks</p>
+    <p class="url"><a href="https://live.staticflickr.com/1842/43998837454_e886656cc0_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/f/f/Herd_of_Cats.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f/Herd_of_Cats.jpg" alt="Large group of cats gathered together outdoors" loading="lazy" /></a>
+  <div class="meta">
+    <h2>What Do You Call a Group of Cats?</h2>
+    <p class="id">fact-group-of-cats · facts</p>
+    <p class="alt"><strong>Alt:</strong> Large group of cats gathered together outdoors</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/f/f/Herd_of_Cats.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/7264/7609145366_1fa4f88aed_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/7264/7609145366_1fa4f88aed_b.jpg" alt="a proud, mysterious cat ~ ~ ~" loading="lazy" /></a>
+  <div class="meta">
+    <h2>What Eats Cats?</h2>
+    <p class="id">wildlife-what-eats-cats · facts</p>
+    <p class="alt"><strong>Alt:</strong> a proud, mysterious cat ~ ~ ~</p>
+    <p class="url"><a href="https://live.staticflickr.com/7264/7609145366_1fa4f88aed_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/3886/15074570029_a60d051a7a_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/3886/15074570029_a60d051a7a_b.jpg" alt="Feral Cat Relaxing on our Patio" loading="lazy" /></a>
+  <div class="meta">
+    <h2>What to Feed Stray Cats</h2>
+    <p class="id">care-stray-cat-feeding · care</p>
+    <p class="alt"><strong>Alt:</strong> Feral Cat Relaxing on our Patio</p>
+    <p class="url"><a href="https://live.staticflickr.com/3886/15074570029_a60d051a7a_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/3184/2655477957_e046526611_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/3184/2655477957_e046526611_b.jpg" alt="Kitten vs Hand Wrestling" loading="lazy" /></a>
+  <div class="meta">
+    <h2>When Do Cats Lose Their Baby Teeth?</h2>
+    <p class="id">guide-kitten-teething · guides</p>
+    <p class="alt"><strong>Alt:</strong> Kitten vs Hand Wrestling</p>
+    <p class="url"><a href="https://live.staticflickr.com/3184/2655477957_e046526611_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/2277/2765005747_eee0fab7ca_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/2277/2765005747_eee0fab7ca_b.jpg" alt="Close-up of a cat with prominent ears" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Are My Cat's Ears Hot?</h2>
+    <p class="id">symptom-hot-ears · symptoms</p>
+    <p class="alt"><strong>Alt:</strong> Close-up of a cat with prominent ears</p>
+    <p class="url"><a href="https://live.staticflickr.com/2277/2765005747_eee0fab7ca_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/6064/6028367829_a99a9bee8d.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/6064/6028367829_a99a9bee8d.jpg" alt="A cat in the window" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Are My Cat's Whiskers So Long?</h2>
+    <p class="id">anatomy-whiskers-long · anatomy</p>
+    <p class="alt"><strong>Alt:</strong> A cat in the window</p>
+    <p class="url"><a href="https://live.staticflickr.com/6064/6028367829_a99a9bee8d.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/d/d9/Cat_Scratch_and_Bite.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Cat_Scratch_and_Bite.jpg" alt="Cat playfully nipping a hand during play" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Bite You?</h2>
+    <p class="id">behavior-biting · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat playfully nipping a hand during play</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/d/d9/Cat_Scratch_and_Bite.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/65535/50516028937_c3ab8765a8_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/65535/50516028937_c3ab8765a8_b.jpg" alt="Black Cat Blep (thesebosscats/twitter.com)" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Blep?</h2>
+    <p class="id">behavior-blep · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Black Cat Blep (thesebosscats/twitter.com)</p>
+    <p class="url"><a href="https://live.staticflickr.com/65535/50516028937_c3ab8765a8_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/f/f5/Japanese_litter_box_in_use.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Japanese_litter_box_in_use.jpg" alt="Norwegian Forest cat using a covered litter box" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Bury Their Poop?</h2>
+    <p class="id">behavior-bury-poop · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Norwegian Forest cat using a covered litter box</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/f/f5/Japanese_litter_box_in_use.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/2254/2234460988_d691f77a27_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/2254/2234460988_d691f77a27_b.jpg" alt="Moonlight cat chasing his tail" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Chase Their Tails?</h2>
+    <p class="id">behavior-chase-tail · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Moonlight cat chasing his tail</p>
+    <p class="url"><a href="https://live.staticflickr.com/2254/2234460988_d691f77a27_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/8/87/Kitten_%2806%29_by_Ron.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Kitten_%2806%29_by_Ron.jpg" alt="Kitten meowing with mouth open" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Cry?</h2>
+    <p class="id">behavior-crying · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Kitten meowing with mouth open</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/8/87/Kitten_%2806%29_by_Ron.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/159/417852567_b4f26e92ed_m.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/159/417852567_b4f26e92ed_m.jpg" alt="Herd of cats sleeping on couch" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Drool?</h2>
+    <p class="id">symptom-drooling · symptoms</p>
+    <p class="alt"><strong>Alt:</strong> Herd of cats sleeping on couch</p>
+    <p class="url"><a href="https://live.staticflickr.com/159/417852567_b4f26e92ed_m.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/0/08/Cat_Eating_Catgrass.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cat_Eating_Catgrass.jpg" alt="Cat eating cat grass outdoors" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Eat Grass?</h2>
+    <p class="id">behavior-eating-grass · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat eating cat grass outdoors</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/0/08/Cat_Eating_Catgrass.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/7336/10285590004_21c300ec2e_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/7336/10285590004_21c300ec2e_b.jpg" alt="Cat running playfully across a room" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Get the Zoomies?</h2>
+    <p class="id">behavior-zoomies · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat running playfully across a room</p>
+    <p class="url"><a href="https://live.staticflickr.com/7336/10285590004_21c300ec2e_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/c/ca/4.5_months_blotched_tabby_kitten_sleeping_on_the_lap_of_its_master.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/4.5_months_blotched_tabby_kitten_sleeping_on_the_lap_of_its_master.jpg" alt="Tabby kitten sleeping curled up on its owner's lap" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Lay on Your Chest?</h2>
+    <p class="id">behavior-sleeping-on-chest · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Tabby kitten sleeping curled up on its owner's lap</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/c/ca/4.5_months_blotched_tabby_kitten_sleeping_on_the_lap_of_its_master.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/c/c7/Larry_the_cat_standing_on_grass_and_licking_his_nose_in_Auderghem%2C_Belgium_%28DSCF2372%29.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Larry_the_cat_standing_on_grass_and_licking_his_nose_in_Auderghem%2C_Belgium_%28DSCF2372%29.jpg" alt="Cat standing on grass licking its nose" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Lick You?</h2>
+    <p class="id">behavior-licking-you · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat standing on grass licking its nose</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/c/c7/Larry_the_cat_standing_on_grass_and_licking_his_nose_in_Auderghem%2C_Belgium_%28DSCF2372%29.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/6/67/Cute_cat_in_loaf_position.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Cute_cat_in_loaf_position.jpg" alt="Cat sitting in loaf position on a cushion" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Loaf?</h2>
+    <p class="id">behavior-loafing · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat sitting in loaf position on a cushion</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/6/67/Cute_cat_in_loaf_position.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/4021/4417553669_7436783317_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/4021/4417553669_7436783317_b.jpg" alt="Cat kneading with front paws on a soft blanket" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Make Biscuits?</h2>
+    <p class="id">behavior-making-biscuits · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat kneading with front paws on a soft blanket</p>
+    <p class="url"><a href="https://live.staticflickr.com/4021/4417553669_7436783317_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/5242/5354109866_af44f959d4_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/5242/5354109866_af44f959d4_b.jpg" alt="Cat meowing in dim indoor lighting" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Meow at Night?</h2>
+    <p class="id">behavior-meow-at-night · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat meowing in dim indoor lighting</p>
+    <p class="url"><a href="https://live.staticflickr.com/5242/5354109866_af44f959d4_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/7/7d/Contented_cat_%288546770661%29.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Contented_cat_%288546770661%29.jpg" alt="Contented tabby cat resting peacefully with eyes closed" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Purr?</h2>
+    <p class="id">behavior-purring · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Contented tabby cat resting peacefully with eyes closed</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/7/7d/Contented_cat_%288546770661%29.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Cat_sleeping_on_bed.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Cat_sleeping_on_bed.jpg" alt="Cat sleeping curled up on a bed" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Sleep at Your Feet?</h2>
+    <p class="id">behavior-sleep-at-feet · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat sleeping curled up on a bed</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Cat_sleeping_on_bed.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/4050/4524232608_8c5f36ed46.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/4050/4524232608_8c5f36ed46.jpg" alt="Cat stretching with front paws extended forward" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Stretch When They See You?</h2>
+    <p class="id">behavior-stretch-greeting · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat stretching with front paws extended forward</p>
+    <p class="url"><a href="https://live.staticflickr.com/4050/4524232608_8c5f36ed46.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/2325/2364326032_e21487da5d_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/2325/2364326032_e21487da5d_b.jpg" alt="Cat Vomit Fountain" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats Throw Up?</h2>
+    <p class="id">symptom-vomiting · symptoms</p>
+    <p class="alt"><strong>Alt:</strong> Cat Vomit Fountain</p>
+    <p class="url"><a href="https://live.staticflickr.com/2325/2364326032_e21487da5d_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/2/2/Cat_dilated_pupils.JPG" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2/Cat_dilated_pupils.JPG" alt="Close-up of a cat with dilated pupils" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats' Eyes Dilate?</h2>
+    <p class="id">anatomy-dilated-pupils · anatomy</p>
+    <p class="alt"><strong>Alt:</strong> Close-up of a cat with dilated pupils</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/2/2/Cat_dilated_pupils.JPG" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://live.staticflickr.com/6/8378612_34ab6787ae_b.jpg" target="_blank" rel="noopener"><img src="https://live.staticflickr.com/6/8378612_34ab6787ae_b.jpg" alt="Cat" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Do Cats' Tails Puff Up?</h2>
+    <p class="id">behavior-puffy-tail · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Cat</p>
+    <p class="url"><a href="https://live.staticflickr.com/6/8378612_34ab6787ae_b.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+<article class="card">
+  <a class="img-wrap" href="https://upload.wikimedia.org/wikipedia/commons/0/05/Two_Sphynx_cats_in_bath.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Two_Sphynx_cats_in_bath.jpg" alt="Two Sphynx cats being bathed in a tub" loading="lazy" /></a>
+  <div class="meta">
+    <h2>Why Don't Cats Like Water?</h2>
+    <p class="id">behavior-water-aversion · behavior</p>
+    <p class="alt"><strong>Alt:</strong> Two Sphynx cats being bathed in a tub</p>
+    <p class="url"><a href="https://upload.wikimedia.org/wikipedia/commons/0/05/Two_Sphynx_cats_in_bath.jpg" target="_blank" rel="noopener">Open full image</a></p>
+    <p class="ok">No heuristic flags</p>
+  </div>
+</article>
+  </div>
+  <script>
+    const grid = document.getElementById('grid');
+    const cards = [...grid.querySelectorAll('.card')];
+    const categoryFilter = document.getElementById('category-filter');
+    let flaggedOnly = false;
+
+    function applyFilters() {
+      const category = categoryFilter.value;
+      for (const card of cards) {
+        const text = card.textContent;
+        const isFlagged = card.classList.contains('flagged');
+        const categoryMatch = !category || text.includes('· ' + category);
+        const flaggedMatch = !flaggedOnly || isFlagged;
+        card.classList.toggle('hidden', !(categoryMatch && flaggedMatch));
+      }
+    }
+
+    document.getElementById('show-all').addEventListener('click', () => {
+      flaggedOnly = false;
+      applyFilters();
+    });
+    document.getElementById('show-flagged').addEventListener('click', () => {
+      flaggedOnly = true;
+      applyFilters();
+    });
+    categoryFilter.addEventListener('change', applyFilters);
+  </script>
+</body>
+</html>

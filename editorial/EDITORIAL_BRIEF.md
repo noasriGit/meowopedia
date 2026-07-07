@@ -47,7 +47,17 @@ Every encyclopedia article should have a unique copyright-free featured image:
 - Set `featuredImage` to a remote HTTPS URL (Wikimedia Commons, Unsplash, Pexels, or Openverse)
 - Set `featuredImageAlt` to descriptive alt text for accessibility and SEO
 - Canonical metadata (license, attribution, source) lives in `content/images/article-images.json` keyed by article `id`
-- Run `npm run source-images` to auto-assign images; `npm run validate-images` checks uniqueness and URL health
+- **Daily draft pipeline:** `npm run prepare-article-image -- --id <articleId>` sources the hero image and runs the audit heuristics in `scripts/editorial/image-relevance.mjs`. Do not publish until `npm run check-article-image -- --id <articleId>` exits 0.
+- **Bulk assign:** `npm run source-images` auto-assigns all articles; `npm run rescore-images` re-evaluates bad picks
+- **Review gallery:** `npm run audit-images` → open `http://localhost:3000/image-audit.html` to visually inspect every hero
+- **Validation:** `npm run validate-images` checks uniqueness and URL health (runs on prebuild)
+
+Image quality rules (enforced by audit):
+
+- Foods and behavior articles: image must show a **cat**; alt text must mention the topic (e.g. "Cat eating fish — tuna and cats")
+- Plants: botanical photo is fine; alt must name the plant
+- Blocked alt terms: people, portraits, mites, unrelated stock phrases
+- Never trust alt text alone — pick images where the subject visually matches the article
 - CC-BY and CC-BY-SA images display attribution automatically; CC0/Unsplash/Pexels do not require visible credit
 
 ## MDX Components Available
