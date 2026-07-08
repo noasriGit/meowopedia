@@ -1,39 +1,36 @@
 {
-  "date": "2026-07-07",
+  "date": "2026-07-08",
   "status": "queued",
-  "discoveredAt": "2026-07-07T18:18:32.630Z",
+  "discoveredAt": "2026-07-08T10:02:21.201Z",
+  "keywordList": {
+    "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
+    "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
+  },
   "filters": {
     "maxDifficulty": 20,
-    "maxSerpDrTop5Min": 15,
-    "minVolume": 500
+    "minVolume": 500,
+    "country": "us"
   },
   "keyword": {
-    "primary": "why is my cat vomiting",
-    "volume": 6700,
-    "difficulty": 2,
-    "trafficPotential": 20000,
-    "intents": {
-      "informational": true,
-      "navigational": false,
-      "commercial": false,
-      "transactional": false,
-      "branded": false,
-      "local": false
-    },
-    "seed": "cat",
-    "source": "matching-terms"
+    "primary": "can cats get pink eye",
+    "volume": 3900,
+    "difficulty": 3,
+    "trafficPotential": 7600,
+    "intents": "Informational,Non-branded,Non-local",
+    "parentKeyword": "cat pink eye",
+    "source": "keyword-list-csv"
   },
   "article": {
-    "id": "symptom-why-is-my-cat-vomiting",
-    "slug": "why-is-my-cat-vomiting",
-    "category": "symptoms",
-    "entityType": "symptom",
-    "searchIntent": "Informational — why is my cat vomiting",
-    "contentPath": "content/symptoms/why-is-my-cat-vomiting.mdx"
+    "id": "fact-can-cats-get-pink-eye",
+    "slug": "can-cats-get-pink-eye",
+    "category": "facts",
+    "entityType": "fact",
+    "searchIntent": "Informational — can cats get pink eye",
+    "contentPath": "content/facts/can-cats-get-pink-eye.mdx"
   },
-  "draftAt": "2026-07-07T12:44:00",
-  "draftAtIso": "2026-07-07T16:44:00.000Z",
-  "draftAtEpochMs": 1783442640000,
+  "draftAt": "2026-07-08T17:31:00",
+  "draftAtIso": "2026-07-08T21:31:00.000Z",
+  "draftAtEpochMs": 1783546260000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -44,43 +41,8 @@
   "prUrl": null,
   "candidatesReviewed": [
     {
-      "keyword": "why is my cat vomiting",
-      "volume": 6700,
-      "difficulty": 2
-    },
-    {
-      "keyword": "why is my cat meowing so much all of a sudden",
-      "volume": 6300,
-      "difficulty": 2
-    },
-    {
-      "keyword": "why do cats hate water",
-      "volume": 5900,
-      "difficulty": 10
-    },
-    {
-      "keyword": "why does my cat keep sneezing",
-      "volume": 5900,
-      "difficulty": 2
-    },
-    {
-      "keyword": "why is my cat sneezing so much",
-      "volume": 4400,
-      "difficulty": 1
-    },
-    {
       "keyword": "can cats get pink eye",
       "volume": 3900,
-      "difficulty": 3
-    },
-    {
-      "keyword": "why is my cat panting",
-      "volume": 3900,
-      "difficulty": 3
-    },
-    {
-      "keyword": "why is my cat pooping on the floor",
-      "volume": 3800,
       "difficulty": 3
     },
     {
@@ -89,8 +51,43 @@
       "difficulty": 0
     },
     {
-      "keyword": "why is my cat not eating",
-      "volume": 3300,
+      "keyword": "are mums toxic to cats",
+      "volume": 2500,
+      "difficulty": 2
+    },
+    {
+      "keyword": "are marigolds poisonous to cats",
+      "volume": 2400,
+      "difficulty": 1
+    },
+    {
+      "keyword": "why do cats sneeze",
+      "volume": 2400,
+      "difficulty": 1
+    },
+    {
+      "keyword": "can humans get worms from cats",
+      "volume": 2100,
+      "difficulty": 5
+    },
+    {
+      "keyword": "how to brush cats teeth",
+      "volume": 1900,
+      "difficulty": 5
+    },
+    {
+      "keyword": "what do ear mites look like in cats",
+      "volume": 1700,
+      "difficulty": 1
+    },
+    {
+      "keyword": "do cats sneeze",
+      "volume": 1200,
+      "difficulty": 0
+    },
+    {
+      "keyword": "how long do indoor-outdoor cats live",
+      "volume": 1100,
       "difficulty": 3
     }
   ]

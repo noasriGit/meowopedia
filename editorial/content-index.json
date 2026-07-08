@@ -1,8 +1,8 @@
 {
   "version": "2026-07-06",
   "source": "google_us_cats_list-overview_2026-07-06_13-04-35.csv",
-  "totalKeywords": 200,
-  "totalArticleGroups": 89,
+  "totalKeywords": 201,
+  "totalArticleGroups": 90,
   "articles": [
     {
       "id": "behavior-making-biscuits",
@@ -1219,6 +1219,17 @@
       "searchIntent": "Informational — breed profile",
       "entityType": "breed",
       "url": "/breeds/persian-cat"
+    },
+    {
+      "id": "fact-can-cats-get-pink-eye",
+      "status": "queued",
+      "priority": 96,
+      "combinedVolume": 3900,
+      "primaryKeyword": "can cats get pink eye",
+      "searchIntent": "Informational — can cats get pink eye",
+      "entityType": "fact",
+      "url": null,
+      "note": "Queued by daily keyword discovery pipeline"
     }
   ],
   "publishedCount": 87,
