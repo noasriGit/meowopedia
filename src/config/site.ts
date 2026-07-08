@@ -72,4 +72,7 @@ export const DEFAULT_METADATA: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "geyhbUQqwAZ8-GuvFaylJB0kmKSYb-nytu5Z576y4bk",
+  },
 };
