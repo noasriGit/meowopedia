@@ -31,11 +31,18 @@ jobs:
       - name: Trigger Cursor draft automation webhook
         env:
           WEBHOOK_URL: ${{ secrets.CURSOR_DRAFT_WEBHOOK_URL }}
+          WEBHOOK_TOKEN: ${{ secrets.CURSOR_DRAFT_WEBHOOK_TOKEN }}
         run: |
           if [ -z "$WEBHOOK_URL" ]; then
             echo "CURSOR_DRAFT_WEBHOOK_URL secret is not set. Add it in GitHub repo settings."
             exit 1
           fi
+          if [ -z "$WEBHOOK_TOKEN" ]; then
+            echo "CURSOR_DRAFT_WEBHOOK_TOKEN secret is not set."
+            echo "In Cursor → Automations → your draft automation → Generate auth header, copy the crsr_ token."
+            exit 1
+          fi
           curl -sS -f -X POST "$WEBHOOK_URL" \
+            -H "Authorization: Bearer $WEBHOOK_TOKEN" \
             -H "Content-Type: application/json" \
             -d '{"source":"github-actions","workflow":"trigger-article-draft"}'
