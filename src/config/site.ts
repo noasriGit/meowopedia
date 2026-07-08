@@ -11,7 +11,7 @@ export const SITE = {
   defaultOgImage: "/og/default.jpg",
   organization: {
     name: "Meowopedia",
-    logo: "/brand/logo.svg",
+    logo: "/favicon.svg",
     sameAs: [
       "https://twitter.com/meowopedia",
       "https://www.facebook.com/meowopedia",
