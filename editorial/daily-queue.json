@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-08",
+  "date": "2026-07-09",
   "status": "queued",
-  "discoveredAt": "2026-07-08T10:02:21.201Z",
+  "discoveredAt": "2026-07-09T10:02:19.930Z",
   "keywordList": {
     "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
@@ -12,25 +12,25 @@
     "country": "us"
   },
   "keyword": {
-    "primary": "can cats get pink eye",
-    "volume": 3900,
-    "difficulty": 3,
-    "trafficPotential": 7600,
+    "primary": "can cats taste spicy",
+    "volume": 3500,
+    "difficulty": 0,
+    "trafficPotential": 1400,
     "intents": "Informational,Non-branded,Non-local",
-    "parentKeyword": "cat pink eye",
+    "parentKeyword": "can cats taste spicy",
     "source": "keyword-list-csv"
   },
   "article": {
-    "id": "fact-can-cats-get-pink-eye",
-    "slug": "can-cats-get-pink-eye",
+    "id": "fact-can-cats-taste-spicy",
+    "slug": "can-cats-taste-spicy",
     "category": "facts",
     "entityType": "fact",
-    "searchIntent": "Informational — can cats get pink eye",
-    "contentPath": "content/facts/can-cats-get-pink-eye.mdx"
+    "searchIntent": "Informational — can cats taste spicy",
+    "contentPath": "content/facts/can-cats-taste-spicy.mdx"
   },
-  "draftAt": "2026-07-08T17:31:00",
-  "draftAtIso": "2026-07-08T21:31:00.000Z",
-  "draftAtEpochMs": 1783546260000,
+  "draftAt": "2026-07-09T15:49:00",
+  "draftAtIso": "2026-07-09T19:49:00.000Z",
+  "draftAtEpochMs": 1783626540000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -40,11 +40,6 @@
   "draftedAt": null,
   "prUrl": null,
   "candidatesReviewed": [
-    {
-      "keyword": "can cats get pink eye",
-      "volume": 3900,
-      "difficulty": 3
-    },
     {
       "keyword": "can cats taste spicy",
       "volume": 3500,
@@ -89,6 +84,11 @@
       "keyword": "how long do indoor-outdoor cats live",
       "volume": 1100,
       "difficulty": 3
+    },
+    {
+      "keyword": "are mums safe for cats",
+      "volume": 1000,
+      "difficulty": 2
     }
   ]
 }

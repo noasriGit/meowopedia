@@ -1,8 +1,8 @@
 {
   "version": "2026-07-06",
   "source": "google_us_cats_list-overview_2026-07-06_13-04-35.csv",
-  "totalKeywords": 201,
-  "totalArticleGroups": 90,
+  "totalKeywords": 202,
+  "totalArticleGroups": 91,
   "articles": [
     {
       "id": "behavior-making-biscuits",
@@ -1227,6 +1227,17 @@
       "combinedVolume": 3900,
       "primaryKeyword": "can cats get pink eye",
       "searchIntent": "Informational — can cats get pink eye",
+      "entityType": "fact",
+      "url": null,
+      "note": "Queued by daily keyword discovery pipeline"
+    },
+    {
+      "id": "fact-can-cats-taste-spicy",
+      "status": "queued",
+      "priority": 97,
+      "combinedVolume": 3500,
+      "primaryKeyword": "can cats taste spicy",
+      "searchIntent": "Informational — can cats taste spicy",
       "entityType": "fact",
       "url": null,
       "note": "Queued by daily keyword discovery pipeline"
