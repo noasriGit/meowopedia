@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from '@vercel/analytics/next';
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { SkipLink } from "@/components/navigation/skip-link";
 import { SiteFooter, SiteHeader } from "@/components/navigation/site-header";
@@ -48,6 +49,7 @@ export default function RootLayout({
           </main>
           <SiteFooter />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
