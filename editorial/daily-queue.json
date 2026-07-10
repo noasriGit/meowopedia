@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-09",
+  "date": "2026-07-10",
   "status": "queued",
-  "discoveredAt": "2026-07-09T10:02:19.930Z",
+  "discoveredAt": "2026-07-10T10:00:43.848Z",
   "keywordList": {
     "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
@@ -12,25 +12,25 @@
     "country": "us"
   },
   "keyword": {
-    "primary": "can cats taste spicy",
-    "volume": 3500,
-    "difficulty": 0,
-    "trafficPotential": 1400,
+    "primary": "are mums toxic to cats",
+    "volume": 2500,
+    "difficulty": 2,
+    "trafficPotential": 1200,
     "intents": "Informational,Non-branded,Non-local",
-    "parentKeyword": "can cats taste spicy",
+    "parentKeyword": "are mums toxic to cats",
     "source": "keyword-list-csv"
   },
   "article": {
-    "id": "fact-can-cats-taste-spicy",
-    "slug": "can-cats-taste-spicy",
-    "category": "facts",
-    "entityType": "fact",
-    "searchIntent": "Informational — can cats taste spicy",
-    "contentPath": "content/facts/can-cats-taste-spicy.mdx"
+    "id": "plant-are-mums-toxic-to-cats",
+    "slug": "are-mums-toxic-to-cats",
+    "category": "plants",
+    "entityType": "plant",
+    "searchIntent": "Informational — are mums toxic to cats",
+    "contentPath": "content/plants/are-mums-toxic-to-cats.mdx"
   },
-  "draftAt": "2026-07-09T15:49:00",
-  "draftAtIso": "2026-07-09T19:49:00.000Z",
-  "draftAtEpochMs": 1783626540000,
+  "draftAt": "2026-07-10T14:27:00",
+  "draftAtIso": "2026-07-10T18:27:00.000Z",
+  "draftAtEpochMs": 1783708020000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -40,11 +40,6 @@
   "draftedAt": null,
   "prUrl": null,
   "candidatesReviewed": [
-    {
-      "keyword": "can cats taste spicy",
-      "volume": 3500,
-      "difficulty": 0
-    },
     {
       "keyword": "are mums toxic to cats",
       "volume": 2500,
@@ -89,6 +84,11 @@
       "keyword": "are mums safe for cats",
       "volume": 1000,
       "difficulty": 2
+    },
+    {
+      "keyword": "why do cats yawn",
+      "volume": 900,
+      "difficulty": 0
     }
   ]
 }

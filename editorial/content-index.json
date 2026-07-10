@@ -1,8 +1,8 @@
 {
   "version": "2026-07-06",
   "source": "google_us_cats_list-overview_2026-07-06_13-04-35.csv",
-  "totalKeywords": 202,
-  "totalArticleGroups": 91,
+  "totalKeywords": 203,
+  "totalArticleGroups": 92,
   "articles": [
     {
       "id": "behavior-making-biscuits",
@@ -1239,6 +1239,17 @@
       "primaryKeyword": "can cats taste spicy",
       "searchIntent": "Informational — can cats taste spicy",
       "entityType": "fact",
+      "url": null,
+      "note": "Queued by daily keyword discovery pipeline"
+    },
+    {
+      "id": "plant-are-mums-toxic-to-cats",
+      "status": "queued",
+      "priority": 98,
+      "combinedVolume": 2500,
+      "primaryKeyword": "are mums toxic to cats",
+      "searchIntent": "Informational — are mums toxic to cats",
+      "entityType": "plant",
       "url": null,
       "note": "Queued by daily keyword discovery pipeline"
     }
