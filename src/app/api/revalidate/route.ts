@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import {
   invalidateContentCache,
 } from "@/lib/content/loader";
+import { invalidateLinkingCache } from "@/lib/knowledge-graph/linking";
 import { invalidateSearchIndex } from "@/lib/search/index";
 
 export async function POST(request: Request) {
@@ -12,6 +13,7 @@ export async function POST(request: Request) {
   }
 
   invalidateContentCache();
+  invalidateLinkingCache();
   invalidateSearchIndex();
   revalidatePath("/", "layout");
 

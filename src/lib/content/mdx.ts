@@ -1,8 +1,9 @@
+import { cache } from "react";
 import { compileMDX } from "next-mdx-remote/rsc";
 import type { MDXComponents } from "mdx/types";
 import { mdxComponents } from "@/components/mdx/mdx-components";
 
-export async function renderMdxContent(
+async function compileMdx(
   source: string,
   extraComponents?: MDXComponents
 ) {
@@ -16,6 +17,8 @@ export async function renderMdxContent(
 
   return content;
 }
+
+export const renderMdxContent = cache(compileMdx);
 
 export async function renderMdxWithToc(source: string) {
   return renderMdxContent(source);

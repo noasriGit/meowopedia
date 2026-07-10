@@ -20,6 +20,7 @@ let articleCache: Article[] | null = null;
 let summaryCache: ArticleSummary[] | null = null;
 let idIndex: Map<string, ArticleSummary> | null = null;
 let slugIndex: Map<string, ArticleSummary> | null = null;
+let urlSlugIndex: Map<string, Article> | null = null;
 
 function collectMdxFiles(dir: string): string[] {
   if (!fs.existsSync(dir)) return [];
@@ -95,6 +96,7 @@ function buildIndexes(articles: Article[]) {
   summaryCache = summaries;
   idIndex = new Map(summaries.map((s) => [s.id, s]));
   slugIndex = new Map(summaries.map((s) => [s.slug, s]));
+  urlSlugIndex = new Map(articles.map((a) => [a.url, a]));
 }
 
 export function loadAllArticles(): Article[] {
@@ -134,9 +136,8 @@ export function getArticleByUrlPrefix(
   slug: string
 ): Article | undefined {
   const prefix = urlPrefix.endsWith("/") ? urlPrefix.slice(0, -1) : urlPrefix;
-  return loadAllArticles().find(
-    (a) => a.slug === slug && a.url.startsWith(`${prefix}/`)
-  );
+  if (!urlSlugIndex) loadAllArticles();
+  return urlSlugIndex?.get(`${prefix}/${slug}`);
 }
 
 export function getStaticParamsForPrefix(
@@ -233,6 +234,7 @@ export function invalidateContentCache(): void {
   summaryCache = null;
   idIndex = null;
   slugIndex = null;
+  urlSlugIndex = null;
 }
 
 export function getContentStats() {

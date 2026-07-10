@@ -84,12 +84,33 @@ function buildGraphEdges(): KnowledgeGraphEdge[] {
   return edges;
 }
 
+let graphCache: {
+  nodes: KnowledgeGraphNode[];
+  edges: KnowledgeGraphEdge[];
+} | null = null;
+
+let recentlyUpdatedCache: ArticleSummary[] | null = null;
+
+function getFullGraph() {
+  if (!graphCache) {
+    graphCache = {
+      nodes: buildGraphNodes(),
+      edges: buildGraphEdges(),
+    };
+  }
+  return graphCache;
+}
+
+export function invalidateLinkingCache(): void {
+  graphCache = null;
+  recentlyUpdatedCache = null;
+}
+
 export function getKnowledgeGraphForArticle(articleId: string): {
   nodes: KnowledgeGraphNode[];
   edges: KnowledgeGraphEdge[];
 } {
-  const allNodes = buildGraphNodes();
-  const allEdges = buildGraphEdges();
+  const { nodes: allNodes, edges: allEdges } = getFullGraph();
   const nodeIds = new Set<string>([articleId]);
 
   const directEdges = allEdges.filter(
@@ -279,12 +300,17 @@ export function getRecentlyUpdated(
   excludeId: string,
   limit = 6
 ): ArticleSummary[] {
-  return loadAllSummaries()
-    .filter((s) => s.id !== excludeId && s.updatedAt)
-    .sort(
-      (a, b) =>
-        new Date(b.updatedAt!).getTime() - new Date(a.updatedAt!).getTime()
-    )
+  if (!recentlyUpdatedCache) {
+    recentlyUpdatedCache = loadAllSummaries()
+      .filter((s) => s.updatedAt)
+      .sort(
+        (a, b) =>
+          new Date(b.updatedAt!).getTime() - new Date(a.updatedAt!).getTime()
+      );
+  }
+
+  return recentlyUpdatedCache
+    .filter((s) => s.id !== excludeId)
     .slice(0, limit);
 }
 
