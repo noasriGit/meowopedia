@@ -33,6 +33,11 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <JsonLdScript data={websiteSchema()} />
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="nRxoQO8r9myikhMGZ73pBA"
+          async
+        />
       </head>
       <body className="min-h-full flex flex-col antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
