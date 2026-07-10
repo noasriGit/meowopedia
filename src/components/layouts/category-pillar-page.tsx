@@ -1,13 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
+import { CategoryGradient } from "@/components/editorial/category-gradient";
 import { CATEGORIES, CATEGORY_SLUGS } from "@/config/taxonomy";
 import { getCategoryPageData, getGlobalStats } from "@/lib/content/categories";
 import { RelatedGrid } from "@/components/encyclopedia/related-grid";
 import { CategoryThemeScope } from "@/components/editorial/category-theme-scope";
 import { CategoryBadge } from "@/components/editorial/category-badge";
-import { getCategoryTheme } from "@/config/category-themes";
-import { getCategoryBanner } from "@/lib/images/category-banners";
-import { isRemoteImageUrl, requiresAttribution } from "@/lib/images/registry";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArticleDisclaimer } from "@/components/encyclopedia/article-disclaimer";
@@ -22,53 +19,31 @@ export function CategoryPillarPage({ slug }: CategoryPillarPageProps) {
   const data = getCategoryPageData(slug);
   const definition = CATEGORIES[slug];
   const stats = getGlobalStats();
-  const theme = getCategoryTheme(slug);
-  const banner = getCategoryBanner(slug);
-  const showBannerCredit =
-    banner && requiresAttribution(banner.license) && banner.attribution;
   const disclaimerTier = getCategoryDisclaimerTier(slug);
 
   return (
     <CategoryThemeScope category={slug}>
       <div>
-        <section className="editorial-hero-full relative min-h-[min(52vh,420px)] overflow-hidden border-b border-border">
-          {banner ? (
-            <>
-              <Image
-                src={banner.url}
-                alt={banner.alt}
-                fill
-                priority
-                unoptimized={isRemoteImageUrl(banner.url)}
-                sizes="100vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-background via-background/92 to-background/55" />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/20" />
-            </>
-          ) : (
-            <div className="editorial-mesh absolute inset-0" />
-          )}
-          <div className="editorial-grain pointer-events-none absolute inset-0 opacity-40" />
+        <section className="editorial-hero-full relative min-h-[min(36vh,280px)] overflow-hidden border-b border-border">
+          <CategoryGradient
+            category={slug}
+            variant="hero"
+            className="absolute inset-0"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
 
-          <div className="relative mx-auto flex min-h-[min(52vh,420px)] max-w-7xl flex-col justify-end px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+          <div className="relative mx-auto flex min-h-[min(36vh,280px)] max-w-7xl flex-col justify-end px-4 py-10 sm:px-6 lg:px-8 lg:py-12">
             <header className="max-w-2xl">
               <CategoryBadge category={slug} />
-              <p className="mt-4 inline-flex rounded-full border border-border bg-card/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur-sm">
+              <p className="mt-3 inline-flex rounded-full border border-border bg-card/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur-sm">
                 {data.articles.length} articles
               </p>
-              <h1 className="editorial-title mt-5 text-4xl font-bold tracking-tight lg:text-6xl">
+              <h1 className="editorial-title mt-4 text-3xl font-bold tracking-tight lg:text-5xl">
                 {data.title}
               </h1>
-              <p className="editorial-deck mt-5 text-lg leading-relaxed text-muted-foreground sm:text-xl">
+              <p className="editorial-deck mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
                 {definition.pillarIntro}
               </p>
-              {showBannerCredit && (
-                <p className="mt-4 text-xs text-muted-foreground">
-                  Photo: {banner.attribution}
-                  {banner.source ? ` / ${banner.source}` : ""}
-                </p>
-              )}
             </header>
           </div>
         </section>
@@ -152,11 +127,10 @@ export function CategoryPillarPage({ slug }: CategoryPillarPageProps) {
 
 export function CategoryExplorerGrid() {
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
       {CATEGORY_SLUGS.map((slug) => {
         const category = CATEGORIES[slug];
         const data = getCategoryPageData(slug);
-        const theme = getCategoryTheme(slug);
 
         return (
           <Link
@@ -164,18 +138,20 @@ export function CategoryExplorerGrid() {
             href={`/${slug}`}
             className="editorial-hover-card group overflow-hidden rounded-2xl border border-border bg-card transition-all"
           >
-            <div
-              className="h-1.5 w-full"
-              style={{ backgroundColor: theme.accent }}
+            <CategoryGradient
+              category={slug}
+              variant="strip"
+              className="h-10"
+              showAccentBar={false}
             />
-            <div className="p-6">
-              <h3 className="text-lg font-semibold transition-colors group-hover:text-[var(--theme-accent,var(--primary))]">
+            <div className="p-4">
+              <h3 className="text-base font-semibold transition-colors group-hover:text-[var(--theme-accent,var(--primary))]">
                 {category.title}
               </h3>
-              <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
+              <p className="mt-1.5 line-clamp-2 text-xs text-muted-foreground">
                 {category.description}
               </p>
-              <p className="mt-4 text-xs font-medium text-muted-foreground">
+              <p className="mt-3 text-[11px] font-medium text-muted-foreground">
                 {data.articles.length} articles
               </p>
             </div>

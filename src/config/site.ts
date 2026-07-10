@@ -5,10 +5,11 @@ export const SITE = {
   tagline: "The Definitive Encyclopedia of Cats",
   description:
     "The largest encyclopedia about cats on the internet. Breeds, health, behavior, nutrition, and the complete feline knowledge graph.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://meowopedia.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.meowopedia.com",
   locale: "en_US",
   twitter: "@meowopedia",
-  defaultOgImage: "/og/default.jpg",
+  defaultOgImage:
+    "https://upload.wikimedia.org/wikipedia/commons/a/af/2_Sphynx_cats_sleeping_together.jpg",
   organization: {
     name: "Meowopedia",
     logo: "/favicon.svg",
@@ -35,8 +36,8 @@ export const SITE = {
     onDemandPaths: true,
   },
   homeHero: {
-    src: "/images/hero/home-hero.jpg",
-    alt: "A grey kitten peering from a garden bush near flowers",
+    src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg",
+    alt: "A cat yawning in warm sunlight",
     attribution: "via Wikimedia Commons",
     license: "cc-by-sa" as const,
     source: "wikimedia",

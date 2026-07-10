@@ -25,7 +25,7 @@ export function formatDate(date: string | undefined): string {
 
 export function absoluteUrl(path: string): string {
   if (/^https?:\/\//.test(path)) return path;
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://meowopedia.com";
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.meowopedia.com";
   return `${base}${path.startsWith("/") ? path : `/${path}`}`;
 }
 

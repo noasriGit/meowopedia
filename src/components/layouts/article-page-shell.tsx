@@ -18,6 +18,7 @@ import {
 } from "@/lib/knowledge-graph/linking";
 import { getArticlePresentation } from "@/lib/editorial/presentation";
 import { getDisclaimerTier } from "@/lib/editorial/disclaimers";
+import { resolveCitationUrl } from "@/lib/seo/citation-urls";
 import { articleBreadcrumbs } from "@/lib/seo/metadata";
 import type { BodyLayoutVariant } from "@/lib/editorial/presentation";
 import type { Article } from "@/types/content";
@@ -178,7 +179,7 @@ export function ArticlePageShell({
                   {article.citations.map((citation, index) => (
                     <li key={index}>
                       <Link
-                        href={citation.url}
+                        href={resolveCitationUrl(citation.url)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-[var(--theme-accent)] hover:underline"

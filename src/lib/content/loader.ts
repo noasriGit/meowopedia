@@ -44,6 +44,11 @@ function resolveUrl(
 ): string {
   const route = getRouteForEntityType(frontmatter.entityType);
   if (route) {
+    // Articles filed under a different category (e.g. health content with disease entityType)
+    // should use the editorial category URL, not the default entity route prefix.
+    if (route.category !== frontmatter.category) {
+      return `/${frontmatter.category}/${frontmatter.slug}`;
+    }
     return `${route.urlPrefix}/${frontmatter.slug}`;
   }
   return `/${frontmatter.category}/${frontmatter.slug}`;

@@ -36,7 +36,9 @@ export function getCategoryBanner(
   category: CategorySlug
 ): CategoryBanner | undefined {
   const banners = loadBanners();
-  return banners[category];
+  const banner = banners[category];
+  if (!banner) return undefined;
+  return banner;
 }
 
 export function invalidateCategoryBannersCache(): void {

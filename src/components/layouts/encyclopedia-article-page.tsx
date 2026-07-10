@@ -51,7 +51,8 @@ export async function EncyclopediaArticlePage({
     ...buildArticleJsonLd(article, schemaTypes),
   ];
 
-  const hero = layout === "breed" ? <BreedHeroSections article={article} /> : undefined;
+  const breedSections =
+    layout === "breed" ? <BreedHeroSections article={article} /> : undefined;
 
   return (
     <>
@@ -59,7 +60,7 @@ export async function EncyclopediaArticlePage({
       <ArticlePageShell
         article={article}
         sidebar={<Sidebar article={article} />}
-        hero={hero}
+        sections={breedSections}
       >
         {content}
       </ArticlePageShell>

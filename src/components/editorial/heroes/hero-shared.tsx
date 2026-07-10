@@ -87,7 +87,7 @@ export function HeroTocPreview({
 export function HeroTitleBlock({ article }: { article: Article }) {
   return (
     <>
-      <h1 className="editorial-title mt-4 text-4xl font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl">
+        <h1 className="editorial-title mt-4 text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl lg:text-6xl">
         {article.title}
       </h1>
       <p className="editorial-deck mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">

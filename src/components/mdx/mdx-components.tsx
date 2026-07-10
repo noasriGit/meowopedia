@@ -13,6 +13,7 @@ import { MythVsFact } from "@/components/editorial/cards/myth-vs-fact";
 import { PullQuote } from "@/components/editorial/cards/pull-quote";
 import { StatCard } from "@/components/editorial/cards/stat-card";
 import { cn, slugify } from "@/lib/utils";
+import { resolveCitationUrl } from "@/lib/seo/citation-urls";
 
 function createHeading(level: 2 | 3 | 4) {
   return function Heading({
@@ -66,11 +67,12 @@ export const mdxComponents: MDXComponents = {
     </li>
   ),
   a: ({ href, children, ...props }) => {
-    const isExternal = href?.startsWith("http");
+    const resolvedHref = href?.startsWith("http") ? resolveCitationUrl(href) : href;
+    const isExternal = resolvedHref?.startsWith("http");
     if (isExternal) {
       return (
         <a
-          href={href}
+          href={resolvedHref}
           target="_blank"
           rel="noopener noreferrer"
           className="font-medium underline-offset-4 hover:underline"
@@ -84,7 +86,7 @@ export const mdxComponents: MDXComponents = {
     }
     return (
       <Link
-        href={href ?? "#"}
+        href={resolvedHref ?? "#"}
         className="font-medium underline-offset-4 hover:underline"
         style={{ color: "var(--theme-accent, var(--primary))" }}
         {...props}

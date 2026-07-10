@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SITE } from "@/config/site";
 import { CATEGORIES, getCategoryDefinition } from "@/config/taxonomy";
 import { getCategoryBanner } from "@/lib/images/category-banners";
-import { absoluteUrl } from "@/lib/utils";
+import { absoluteUrl, truncate } from "@/lib/utils";
 import type { Article, ArticleSummary } from "@/types/content";
 
 interface BuildMetadataOptions {
@@ -20,22 +20,41 @@ interface BuildMetadataOptions {
   tags?: string[];
 }
 
+const META_DESCRIPTION_MIN = 110;
+const META_DESCRIPTION_MAX = 160;
+
+function normalizeMetaDescription(description: string): string {
+  const trimmed = description.trim();
+  if (trimmed.length > META_DESCRIPTION_MAX) {
+    return truncate(trimmed, META_DESCRIPTION_MAX);
+  }
+  if (trimmed.length < META_DESCRIPTION_MIN) {
+    const suffix = ` Expert-reviewed guides on ${SITE.name}.`;
+    const extended = `${trimmed}${suffix}`;
+    return extended.length > META_DESCRIPTION_MAX
+      ? truncate(extended, META_DESCRIPTION_MAX)
+      : extended;
+  }
+  return trimmed;
+}
+
 export function buildMetadata(options: BuildMetadataOptions): Metadata {
   const url = absoluteUrl(options.path);
   const canonicalUrl = options.canonical
     ? absoluteUrl(options.canonical)
     : url;
   const image = options.image ?? SITE.defaultOgImage;
+  const description = normalizeMetaDescription(options.description);
 
   return {
     title: options.title,
-    description: options.description,
+    description,
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
       title: options.title,
-      description: options.description,
+      description,
       url,
       type: options.type ?? "website",
       siteName: SITE.name,
@@ -57,7 +76,7 @@ export function buildMetadata(options: BuildMetadataOptions): Metadata {
       card: "summary_large_image",
       site: SITE.twitter,
       title: options.title,
-      description: options.description,
+      description,
       images: [absoluteUrl(image)],
     },
     robots: options.noindex

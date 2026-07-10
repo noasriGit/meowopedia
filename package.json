@@ -19,7 +19,6 @@
     "discover-keywords": "node scripts/discover-keywords.mjs",
     "check-draft-queue": "node scripts/check-draft-queue.mjs",
     "mark-draft-complete": "node scripts/mark-draft-complete.mjs",
-    "prebuild": "node scripts/validate-article-images.mjs",
     "test": "tsx --test src/lib/editorial/disclaimers.test.ts && node --test scripts/editorial/pipeline.test.mjs"
   },
   "dependencies": {

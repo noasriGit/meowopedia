@@ -116,7 +116,7 @@ export function HomeHeroSearch() {
       </label>
       <div className="relative">
         <Search
-          className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-white/60"
+          className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground"
           aria-hidden="true"
         />
         <input
@@ -132,7 +132,7 @@ export function HomeHeroSearch() {
           }}
           onFocus={() => setIsOpen(true)}
           onKeyDown={handleInputKeyDown}
-          className="editorial-home-search-input h-14 w-full rounded-none border border-white/30 bg-black/30 pl-12 pr-12 text-base text-white placeholder:text-white/50 backdrop-blur-sm transition-colors focus:border-white/60 focus:bg-black/40 focus:outline-none"
+          className="h-14 w-full rounded-none border border-border/80 bg-card/85 pl-12 pr-12 text-base text-foreground shadow-sm backdrop-blur-sm transition-colors placeholder:text-muted-foreground focus:border-ring focus:bg-card focus:outline-none focus:ring-2 focus:ring-ring/30 dark:bg-card/70 dark:focus:bg-card"
           role="combobox"
           aria-expanded={showResults}
           aria-controls={listboxId}
@@ -150,7 +150,7 @@ export function HomeHeroSearch() {
               setResults([]);
               inputRef.current?.focus();
             }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white"
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground transition-colors hover:text-foreground"
             aria-label="Clear search"
           >
             <X className="h-5 w-5" aria-hidden="true" />
@@ -167,10 +167,10 @@ export function HomeHeroSearch() {
             id={listboxId}
             role="listbox"
             aria-label="Search results"
-            className="absolute bottom-full left-0 z-50 mb-2 flex w-full max-h-[min(18rem,50vh)] flex-col overflow-hidden rounded-lg border border-white/20 bg-black/90 shadow-2xl backdrop-blur-md lg:bottom-auto lg:left-full lg:top-0 lg:mb-0 lg:ml-3 lg:w-96 lg:max-h-[min(24rem,70vh)]"
+            className="absolute bottom-full left-0 z-50 mb-2 flex max-h-[min(18rem,50vh)] w-full flex-col overflow-hidden rounded-lg border border-border bg-popover text-popover-foreground shadow-2xl backdrop-blur-md lg:bottom-auto lg:left-full lg:top-0 lg:mb-0 lg:ml-3 lg:max-h-[min(24rem,70vh)] lg:w-96"
           >
             {isLoading ? (
-              <p className="p-4 text-sm text-white/70" role="status">
+              <p className="p-4 text-sm text-muted-foreground" role="status">
                 Searching…
               </p>
             ) : results.length ? (
@@ -186,12 +186,14 @@ export function HomeHeroSearch() {
                       href={result.url}
                       onClick={() => setIsOpen(false)}
                       className={cn(
-                        "block px-4 py-3 transition-colors hover:bg-white/10",
-                        activeIndex === index && "bg-white/10"
+                        "block px-4 py-3 transition-colors hover:bg-accent",
+                        activeIndex === index && "bg-accent"
                       )}
                     >
-                      <p className="font-medium text-white">{result.title}</p>
-                      <p className="mt-0.5 line-clamp-1 text-xs text-white/60">
+                      <p className="font-medium text-foreground">
+                        {result.title}
+                      </p>
+                      <p className="mt-0.5 line-clamp-1 text-xs text-muted-foreground">
                         {result.summary}
                       </p>
                     </Link>
@@ -199,15 +201,15 @@ export function HomeHeroSearch() {
                 ))}
               </ul>
             ) : (
-              <p className="p-4 text-sm text-white/70" role="status">
+              <p className="p-4 text-sm text-muted-foreground" role="status">
                 No results for &ldquo;{query}&rdquo;
               </p>
             )}
-            <div className="border-t border-white/10 px-4 py-2">
+            <div className="border-t border-border px-4 py-2">
               <Link
                 href={`/search?q=${encodeURIComponent(query)}`}
                 onClick={() => setIsOpen(false)}
-                className="text-sm font-medium text-white/90 hover:text-white hover:underline"
+                className="text-sm font-medium text-foreground hover:underline"
               >
                 View all results for &ldquo;{query}&rdquo;
               </Link>

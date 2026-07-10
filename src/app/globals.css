@@ -275,6 +275,55 @@ summary:focus-visible {
   isolation: isolate;
 }
 
+.editorial-home-gradient {
+  --home-gradient: linear-gradient(
+    145deg,
+    #e8f4fc 0%,
+    #f3eef8 22%,
+    #fdf4e8 45%,
+    #eef8f0 68%,
+    #faf9f7 100%
+  );
+  --home-mesh-a: rgba(147, 197, 253, 0.28);
+  --home-mesh-b: rgba(253, 230, 138, 0.22);
+  --home-mesh-c: rgba(167, 243, 208, 0.2);
+  background: var(--home-gradient);
+}
+
+.dark .editorial-home-gradient {
+  --home-gradient: linear-gradient(
+    145deg,
+    #0c1218 0%,
+    #12101c 24%,
+    #101814 48%,
+    #0e100c 72%,
+    #0c0a09 100%
+  );
+  --home-mesh-a: rgba(59, 130, 246, 0.14);
+  --home-mesh-b: rgba(251, 146, 60, 0.1);
+  --home-mesh-c: rgba(52, 211, 153, 0.08);
+}
+
+.article-hero-gradient {
+  background: var(--article-hero-bg);
+}
+
+.dark .article-hero-gradient {
+  background: var(--article-hero-bg-dark);
+}
+
+.editorial-home-gradient__mesh-a {
+  background: var(--home-mesh-a);
+}
+
+.editorial-home-gradient__mesh-b {
+  background: var(--home-mesh-b);
+}
+
+.editorial-home-gradient__mesh-c {
+  background: var(--home-mesh-c);
+}
+
 .editorial-home-scrim {
   background: linear-gradient(
     to top,

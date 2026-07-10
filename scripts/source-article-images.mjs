@@ -144,9 +144,13 @@ function isAllowedLicense(license) {
   return ["cc0", "cc-by", "cc-by-sa", "unsplash", "pexels"].includes(license);
 }
 
+function isBlockedImageUrl(url) {
+  return !url || url.includes("live.staticflickr.com");
+}
+
 function pickUnique(candidates, article) {
   for (const candidate of candidates) {
-    if (!candidate?.url || USED_URLS.has(candidate.url)) continue;
+    if (!candidate?.url || USED_URLS.has(candidate.url) || isBlockedImageUrl(candidate.url)) continue;
     if (article && !isRelevantCandidate(candidate, article)) continue;
     USED_URLS.add(candidate.url);
     return candidate;
@@ -257,6 +261,8 @@ async function searchOpenverse(query) {
 
   return (data.results ?? [])
     .map((item) => {
+      if (!item.url || item.url.includes("live.staticflickr.com")) return null;
+      if (!item.url.includes("upload.wikimedia.org")) return null;
       const licenseMap = { cc0: "cc0", by: "cc-by", "by-sa": "cc-by-sa" };
       const license = licenseMap[item.license?.toLowerCase()] ?? normalizeLicense(item.license);
       if (!license) return null;

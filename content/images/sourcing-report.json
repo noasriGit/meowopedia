@@ -1,342 +1,35 @@
 {
-  "generatedAt": "2026-07-07T15:11:10.901Z",
+  "generatedAt": "2026-07-09T16:54:51.852Z",
   "articles": [
     {
-      "id": "anatomy-cat-vision-colors",
-      "title": "What Colors Do Cats Like?",
-      "category": "anatomy",
-      "query": "cat cat color vision",
-      "provider": "wikimedia",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Fast_and_Furious_cat.jpg"
-    },
-    {
-      "id": "anatomy-male-cat-anatomy",
-      "title": "Do Male Cats Have Balls?",
-      "category": "anatomy",
-      "query": "male cat anatomy",
-      "provider": "wikimedia",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Scheme_cat_anatomy-el.png"
-    },
-    {
-      "id": "behavior-blep",
-      "title": "Why Do Cats Blep?",
-      "category": "behavior",
-      "query": "cat blep",
-      "provider": "openverse",
-      "license": "cc-by",
-      "url": "https://live.staticflickr.com/65535/50516028937_c3ab8765a8_b.jpg"
-    },
-    {
-      "id": "behavior-bury-poop",
-      "title": "Why Do Cats Bury Their Poop?",
-      "category": "behavior",
-      "query": "cat litter behavior",
-      "provider": "wikimedia",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Tiger_cat_in_tree_-_DPLA_-_98713018e71f748edee7e0a99e9a6c18.jpg"
-    },
-    {
-      "id": "behavior-chase-tail",
-      "title": "Why Do Cats Chase Their Tails?",
-      "category": "behavior",
-      "query": "cat tail chasing",
-      "provider": "openverse",
-      "license": "cc-by-sa",
-      "url": "https://live.staticflickr.com/2254/2234460988_d691f77a27_b.jpg"
-    },
-    {
-      "id": "behavior-playing-or-fighting",
-      "title": "How to Tell If Cats Are Playing or Fighting",
-      "category": "behavior",
-      "query": "cat social behavior",
-      "provider": "wikimedia",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Kaffir_cat_on_grass_-_DPLA_-_bc3ad67e99f5f9ccc76902669ddf7490.jpg"
-    },
-    {
-      "id": "behavior-sleep-at-feet",
-      "title": "Why Do Cats Sleep at Your Feet?",
-      "category": "behavior",
-      "query": "cat sleep behavior",
-      "provider": "wikimedia",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Cat-sleeping-on-head.jpg"
-    },
-    {
-      "id": "behavior-social-animals",
-      "title": "Are Cats Social Animals?",
-      "category": "behavior",
-      "query": "cat social behavior",
-      "provider": "wikimedia",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Tiger_cat_feeding_-_DPLA_-_040faed86a7ab34a42f5828169b2ed54.jpg"
-    },
-    {
-      "id": "behavior-water-aversion",
-      "title": "Why Don't Cats Like Water?",
-      "category": "behavior",
-      "query": "cat water aversion",
-      "provider": "openverse",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cat_at_Blakes_Lock_-_geograph.org.uk_-_947597.jpg"
-    },
-    {
-      "id": "compare-cats-vs-dogs-clean",
-      "title": "Are Cats Cleaner Than Dogs?",
-      "category": "compare",
-      "query": "cat vs dog",
-      "provider": "openverse",
-      "license": "cc-by-sa",
-      "url": "https://live.staticflickr.com/2221/3539908931_720dd7c608_b.jpg"
-    },
-    {
-      "id": "disease-ckd",
-      "title": "Chronic Kidney Disease in Cats",
-      "category": "diseases",
-      "query": "veterinary cat ",
-      "provider": "openverse",
-      "license": "cc-by",
-      "url": "https://live.staticflickr.com/7559/15633818714_75938fe113.jpg"
-    },
-    {
-      "id": "fact-cats-swim",
-      "title": "Can Cats Swim?",
-      "category": "facts",
-      "query": "cat can cats swim",
-      "provider": "openverse",
-      "license": "cc-by",
-      "url": "https://live.staticflickr.com/2554/4115872878_66acfe5ac3_b.jpg"
-    },
-    {
-      "id": "fact-group-of-cats",
-      "title": "What Do You Call a Group of Cats?",
-      "category": "facts",
-      "query": "cat terms",
-      "provider": "wikimedia",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Six_weeks_old_cat_%28aka%29.jpg"
-    },
-    {
-      "id": "wildlife-foxes-and-cats",
-      "title": "Do Foxes Eat Cats?",
-      "category": "facts",
-      "query": "cat foxes and cats",
-      "provider": "wikimedia",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Felis_catus-cat_on_snow.jpg"
-    },
-    {
-      "id": "wildlife-what-eats-cats",
-      "title": "What Eats Cats?",
-      "category": "facts",
-      "query": "What Eats Cats",
-      "provider": "openverse",
-      "license": "cc-by",
-      "url": "https://live.staticflickr.com/7264/7609145366_1fa4f88aed_b.jpg"
-    },
-    {
-      "id": "food-catnip",
-      "title": "Can Cats Overdose on Catnip?",
-      "category": "foods",
-      "query": "catnip",
-      "provider": "wikimedia",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Catnip_flowers.jpg"
-    },
-    {
-      "id": "food-oysters",
-      "title": "Can Cats Eat Oysters?",
-      "category": "foods",
-      "query": "oysters",
-      "provider": "wikimedia",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Oysters_p1040741.jpg"
-    },
-    {
-      "id": "food-strawberries",
-      "title": "Can Cats Eat Strawberries?",
-      "category": "foods",
-      "query": "strawberries",
-      "provider": "openverse",
-      "license": "cc-by",
-      "url": "https://live.staticflickr.com/1430/1328402515_7ec84c7626_b.jpg"
-    },
-    {
-      "id": "guide-cat-pregnancy",
-      "title": "How Long Are Cats Pregnant?",
-      "category": "guides",
-      "query": "cat pregnancy",
-      "provider": "openverse",
-      "license": "cc-by",
-      "url": "https://live.staticflickr.com/3454/3189461961_9ab8892bd2_b.jpg"
-    },
-    {
-      "id": "guide-kitten-teething",
-      "title": "When Do Cats Lose Their Baby Teeth?",
-      "category": "guides",
-      "query": "kitten",
-      "provider": "openverse",
-      "license": "cc-by",
-      "url": "https://live.staticflickr.com/3184/2655477957_e046526611_b.jpg"
-    },
-    {
-      "id": "health-cat-allergies",
-      "title": "What Are Cats Allergic To?",
+      "id": "medication-capstar",
+      "title": "Is Capstar Safe for Cats?",
       "category": "health",
-      "query": "cat cat allergies",
-      "provider": "openverse",
-      "license": "cc-by",
-      "url": "https://live.staticflickr.com/5073/14228593899_59de6c6138_b.jpg"
-    },
-    {
-      "id": "nutrition-wet-food",
-      "title": "Do Cats Need Wet Food?",
-      "category": "nutrition",
-      "query": "Do Cats Need Wet Food",
-      "provider": "openverse",
-      "license": "cc-by-sa",
-      "url": "https://live.staticflickr.com/5794/23994608172_d17eef00fb_b.jpg"
-    },
-    {
-      "id": "plant-snake-plant",
-      "title": "Are Snake Plants Toxic to Cats?",
-      "category": "plants",
-      "query": "snake plant",
-      "provider": "openverse",
-      "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Snake_plant.jpg"
-    },
-    {
-      "id": "symptom-coughing",
-      "title": "Can Cats Cough?",
-      "category": "symptoms",
-      "query": "cat cat coughing",
-      "provider": "wikimedia",
-      "license": "cc-by",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/My_Mamma._Mother_and_child_with_cat_Wellcome_L0041338.jpg"
-    },
-    {
-      "id": "symptom-hot-ears",
-      "title": "Why Are My Cat's Ears Hot?",
-      "category": "symptoms",
-      "query": "cat cat ear temperature",
-      "provider": "wikimedia",
-      "license": "cc-by",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Small_Cat_Big_Ears_%286024252536%29.jpg"
-    },
-    {
-      "id": "symptom-farting",
-      "title": "Can Cats Fart?",
-      "category": "symptoms",
-      "query": "cat cat farting",
-      "provider": "openverse",
-      "license": "cc-by-sa",
-      "url": "https://live.staticflickr.com/3941/15495303501_29547c15e1_b.jpg"
-    },
-    {
-      "id": "symptom-snoring",
-      "title": "Do Cats Snore?",
-      "category": "symptoms",
-      "query": "cat cat snoring",
+      "query": "veterinary cat ",
       "provider": "wikimedia",
       "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Gorgeous_cat.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg"
     },
     {
-      "id": "symptom-vomiting",
-      "title": "Why Do Cats Throw Up?",
-      "category": "symptoms",
-      "query": "cat cat vomiting",
-      "provider": "wikimedia",
-      "license": "cc0",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Cat_vomit.jpg"
-    },
-    {
-      "id": "symptom-diarrhea",
-      "title": "What Causes Diarrhea in Cats?",
-      "category": "symptoms",
-      "query": "cat diarrhea in cats",
-      "provider": "wikimedia",
-      "license": "cc0",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/5-year-old_Siberian_kitten_Michaelchi.jpg"
-    },
-    {
-      "id": "symptom-sick-cat",
-      "title": "Can Cats Get Sick?",
-      "category": "symptoms",
-      "query": "veterinary cat sick cat",
+      "id": "parasite-worms",
+      "title": "How Do Cats Get Worms?",
+      "category": "health",
+      "query": "veterinary cat ",
       "provider": "wikimedia",
       "license": "cc-by-sa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Sick_cat_installing_a_catheter.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Cat_poster_2.jpg"
     }
   ],
   "failures": [
     {
-      "id": "behavior-stretch-greeting",
-      "title": "Why Do Cats Stretch When They See You?",
-      "category": "behavior"
-    },
-    {
-      "id": "compare-dogs-allergic-cats",
-      "title": "Can Dogs Be Allergic to Cats?",
-      "category": "compare"
-    },
-    {
-      "id": "disease-feline-calicivirus",
-      "title": "How Long Do Cats Live with Calicivirus?",
-      "category": "diseases"
-    },
-    {
-      "id": "disease-lyme-cats",
-      "title": "Can Cats Get Lyme Disease?",
-      "category": "diseases"
-    },
-    {
-      "id": "fact-down-syndrome-cats",
-      "title": "Can Cats Have Down Syndrome?",
-      "category": "facts"
+      "id": "food-coconut-oil",
+      "title": "Is Coconut Oil Safe for Cats?",
+      "category": "foods"
     },
     {
       "id": "guide-cat-estrus",
       "title": "Do Cats Get Periods?",
       "category": "guides"
-    },
-    {
-      "id": "medication-capstar",
-      "title": "Is Capstar Safe for Cats?",
-      "category": "health"
-    },
-    {
-      "id": "plant-frankincense",
-      "title": "Is Frankincense Safe for Cats?",
-      "category": "health"
-    },
-    {
-      "id": "medication-ibuprofen-cats",
-      "title": "Can Cats Have Ibuprofen?",
-      "category": "health"
-    },
-    {
-      "id": "poisoning-incense-cats",
-      "title": "Is Incense Bad for Cats?",
-      "category": "health"
-    },
-    {
-      "id": "health-lice-cats",
-      "title": "Can Cats Get Lice from Humans?",
-      "category": "health"
-    },
-    {
-      "id": "medication-pedialyte-cats",
-      "title": "Can Cats Have Pedialyte?",
-      "category": "health"
-    },
-    {
-      "id": "health-strep-throat-cats",
-      "title": "Can Cats Get Strep Throat?",
-      "category": "health"
     }
   ]
 }

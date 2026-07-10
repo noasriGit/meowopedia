@@ -73,18 +73,9 @@ function pickFromPool<T>(pool: T[], seed: number): T {
 
 export function getArticlePresentation(article: Article): ArticlePresentation {
   const seed = hashString(article.id);
-  const hasImage = Boolean(article.featuredImage);
 
-  let heroPool =
-    ENTITY_HERO_BIAS[article.entityType] ??
-    (hasImage
-      ? (["immersive", "split", "magazine"] as HeroVariant[])
-      : (["editorial", "minimal", "magazine"] as HeroVariant[]));
-
-  if (!hasImage) {
-    heroPool = heroPool.filter((v) => v !== "immersive");
-    if (!heroPool.length) heroPool = ["editorial", "minimal", "magazine"];
-  }
+  const heroPool =
+    ENTITY_HERO_BIAS[article.entityType] ?? HERO_VARIANTS;
 
   const bodyPool =
     CATEGORY_BODY_BIAS[article.category] ?? BODY_LAYOUTS;
