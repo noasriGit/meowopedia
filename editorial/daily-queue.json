@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "status": "queued",
-  "discoveredAt": "2026-07-10T10:00:43.848Z",
+  "discoveredAt": "2026-07-11T10:01:11.310Z",
   "keywordList": {
     "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
@@ -12,25 +12,25 @@
     "country": "us"
   },
   "keyword": {
-    "primary": "are mums toxic to cats",
-    "volume": 2500,
-    "difficulty": 2,
-    "trafficPotential": 1200,
+    "primary": "are marigolds poisonous to cats",
+    "volume": 2400,
+    "difficulty": 1,
+    "trafficPotential": 2400,
     "intents": "Informational,Non-branded,Non-local",
-    "parentKeyword": "are mums toxic to cats",
+    "parentKeyword": "are marigolds poisonous to dogs",
     "source": "keyword-list-csv"
   },
   "article": {
-    "id": "plant-are-mums-toxic-to-cats",
-    "slug": "are-mums-toxic-to-cats",
+    "id": "plant-are-marigolds-poisonous-to-cats",
+    "slug": "are-marigolds-poisonous-to-cats",
     "category": "plants",
     "entityType": "plant",
-    "searchIntent": "Informational — are mums toxic to cats",
-    "contentPath": "content/plants/are-mums-toxic-to-cats.mdx"
+    "searchIntent": "Informational — are marigolds poisonous to cats",
+    "contentPath": "content/plants/are-marigolds-poisonous-to-cats.mdx"
   },
-  "draftAt": "2026-07-10T14:27:00",
-  "draftAtIso": "2026-07-10T18:27:00.000Z",
-  "draftAtEpochMs": 1783708020000,
+  "draftAt": "2026-07-11T10:59:00",
+  "draftAtIso": "2026-07-11T14:59:00.000Z",
+  "draftAtEpochMs": 1783781940000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -40,11 +40,6 @@
   "draftedAt": null,
   "prUrl": null,
   "candidatesReviewed": [
-    {
-      "keyword": "are mums toxic to cats",
-      "volume": 2500,
-      "difficulty": 2
-    },
     {
       "keyword": "are marigolds poisonous to cats",
       "volume": 2400,
@@ -89,6 +84,11 @@
       "keyword": "why do cats yawn",
       "volume": 900,
       "difficulty": 0
+    },
+    {
+      "keyword": "are snake plants poisonous to cats",
+      "volume": 900,
+      "difficulty": 3
     }
   ]
 }
