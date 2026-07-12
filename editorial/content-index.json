@@ -1,8 +1,8 @@
 {
   "version": "2026-07-06",
   "source": "google_us_cats_list-overview_2026-07-06_13-04-35.csv",
-  "totalKeywords": 204,
-  "totalArticleGroups": 93,
+  "totalKeywords": 205,
+  "totalArticleGroups": 94,
   "articles": [
     {
       "id": "behavior-making-biscuits",
@@ -1261,6 +1261,17 @@
       "primaryKeyword": "are marigolds poisonous to cats",
       "searchIntent": "Informational — are marigolds poisonous to cats",
       "entityType": "plant",
+      "url": null,
+      "note": "Queued by daily keyword discovery pipeline"
+    },
+    {
+      "id": "symptom-sneeze",
+      "status": "queued",
+      "priority": 100,
+      "combinedVolume": 2400,
+      "primaryKeyword": "why do cats sneeze",
+      "searchIntent": "Informational — why do cats sneeze",
+      "entityType": "symptom",
       "url": null,
       "note": "Queued by daily keyword discovery pipeline"
     }
