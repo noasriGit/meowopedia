@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-12",
+  "date": "2026-07-13",
   "status": "queued",
-  "discoveredAt": "2026-07-12T10:02:11.841Z",
+  "discoveredAt": "2026-07-13T10:02:03.075Z",
   "keywordList": {
     "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
@@ -12,25 +12,25 @@
     "country": "us"
   },
   "keyword": {
-    "primary": "why do cats sneeze",
-    "volume": 2400,
-    "difficulty": 1,
-    "trafficPotential": 12000,
+    "primary": "can humans get worms from cats",
+    "volume": 2100,
+    "difficulty": 5,
+    "trafficPotential": 2300,
     "intents": "Informational,Non-branded,Non-local",
-    "parentKeyword": "cat sneezing",
+    "parentKeyword": "can humans get worms from cats",
     "source": "keyword-list-csv"
   },
   "article": {
-    "id": "symptom-sneeze",
-    "slug": "sneeze",
-    "category": "symptoms",
-    "entityType": "symptom",
-    "searchIntent": "Informational — why do cats sneeze",
-    "contentPath": "content/symptoms/sneeze.mdx"
+    "id": "fact-can-humans-get-worms-from-cats",
+    "slug": "can-humans-get-worms-from-cats",
+    "category": "facts",
+    "entityType": "fact",
+    "searchIntent": "Informational — can humans get worms from cats",
+    "contentPath": "content/facts/can-humans-get-worms-from-cats.mdx"
   },
-  "draftAt": "2026-07-12T15:06:00",
-  "draftAtIso": "2026-07-12T19:06:00.000Z",
-  "draftAtEpochMs": 1783883160000,
+  "draftAt": "2026-07-13T11:34:00",
+  "draftAtIso": "2026-07-13T15:34:00.000Z",
+  "draftAtEpochMs": 1783956840000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -40,11 +40,6 @@
   "draftedAt": null,
   "prUrl": null,
   "candidatesReviewed": [
-    {
-      "keyword": "why do cats sneeze",
-      "volume": 2400,
-      "difficulty": 1
-    },
     {
       "keyword": "can humans get worms from cats",
       "volume": 2100,
@@ -59,11 +54,6 @@
       "keyword": "what do ear mites look like in cats",
       "volume": 1700,
       "difficulty": 1
-    },
-    {
-      "keyword": "do cats sneeze",
-      "volume": 1200,
-      "difficulty": 0
     },
     {
       "keyword": "how long do indoor-outdoor cats live",
@@ -89,6 +79,16 @@
       "keyword": "is aloe poisonous to cats",
       "volume": 900,
       "difficulty": 7
+    },
+    {
+      "keyword": "do fox eat cats",
+      "volume": 900,
+      "difficulty": 0
+    },
+    {
+      "keyword": "why do cats meow so much",
+      "volume": 800,
+      "difficulty": 15
     }
   ]
 }
