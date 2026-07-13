@@ -12,7 +12,7 @@ export const SITE = {
     "https://upload.wikimedia.org/wikipedia/commons/a/af/2_Sphynx_cats_sleeping_together.jpg",
   organization: {
     name: "Meowopedia",
-    logo: "/favicon.svg",
+    logo: "/web-app-manifest-192x192.png",
     sameAs: [
       "https://twitter.com/meowopedia",
       "https://www.facebook.com/meowopedia",
@@ -48,6 +48,20 @@ export const SITE = {
 
 export const DEFAULT_METADATA: Metadata = {
   metadataBase: new URL(SITE.url),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: {
+      url: "/apple-touch-icon.png",
+      sizes: "180x180",
+      type: "image/png",
+    },
+  },
+  manifest: "/site.webmanifest",
   title: {
     default: `${SITE.name} — ${SITE.tagline}`,
     template: `%s | ${SITE.name}`,
