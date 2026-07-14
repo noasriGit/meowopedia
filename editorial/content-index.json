@@ -1,8 +1,8 @@
 {
   "version": "2026-07-06",
   "source": "google_us_cats_list-overview_2026-07-06_13-04-35.csv",
-  "totalKeywords": 206,
-  "totalArticleGroups": 95,
+  "totalKeywords": 207,
+  "totalArticleGroups": 96,
   "articles": [
     {
       "id": "behavior-making-biscuits",
@@ -1283,6 +1283,17 @@
       "primaryKeyword": "can humans get worms from cats",
       "searchIntent": "Informational — can humans get worms from cats",
       "entityType": "fact",
+      "url": null,
+      "note": "Queued by daily keyword discovery pipeline"
+    },
+    {
+      "id": "guide-how-to-brush-cats-teeth",
+      "status": "queued",
+      "priority": 102,
+      "combinedVolume": 1900,
+      "primaryKeyword": "how to brush cats teeth",
+      "searchIntent": "Informational — how to brush cats teeth",
+      "entityType": "guide",
       "url": null,
       "note": "Queued by daily keyword discovery pipeline"
     }
