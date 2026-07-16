@@ -1,8 +1,8 @@
 {
   "version": "2026-07-06",
   "source": "google_us_cats_list-overview_2026-07-06_13-04-35.csv",
-  "totalKeywords": 207,
-  "totalArticleGroups": 96,
+  "totalKeywords": 208,
+  "totalArticleGroups": 97,
   "articles": [
     {
       "id": "behavior-making-biscuits",
@@ -1294,6 +1294,17 @@
       "primaryKeyword": "how to brush cats teeth",
       "searchIntent": "Informational — how to brush cats teeth",
       "entityType": "guide",
+      "url": null,
+      "note": "Queued by daily keyword discovery pipeline"
+    },
+    {
+      "id": "fact-what-do-ear-mites-look-like-in-cats",
+      "status": "queued",
+      "priority": 103,
+      "combinedVolume": 1700,
+      "primaryKeyword": "what do ear mites look like in cats",
+      "searchIntent": "Informational — what do ear mites look like in cats",
+      "entityType": "fact",
       "url": null,
       "note": "Queued by daily keyword discovery pipeline"
     }

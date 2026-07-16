@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-16",
   "status": "queued",
-  "discoveredAt": "2026-07-14T10:00:57.310Z",
+  "discoveredAt": "2026-07-16T10:01:45.156Z",
   "keywordList": {
     "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
@@ -12,25 +12,25 @@
     "country": "us"
   },
   "keyword": {
-    "primary": "how to brush cats teeth",
-    "volume": 1900,
-    "difficulty": 5,
-    "trafficPotential": 2200,
+    "primary": "what do ear mites look like in cats",
+    "volume": 1700,
+    "difficulty": 1,
+    "trafficPotential": 1100,
     "intents": "Informational,Non-branded,Non-local",
-    "parentKeyword": "how to brush cat teeth",
+    "parentKeyword": "what do ear mites look like in cats",
     "source": "keyword-list-csv"
   },
   "article": {
-    "id": "guide-how-to-brush-cats-teeth",
-    "slug": "how-to-brush-cats-teeth",
-    "category": "guides",
-    "entityType": "guide",
-    "searchIntent": "Informational — how to brush cats teeth",
-    "contentPath": "content/guides/how-to-brush-cats-teeth.mdx"
+    "id": "fact-what-do-ear-mites-look-like-in-cats",
+    "slug": "what-do-ear-mites-look-like-in-cats",
+    "category": "facts",
+    "entityType": "fact",
+    "searchIntent": "Informational — what do ear mites look like in cats",
+    "contentPath": "content/facts/what-do-ear-mites-look-like-in-cats.mdx"
   },
-  "draftAt": "2026-07-14T10:42:00",
-  "draftAtIso": "2026-07-14T14:42:00.000Z",
-  "draftAtEpochMs": 1784040120000,
+  "draftAt": "2026-07-16T10:03:00",
+  "draftAtIso": "2026-07-16T14:03:00.000Z",
+  "draftAtEpochMs": 1784210580000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -40,11 +40,6 @@
   "draftedAt": null,
   "prUrl": null,
   "candidatesReviewed": [
-    {
-      "keyword": "how to brush cats teeth",
-      "volume": 1900,
-      "difficulty": 5
-    },
     {
       "keyword": "what do ear mites look like in cats",
       "volume": 1700,
@@ -89,6 +84,11 @@
       "keyword": "pothos safe for cats",
       "volume": 600,
       "difficulty": 2
+    },
+    {
+      "keyword": "do cats eat fish",
+      "volume": 600,
+      "difficulty": 1
     }
   ]
 }
