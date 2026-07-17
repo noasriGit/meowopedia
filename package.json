@@ -19,7 +19,7 @@
     "discover-keywords": "node scripts/discover-keywords.mjs",
     "check-draft-queue": "node scripts/check-draft-queue.mjs",
     "mark-draft-complete": "node scripts/mark-draft-complete.mjs",
-    "test": "tsx --test src/lib/editorial/disclaimers.test.ts && node --test scripts/editorial/pipeline.test.mjs"
+    "test": "tsx --test src/lib/editorial/disclaimers.test.ts src/lib/sitemap/validation.test.ts && node --test scripts/editorial/pipeline.test.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.15",
