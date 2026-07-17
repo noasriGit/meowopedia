@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-16",
+  "date": "2026-07-17",
   "status": "queued",
-  "discoveredAt": "2026-07-16T10:01:45.156Z",
+  "discoveredAt": "2026-07-17T10:01:30.736Z",
   "keywordList": {
     "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
@@ -12,25 +12,25 @@
     "country": "us"
   },
   "keyword": {
-    "primary": "what do ear mites look like in cats",
-    "volume": 1700,
-    "difficulty": 1,
-    "trafficPotential": 1100,
+    "primary": "how long do indoor-outdoor cats live",
+    "volume": 1100,
+    "difficulty": 3,
+    "trafficPotential": 700,
     "intents": "Informational,Non-branded,Non-local",
-    "parentKeyword": "what do ear mites look like in cats",
+    "parentKeyword": "how long do indoor-outdoor cats live",
     "source": "keyword-list-csv"
   },
   "article": {
-    "id": "fact-what-do-ear-mites-look-like-in-cats",
-    "slug": "what-do-ear-mites-look-like-in-cats",
-    "category": "facts",
-    "entityType": "fact",
-    "searchIntent": "Informational — what do ear mites look like in cats",
-    "contentPath": "content/facts/what-do-ear-mites-look-like-in-cats.mdx"
+    "id": "guide-how-long-do-indoor-outdoor-cats-live",
+    "slug": "how-long-do-indoor-outdoor-cats-live",
+    "category": "guides",
+    "entityType": "guide",
+    "searchIntent": "Informational — how long do indoor-outdoor cats live",
+    "contentPath": "content/guides/how-long-do-indoor-outdoor-cats-live.mdx"
   },
-  "draftAt": "2026-07-16T10:03:00",
-  "draftAtIso": "2026-07-16T14:03:00.000Z",
-  "draftAtEpochMs": 1784210580000,
+  "draftAt": "2026-07-17T16:31:00",
+  "draftAtIso": "2026-07-17T20:31:00.000Z",
+  "draftAtEpochMs": 1784320260000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -40,11 +40,6 @@
   "draftedAt": null,
   "prUrl": null,
   "candidatesReviewed": [
-    {
-      "keyword": "what do ear mites look like in cats",
-      "volume": 1700,
-      "difficulty": 1
-    },
     {
       "keyword": "how long do indoor-outdoor cats live",
       "volume": 1100,
@@ -89,6 +84,11 @@
       "keyword": "do cats eat fish",
       "volume": 600,
       "difficulty": 1
+    },
+    {
+      "keyword": "how well can cats see in the dark",
+      "volume": 600,
+      "difficulty": 3
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "version": "2026-07-06",
   "source": "google_us_cats_list-overview_2026-07-06_13-04-35.csv",
-  "totalKeywords": 208,
-  "totalArticleGroups": 97,
+  "totalKeywords": 209,
+  "totalArticleGroups": 98,
   "articles": [
     {
       "id": "behavior-making-biscuits",
@@ -1305,6 +1305,17 @@
       "primaryKeyword": "what do ear mites look like in cats",
       "searchIntent": "Informational — what do ear mites look like in cats",
       "entityType": "fact",
+      "url": null,
+      "note": "Queued by daily keyword discovery pipeline"
+    },
+    {
+      "id": "guide-how-long-do-indoor-outdoor-cats-live",
+      "status": "queued",
+      "priority": 104,
+      "combinedVolume": 1100,
+      "primaryKeyword": "how long do indoor-outdoor cats live",
+      "searchIntent": "Informational — how long do indoor-outdoor cats live",
+      "entityType": "guide",
       "url": null,
       "note": "Queued by daily keyword discovery pipeline"
     }
