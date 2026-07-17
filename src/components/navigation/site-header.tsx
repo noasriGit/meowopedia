@@ -241,6 +241,11 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/sitemap" className="text-sm text-muted-foreground hover:text-foreground">
+                  Sitemap
+                </Link>
+              </li>
+              <li>
                 <Link href="/compare" className="text-sm text-muted-foreground hover:text-foreground">
                   Compare
                 </Link>
