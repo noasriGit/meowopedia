@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-17",
+  "date": "2026-07-18",
   "status": "queued",
-  "discoveredAt": "2026-07-17T10:01:30.736Z",
+  "discoveredAt": "2026-07-18T10:00:26.753Z",
   "keywordList": {
     "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
@@ -12,25 +12,25 @@
     "country": "us"
   },
   "keyword": {
-    "primary": "how long do indoor-outdoor cats live",
-    "volume": 1100,
-    "difficulty": 3,
-    "trafficPotential": 700,
+    "primary": "are mums safe for cats",
+    "volume": 1000,
+    "difficulty": 2,
+    "trafficPotential": 1500,
     "intents": "Informational,Non-branded,Non-local",
-    "parentKeyword": "how long do indoor-outdoor cats live",
+    "parentKeyword": "are mums toxic to cats",
     "source": "keyword-list-csv"
   },
   "article": {
-    "id": "guide-how-long-do-indoor-outdoor-cats-live",
-    "slug": "how-long-do-indoor-outdoor-cats-live",
-    "category": "guides",
-    "entityType": "guide",
-    "searchIntent": "Informational — how long do indoor-outdoor cats live",
-    "contentPath": "content/guides/how-long-do-indoor-outdoor-cats-live.mdx"
+    "id": "plant-are-mums-safe-for-cats",
+    "slug": "are-mums-safe-for-cats",
+    "category": "plants",
+    "entityType": "plant",
+    "searchIntent": "Informational — are mums safe for cats",
+    "contentPath": "content/plants/are-mums-safe-for-cats.mdx"
   },
-  "draftAt": "2026-07-17T16:31:00",
-  "draftAtIso": "2026-07-17T20:31:00.000Z",
-  "draftAtEpochMs": 1784320260000,
+  "draftAt": "2026-07-18T10:50:00",
+  "draftAtIso": "2026-07-18T14:50:00.000Z",
+  "draftAtEpochMs": 1784386200000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -40,11 +40,6 @@
   "draftedAt": null,
   "prUrl": null,
   "candidatesReviewed": [
-    {
-      "keyword": "how long do indoor-outdoor cats live",
-      "volume": 1100,
-      "difficulty": 3
-    },
     {
       "keyword": "are mums safe for cats",
       "volume": 1000,
@@ -89,6 +84,11 @@
       "keyword": "how well can cats see in the dark",
       "volume": 600,
       "difficulty": 3
+    },
+    {
+      "keyword": "why do cats yowl",
+      "volume": 600,
+      "difficulty": 4
     }
   ]
 }
