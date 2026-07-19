@@ -1,8 +1,8 @@
 {
   "version": "2026-07-06",
   "source": "google_us_cats_list-overview_2026-07-06_13-04-35.csv",
-  "totalKeywords": 210,
-  "totalArticleGroups": 99,
+  "totalKeywords": 211,
+  "totalArticleGroups": 100,
   "articles": [
     {
       "id": "behavior-making-biscuits",
@@ -1327,6 +1327,17 @@
       "primaryKeyword": "are mums safe for cats",
       "searchIntent": "Informational — are mums safe for cats",
       "entityType": "plant",
+      "url": null,
+      "note": "Queued by daily keyword discovery pipeline"
+    },
+    {
+      "id": "behavior-yawn",
+      "status": "queued",
+      "priority": 106,
+      "combinedVolume": 900,
+      "primaryKeyword": "why do cats yawn",
+      "searchIntent": "Informational — why do cats yawn",
+      "entityType": "behavior",
       "url": null,
       "note": "Queued by daily keyword discovery pipeline"
     }

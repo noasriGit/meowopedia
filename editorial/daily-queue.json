@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-18",
+  "date": "2026-07-19",
   "status": "queued",
-  "discoveredAt": "2026-07-18T10:00:26.753Z",
+  "discoveredAt": "2026-07-19T10:02:09.455Z",
   "keywordList": {
     "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
@@ -12,25 +12,25 @@
     "country": "us"
   },
   "keyword": {
-    "primary": "are mums safe for cats",
-    "volume": 1000,
-    "difficulty": 2,
-    "trafficPotential": 1500,
+    "primary": "why do cats yawn",
+    "volume": 900,
+    "difficulty": 0,
+    "trafficPotential": 1300,
     "intents": "Informational,Non-branded,Non-local",
-    "parentKeyword": "are mums toxic to cats",
+    "parentKeyword": "cat yawning",
     "source": "keyword-list-csv"
   },
   "article": {
-    "id": "plant-are-mums-safe-for-cats",
-    "slug": "are-mums-safe-for-cats",
-    "category": "plants",
-    "entityType": "plant",
-    "searchIntent": "Informational — are mums safe for cats",
-    "contentPath": "content/plants/are-mums-safe-for-cats.mdx"
+    "id": "behavior-yawn",
+    "slug": "yawn",
+    "category": "behavior",
+    "entityType": "behavior",
+    "searchIntent": "Informational — why do cats yawn",
+    "contentPath": "content/behavior/yawn.mdx"
   },
-  "draftAt": "2026-07-18T10:50:00",
-  "draftAtIso": "2026-07-18T14:50:00.000Z",
-  "draftAtEpochMs": 1784386200000,
+  "draftAt": "2026-07-19T16:25:00",
+  "draftAtIso": "2026-07-19T20:25:00.000Z",
+  "draftAtEpochMs": 1784492700000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -40,11 +40,6 @@
   "draftedAt": null,
   "prUrl": null,
   "candidatesReviewed": [
-    {
-      "keyword": "are mums safe for cats",
-      "volume": 1000,
-      "difficulty": 2
-    },
     {
       "keyword": "why do cats yawn",
       "volume": 900,
@@ -89,6 +84,11 @@
       "keyword": "why do cats yowl",
       "volume": 600,
       "difficulty": 4
+    },
+    {
+      "keyword": "how long does dewormer take to work on cats",
+      "volume": 500,
+      "difficulty": 0
     }
   ]
 }
