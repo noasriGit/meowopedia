@@ -1,8 +1,8 @@
 {
   "version": "2026-07-06",
   "source": "google_us_cats_list-overview_2026-07-06_13-04-35.csv",
-  "totalKeywords": 211,
-  "totalArticleGroups": 100,
+  "totalKeywords": 212,
+  "totalArticleGroups": 101,
   "articles": [
     {
       "id": "behavior-making-biscuits",
@@ -1338,6 +1338,17 @@
       "primaryKeyword": "why do cats yawn",
       "searchIntent": "Informational — why do cats yawn",
       "entityType": "behavior",
+      "url": null,
+      "note": "Queued by daily keyword discovery pipeline"
+    },
+    {
+      "id": "plant-are-snake-plants-poisonous-to-cats",
+      "status": "queued",
+      "priority": 107,
+      "combinedVolume": 900,
+      "primaryKeyword": "are snake plants poisonous to cats",
+      "searchIntent": "Informational — are snake plants poisonous to cats",
+      "entityType": "plant",
       "url": null,
       "note": "Queued by daily keyword discovery pipeline"
     }

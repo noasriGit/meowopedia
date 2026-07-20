@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-19",
+  "date": "2026-07-20",
   "status": "queued",
-  "discoveredAt": "2026-07-19T10:02:09.455Z",
+  "discoveredAt": "2026-07-20T10:01:05.902Z",
   "keywordList": {
     "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
@@ -12,25 +12,25 @@
     "country": "us"
   },
   "keyword": {
-    "primary": "why do cats yawn",
+    "primary": "are snake plants poisonous to cats",
     "volume": 900,
-    "difficulty": 0,
-    "trafficPotential": 1300,
+    "difficulty": 3,
+    "trafficPotential": 7500,
     "intents": "Informational,Non-branded,Non-local",
-    "parentKeyword": "cat yawning",
+    "parentKeyword": "are snake plants toxic to cats",
     "source": "keyword-list-csv"
   },
   "article": {
-    "id": "behavior-yawn",
-    "slug": "yawn",
-    "category": "behavior",
-    "entityType": "behavior",
-    "searchIntent": "Informational — why do cats yawn",
-    "contentPath": "content/behavior/yawn.mdx"
+    "id": "plant-are-snake-plants-poisonous-to-cats",
+    "slug": "are-snake-plants-poisonous-to-cats",
+    "category": "plants",
+    "entityType": "plant",
+    "searchIntent": "Informational — are snake plants poisonous to cats",
+    "contentPath": "content/plants/are-snake-plants-poisonous-to-cats.mdx"
   },
-  "draftAt": "2026-07-19T16:25:00",
-  "draftAtIso": "2026-07-19T20:25:00.000Z",
-  "draftAtEpochMs": 1784492700000,
+  "draftAt": "2026-07-20T10:00:00",
+  "draftAtIso": "2026-07-20T14:00:00.000Z",
+  "draftAtEpochMs": 1784556000000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -40,11 +40,6 @@
   "draftedAt": null,
   "prUrl": null,
   "candidatesReviewed": [
-    {
-      "keyword": "why do cats yawn",
-      "volume": 900,
-      "difficulty": 0
-    },
     {
       "keyword": "are snake plants poisonous to cats",
       "volume": 900,
@@ -87,6 +82,11 @@
     },
     {
       "keyword": "how long does dewormer take to work on cats",
+      "volume": 500,
+      "difficulty": 0
+    },
+    {
+      "keyword": "do bengal cats shed",
       "volume": 500,
       "difficulty": 0
     }
