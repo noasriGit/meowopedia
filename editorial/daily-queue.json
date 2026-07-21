@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "status": "queued",
-  "discoveredAt": "2026-07-20T10:01:05.902Z",
+  "discoveredAt": "2026-07-21T10:02:12.105Z",
   "keywordList": {
     "path": "google_us_cats-extended_list-overview_2026-07-07_14-32-43.csv",
     "note": "Pre-filtered in Ahrefs Keyword Explorer for KD < 20 and DR < 15 in top 5 before export."
@@ -12,25 +12,25 @@
     "country": "us"
   },
   "keyword": {
-    "primary": "are snake plants poisonous to cats",
+    "primary": "is aloe poisonous to cats",
     "volume": 900,
-    "difficulty": 3,
-    "trafficPotential": 7500,
+    "difficulty": 7,
+    "trafficPotential": 4500,
     "intents": "Informational,Non-branded,Non-local",
-    "parentKeyword": "are snake plants toxic to cats",
+    "parentKeyword": "is aloe toxic to cats",
     "source": "keyword-list-csv"
   },
   "article": {
-    "id": "plant-are-snake-plants-poisonous-to-cats",
-    "slug": "are-snake-plants-poisonous-to-cats",
+    "id": "plant-is-aloe-poisonous-to-cats",
+    "slug": "is-aloe-poisonous-to-cats",
     "category": "plants",
     "entityType": "plant",
-    "searchIntent": "Informational — are snake plants poisonous to cats",
-    "contentPath": "content/plants/are-snake-plants-poisonous-to-cats.mdx"
+    "searchIntent": "Informational — is aloe poisonous to cats",
+    "contentPath": "content/plants/is-aloe-poisonous-to-cats.mdx"
   },
-  "draftAt": "2026-07-20T10:00:00",
-  "draftAtIso": "2026-07-20T14:00:00.000Z",
-  "draftAtEpochMs": 1784556000000,
+  "draftAt": "2026-07-21T16:32:00",
+  "draftAtIso": "2026-07-21T20:32:00.000Z",
+  "draftAtEpochMs": 1784665920000,
   "draftWindow": {
     "timezone": "America/New_York",
     "startHour": 10,
@@ -40,11 +40,6 @@
   "draftedAt": null,
   "prUrl": null,
   "candidatesReviewed": [
-    {
-      "keyword": "are snake plants poisonous to cats",
-      "volume": 900,
-      "difficulty": 3
-    },
     {
       "keyword": "is aloe poisonous to cats",
       "volume": 900,
@@ -87,6 +82,11 @@
     },
     {
       "keyword": "do bengal cats shed",
+      "volume": 500,
+      "difficulty": 0
+    },
+    {
+      "keyword": "how to use diatomaceous earth for fleas on cats",
       "volume": 500,
       "difficulty": 0
     }
